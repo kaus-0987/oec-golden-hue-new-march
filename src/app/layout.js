@@ -4,9 +4,9 @@ import Footer from "@/components/sections/Footer";
 import BottomNavigation from "@/components/ui/BottomNavigation";
 
 export const metadata = {
-  title: "OEC India - Best Overseas Education Consultants for Study Abroad",
+  title: "OEC Dubai - Best Overseas Education Consultants for Study Abroad",
   description: 
-  "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+  "OEC Dubai helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
   icons: {
     icon: [
       { url: "/oec.png" },
@@ -21,32 +21,32 @@ export const metadata = {
     shortcut: "/oec.png",
   },
   openGraph: {
-    title: "OEC India - Best Overseas Education Consultants for Study Abroad",
+    title: "OEC Dubai - Best Overseas Education Consultants for Study Abroad",
     description:
-      "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+      "OEC Dubai helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
     images: [
       {
-        url: "https://oecindia.com/oec.png",
+        url: "https://oecdubai.com/oec.png",
         width: 800,
         height: 600,
-        alt: "OEC India",
+        alt: "OEC Dubai",
       },
     ],
-    siteName: "OEC India",
+    siteName: "OEC Dubai",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "OEC India - Best Overseas Education Consultants for Study Abroad",
+    title: "OEC Dubai - Best Overseas Education Consultants for Study Abroad",
     description:
-      "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+      "OEC Dubai helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
     images: [
       {
-        url: "https://oecindia.com/oec.png",
+        url: "https://oecdubai.com/oec.png",
         width: 800,
         height: 600,
-        alt: "OEC India",
+        alt: "OEC Dubai",
       },
     ],
   },

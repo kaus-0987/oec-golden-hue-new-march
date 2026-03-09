@@ -10,11 +10,11 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => {
         onClick={onToggle}
         className="w-full px-6 py-4 text-left bg-white hover:bg-gray-50 transition-colors flex items-center justify-between"
       >
-        <h4 className="text-base font-medium text-gray-800 pr-4">{question}</h4>
+        <h4 className="text-base font-medium text-amber-900 pr-4">{question}</h4>
         {isOpen ? (
-          <ChevronUp className="w-4 h-4 text-gray-600 flex-shrink-0" />
+          <ChevronUp className="w-4 h-4 text-amber-700 flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-4 h-4 text-gray-600 flex-shrink-0" />
+          <ChevronDown className="w-4 h-4 text-amber-700 flex-shrink-0" />
         )}
       </button>
       {isOpen && (
@@ -79,7 +79,7 @@ const FAQSection = ({ activeSection }) => {
       <div className="bg-gray-50 rounded-xl p-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading FAQs...</p>
+          <p className="text-amber-700">Loading FAQs...</p>
         </div>
       </div>
     );
@@ -87,7 +87,7 @@ const FAQSection = ({ activeSection }) => {
 
   return (
     <div className="bg-gray-50 rounded-xl p-8">
-      <h3 className="text-2xl font-bold text-primary-800 mb-6 text-center">
+      <h3 className="text-2xl font-bold text-amber-900 mb-6 text-center">
         Frequently Asked Questions
       </h3>
 
@@ -104,7 +104,7 @@ const FAQSection = ({ activeSection }) => {
           ))}
         </div>
       ) : (
-        <p className="text-center text-gray-600">
+        <p className="text-center text-amber-700">
           No FAQs available for this service.
         </p>
       )}

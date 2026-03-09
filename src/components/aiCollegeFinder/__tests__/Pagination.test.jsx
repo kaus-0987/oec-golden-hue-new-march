@@ -57,6 +57,6 @@ describe('Pagination Component', () => {
     render(<Pagination {...defaultProps} currentPage={3} />);
     
     const currentPageButton = screen.getByText('3');
-    expect(currentPageButton).toHaveClass('bg-primary-800', 'text-white');
+    expect(currentPageButton).toHaveClass('bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900', 'text-white');
   });
 });

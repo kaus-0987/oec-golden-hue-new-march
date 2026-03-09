@@ -8,7 +8,7 @@ The favicon fix has been pushed to GitHub. Netlify should be rebuilding now.
 
 Please check the following and share the answers:
 
-### 1. **What do you see when you visit https://oecindia.com/oeccrm/login?**
+### 1. **What do you see when you visit https://oecdubai.com/oeccrm/login?**
 
 - [ ] Completely blank white page
 - [ ] Some content loading but errors
@@ -18,7 +18,7 @@ Please check the following and share the answers:
 
 ### 2. **Open Browser Console (F12 or Cmd+Option+I)**
 
-Visit https://oecindia.com/oeccrm/login and check:
+Visit https://oecdubai.com/oeccrm/login and check:
 
 **Console Tab:**
 - Are there any **red error messages**?
@@ -34,19 +34,19 @@ Visit https://oecindia.com/oeccrm/login and check:
 
 Try opening these URLs in your browser:
 
-1. **HTML File**: https://oecindia.com/oeccrm/index.html
+1. **HTML File**: https://oecdubai.com/oeccrm/index.html
    - Does it load? (yes/no)
    - What do you see?
 
-2. **Main JavaScript**: https://oecindia.com/oeccrm/static/js/main.4e609c23.js
+2. **Main JavaScript**: https://oecdubai.com/oeccrm/static/js/main.4e609c23.js
    - Does it load? (yes/no)
    - Does it show JavaScript code or 404?
 
-3. **Main CSS**: https://oecindia.com/oeccrm/static/css/main.204391fc.css
+3. **Main CSS**: https://oecdubai.com/oeccrm/static/css/main.204391fc.css
    - Does it load? (yes/no)
    - Does it show CSS code or 404?
 
-4. **Favicon**: https://oecindia.com/oeccrm/favicon.ico
+4. **Favicon**: https://oecdubai.com/oeccrm/favicon.ico
    - Does it load? (yes/no)
 
 ### 4. **Check Netlify Deploy Log**
@@ -81,7 +81,7 @@ Based on the favicon error you mentioned, here are possibilities:
 ## 🔧 Quick Tests
 
 ### Test 1: View Page Source
-1. Visit https://oecindia.com/oeccrm/login
+1. Visit https://oecdubai.com/oeccrm/login
 2. Right-click > "View Page Source"
 3. What do you see?
    - HTML with CRM content?
@@ -89,11 +89,11 @@ Based on the favicon error you mentioned, here are possibilities:
    - Netlify 404 page?
 
 ### Test 2: Direct File Access
-Visit: https://oecindia.com/oeccrm/index.html
+Visit: https://oecdubai.com/oeccrm/index.html
 Does it work?
 
 ### Test 3: Check Alternative Path
-Visit: https://oecindia.com/crm/login
+Visit: https://oecdubai.com/crm/login
 Does this work instead?
 
 ## 📸 Most Helpful Information

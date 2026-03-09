@@ -44,7 +44,7 @@ const Testimonials = () => {
             rating: item.rating,
             text: item.content,
             results:
-              "OEC India's guidance was crucial for my success story, leading to outstanding academic and career achievements.",
+              "OEC Dubai's guidance was crucial for my success story, leading to outstanding academic and career achievements.",
           }));
           setTestimonials(formattedData);
         } else {
@@ -119,11 +119,11 @@ const Testimonials = () => {
         <div className="text-center mb-16">
           <h2
             id="testimonials-heading"
-            className="text-3xl sm:text-4xl font-bold text-primary-800 mb-4"
+            className="text-3xl sm:text-4xl font-bold text-amber-900 mb-4"
           >
             Premium Student Reviews
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-amber-700 max-w-3xl mx-auto px-4">
             Why are we the best study abroad consultants?
           </p>
           {testimonials.length > 1 && (
@@ -185,7 +185,7 @@ const Testimonials = () => {
             </div>
           </div>
         ) : !currentTestimonial ? (
-          <div className="text-center text-gray-600">
+          <div className="text-center text-amber-700">
             No testimonials available at the moment.
           </div>
         ) : (
@@ -230,7 +230,7 @@ const Testimonials = () => {
                           </div>
                         )}
                         <div className="text-center lg:text-left">
-                          <h3 className="text-2xl font-semibold mb-1 text-primary-900">
+                          <h3 className="text-2xl font-semibold mb-1 text-black">
                             {currentTestimonial.name}
                           </h3>
                           <p className="text-primary-700 mb-2">
@@ -268,7 +268,7 @@ const Testimonials = () => {
                     <div className="flex-1 lg:border-l lg:border-primary-800 lg:pl-8">
                       <div className="relative">
                         <Quote
-                          className="h-10 w-10 text-primary-800 mb-4 opacity-20"
+                          className="h-10 w-10 text-amber-900 mb-4 opacity-20"
                           aria-hidden="true"
                         />
                         <blockquote className="text-lg leading-relaxed mb-6 text-gray-700 pl-8 -mt-8">
@@ -290,7 +290,7 @@ const Testimonials = () => {
             <div className="flex justify-center items-center mt-10 space-x-6">
               <button
                 onClick={prevTestimonial}
-                className="p-3 bg-white border border-primary-800 rounded-full text-secondary-500 hover:bg-primary-50 transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-300 disabled:opacity-50"
+                className="p-3 bg-white border border-primary-800 rounded-full text-white hover:bg-primary-50 transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-300 disabled:opacity-50"
                 aria-label="Previous testimonial"
                 disabled={testimonials.length < 2}
               >
@@ -328,7 +328,7 @@ const Testimonials = () => {
 
               <button
                 onClick={nextTestimonial}
-                className="p-3 bg-white border border-primary-800 rounded-full text-secondary-500 hover:bg-primary-50 transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-300 disabled:opacity-50"
+                className="p-3 bg-white border border-primary-800 rounded-full text-white hover:bg-primary-50 transition-colors duration-200 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-300 disabled:opacity-50"
                 aria-label="Next testimonial"
                 disabled={testimonials.length < 2}
               >

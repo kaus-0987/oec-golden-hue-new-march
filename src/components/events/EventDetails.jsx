@@ -129,13 +129,13 @@ const EventDetailPage = ({ slug }) => {
 
   return (
     <div className="bg-gray-100">
-      <div className="bg-primary-800 text-white mt-20 py-20 md:py-32">
+      <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="md:w-2/3">
               <Link
                 href="/events"
-                className="inline-flex items-center text-secondary-500 hover:text-white mb-6 transition-colors"
+                className="inline-flex items-center text-white hover:text-white mb-6 transition-colors"
               >
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Events
@@ -153,13 +153,13 @@ const EventDetailPage = ({ slug }) => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
                 {eventData.title}
               </h1>
-              <p className="text-xl text-secondary-500 mb-8">
+              <p className="text-xl text-white mb-8">
                 {eventData.short_description}
               </p>
 
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-2">
-                  <CalendarIcon className="h-6 w-6 text-secondary-500" />
+                  <CalendarIcon className="h-6 w-6 text-white" />
                   <span className="text-lg">
                     {moment(eventData.start_date).format("MMMM D, YYYY")}
                     {eventData.end_date &&
@@ -167,13 +167,13 @@ const EventDetailPage = ({ slug }) => {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock className="h-6 w-6 text-secondary-500" />
+                  <Clock className="h-6 w-6 text-white" />
                   <span className="text-lg">
                     {formatTimeRange(eventData.start_time, eventData.end_time)}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-6 w-6 text-secondary-500" />
+                  <MapPin className="h-6 w-6 text-white" />
                   <span className="text-lg">
                     {eventData.is_online
                       ? "Online Event"
@@ -191,25 +191,25 @@ const EventDetailPage = ({ slug }) => {
                     ? "FREE"
                     : `₹${eventData.registration_fee}`}
                 </span>
-                <span className="text-sm text-secondary-500">PER PERSON</span>
+                <span className="text-sm text-white">PER PERSON</span>
               </div>
               {eventData.is_registration_required && (
                 <a
                   href={eventData.registration_link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-white text-primary-800 py-3 px-6 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors mb-4 flex items-center justify-center gap-2"
+                  className="w-full bg-white text-amber-900 py-3 px-6 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors mb-4 flex items-center justify-center gap-2"
                 >
                   Register Now
                   <ChevronRight className="h-5 w-5" />
                 </a>
               )}
               <div className="flex justify-center gap-4 mt-4">
-                <button className="text-white hover:text-secondary-500 transition-colors flex items-center gap-1">
+                <button className="text-white hover:text-white transition-colors flex items-center gap-1">
                   <Share2 className="h-5 w-5" />
                   <span className="text-sm">Share</span>
                 </button>
-                <button className="text-white hover:text-secondary-500 transition-colors flex items-center gap-1">
+                <button className="text-white hover:text-white transition-colors flex items-center gap-1">
                   <Bookmark className="h-5 w-5" />
                   <span className="text-sm">Save</span>
                 </button>
@@ -240,7 +240,7 @@ const EventDetailPage = ({ slug }) => {
                     About This Event
                   </h2>
                   <div
-                    className="prose max-w-none text-gray-600"
+                    className="prose max-w-none text-amber-700"
                     dangerouslySetInnerHTML={{
                       __html: eventData.description,
                     }}
@@ -251,7 +251,7 @@ const EventDetailPage = ({ slug }) => {
                         Benefits
                       </h3>
                       <div
-                        className="prose max-w-none text-gray-600 mb-6"
+                        className="prose max-w-none text-amber-700 mb-6"
                         dangerouslySetInnerHTML={{
                           __html: eventData.benefits,
                         }}
@@ -264,7 +264,7 @@ const EventDetailPage = ({ slug }) => {
                         Agenda
                       </h3>
                       <div
-                        className="prose max-w-none text-gray-600 mb-6"
+                        className="prose max-w-none text-amber-700 mb-6"
                         dangerouslySetInnerHTML={{
                           __html: eventData.agenda,
                         }}
@@ -277,7 +277,7 @@ const EventDetailPage = ({ slug }) => {
                         Requirements
                       </h3>
                       <div
-                        className="prose max-w-none text-gray-600 mb-6"
+                        className="prose max-w-none text-amber-700 mb-6"
                         dangerouslySetInnerHTML={{
                           __html: eventData.requirements,
                         }}
@@ -310,11 +310,11 @@ const EventDetailPage = ({ slug }) => {
                             <h3 className="text-xl font-semibold text-gray-900 mb-1">
                               {speaker.name}
                             </h3>
-                            <p className="text-gray-600 mb-2">
+                            <p className="text-amber-700 mb-2">
                               {speaker.designation} at {speaker.company}
                             </p>
                             {speaker.bio && (
-                              <p className="text-gray-600 text-sm mb-2">
+                              <p className="text-amber-700 text-sm mb-2">
                                 {speaker.bio}
                               </p>
                             )}
@@ -323,7 +323,7 @@ const EventDetailPage = ({ slug }) => {
                                 href={speaker.linkedin_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-primary-800 hover:text-primary-600 font-medium text-sm flex items-center gap-1"
+                                className="text-amber-900 hover:text-primary-600 font-medium text-sm flex items-center gap-1"
                               >
                                 Connect on LinkedIn
                                 <ChevronRight className="h-4 w-4" />
@@ -352,13 +352,13 @@ const EventDetailPage = ({ slug }) => {
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">
                         {eventData.organizer_name}
                       </h3>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-amber-700 mb-4">
                         {eventData.organizer_name} is organizing this event.
                       </p>
                       {eventData.organizer_email && (
                         <a
                           href={`mailto:${eventData.organizer_email}`}
-                          className="text-primary-800 hover:text-primary-600 font-medium flex items-center gap-1"
+                          className="text-amber-900 hover:text-primary-600 font-medium flex items-center gap-1"
                         >
                           Contact Organizer
                           <ChevronRight className="h-4 w-4" />
@@ -391,7 +391,7 @@ const EventDetailPage = ({ slug }) => {
                             href={eventData.registration_link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-full bg-primary-800 hover:bg-primary-600 text-white py-3 px-6 rounded-lg font-bold text-lg transition-colors mb-4 flex items-center justify-center gap-2"
+                            className="w-full bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-3 px-6 rounded-lg font-bold text-lg transition-colors mb-4 flex items-center justify-center gap-2"
                           >
                             Register Now
                             <ChevronRight className="h-5 w-5" />
@@ -399,7 +399,7 @@ const EventDetailPage = ({ slug }) => {
                         ) : (
                           <button
                             onClick={() => setShowRegistrationForm(true)}
-                            className="w-full bg-primary-800 hover:bg-primary-600 text-white py-3 px-6 rounded-lg font-bold text-lg transition-colors mb-4 flex items-center justify-center gap-2"
+                            className="w-full bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-3 px-6 rounded-lg font-bold text-lg transition-colors mb-4 flex items-center justify-center gap-2"
                           >
                             Register Now
                             <ChevronRight className="h-5 w-5" />
@@ -426,7 +426,7 @@ const EventDetailPage = ({ slug }) => {
                       </h3>
                       <div className="space-y-3">
                         <div className="flex items-start gap-3">
-                          <CalendarIcon className="h-5 w-5 text-secondary-500 mt-0.5 flex-shrink-0" />
+                          <CalendarIcon className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
                           <div>
                             <div className="text-sm font-medium text-gray-900">
                               {moment(eventData.start_date).format(
@@ -446,7 +446,7 @@ const EventDetailPage = ({ slug }) => {
                           </div>
                         </div>
                         <div className="flex items-start gap-3">
-                          <MapPin className="h-5 w-5 text-secondary-500 mt-0.5 flex-shrink-0" />
+                          <MapPin className="h-5 w-5 text-white mt-0.5 flex-shrink-0" />
                           <div>
                             <div className="text-sm font-medium text-gray-900">
                               {eventData.is_online
@@ -472,7 +472,7 @@ const EventDetailPage = ({ slug }) => {
                       <h3 className="text-xl font-bold text-gray-900 mb-2">
                         {eventData.title}
                       </h3>
-                      <div className="flex items-center justify-center gap-2 text-gray-600">
+                      <div className="flex items-center justify-center gap-2 text-amber-700">
                         <MessageCircle className="h-5 w-5 text-primary-600" />
                         <span className="font-semibold">Register for This Event</span>
                       </div>
@@ -520,8 +520,8 @@ const EventDetailPage = ({ slug }) => {
                       ></iframe>
                     ) : (
                       <div className="w-full h-48 bg-gray-200 flex flex-col items-center justify-center">
-                        <MapPin className="h-8 w-8 text-secondary-500" />
-                        <span className="mt-2 text-sm text-gray-600">
+                        <MapPin className="h-8 w-8 text-white" />
+                        <span className="mt-2 text-sm text-amber-700">
                           {eventData.is_online
                             ? "This is an online event"
                             : "Location map unavailable"}
@@ -531,24 +531,24 @@ const EventDetailPage = ({ slug }) => {
                   </div>
                   {!eventData.is_online && (
                     <>
-                      <p className="text-sm text-gray-600 mb-2">
+                      <p className="text-sm text-amber-700 mb-2">
                         <strong>Venue:</strong> {eventData.venue_name}
                       </p>
                       {eventData.venue_address && (
-                        <p className="text-sm text-gray-600">
+                        <p className="text-sm text-amber-700">
                           <strong>Address:</strong> {eventData.venue_address}
                         </p>
                       )}
                     </>
                   )}
                   {eventData.is_online && eventData.meeting_link && (
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-amber-700">
                       <strong>Meeting Link:</strong>{" "}
                       <a
                         href={eventData.meeting_link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary-800 hover:underline break-all"
+                        className="text-amber-900 hover:underline break-all"
                       >
                         Join Online
                       </a>

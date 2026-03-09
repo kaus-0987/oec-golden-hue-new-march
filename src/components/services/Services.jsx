@@ -75,14 +75,14 @@ const ExpandableSection = ({ title, children }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 text-left bg-primary-50 hover:bg-primary-100 transition-colors flex items-center justify-between"
       >
-        <h3 className="text-lg font-semibold text-primary-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-amber-900">{title}</h3>
         <ChevronDown
           className={`w-5 h-5 text-primary-600 transition-transform ${
             isOpen ? "rotate-180" : ""
           }`}
         />
       </button>
-      {isOpen && <div className="p-6 bg-white">{children}</div>}
+      {isOpen && <div className="p-6 text-amber-700 bg-white">{children}</div>}
     </div>
   );
 };
@@ -279,11 +279,11 @@ const Services = () => {
       <div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-primary-800 mb-4">
+            <h3 className="text-2xl font-bold text-amber-900 mb-4">
               {activeService.name}
             </h3>
             <div
-              className="text-gray-600 mb-6 leading-relaxed"
+              className="text-amber-700 mb-6 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: activeService.description }}
             />
             {activeService.notes && (
@@ -296,7 +296,7 @@ const Services = () => {
             )}
           </div>
           <div className="bg-primary-50 p-6 rounded-xl">
-            <h4 className="font-semibold text-primary-800 mb-4">
+            <h4 className="font-semibold text-amber-900 mb-4">
               Key Features:
             </h4>
             {activeService.key_points &&
@@ -310,13 +310,13 @@ const Services = () => {
         )}
         <ExpandableSection title="How It Works">
           <div
-            className="text-gray-600"
+            className="text-amber-700"
             dangerouslySetInnerHTML={{ __html: activeService.description }}
           />
         </ExpandableSection>
         <ExpandableSection title="Additional Information">
           <div
-            className="text-gray-600"
+            className="text-amber-700"
             dangerouslySetInnerHTML={{
               __html: activeService.notes,
             }}
@@ -344,12 +344,12 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 mb-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 mb-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Complete Study Abroad Solutions
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             From university selection to career guidance - we support you at
             every step of your study abroad journey
           </p>
@@ -367,8 +367,8 @@ const Services = () => {
                   key={service.id}
                   className={`flex items-center px-4 py-2 rounded-full transition-all duration-300 text-sm ${
                     activeSection === service.id
-                      ? "bg-primary-800 text-white"
-                      : "bg-white text-primary-800 border border-primary-800 shadow-lg"
+                      ? "bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-amber-900"
+                      : "bg-white text-amber-700 border border-primary-800 shadow-lg"
                   }`}
                   onClick={() => handleServiceChange(service.id)}
                 >
@@ -421,17 +421,17 @@ const Services = () => {
                   <div className="text-secondary-500 mb-3 flex justify-center">
                     {achievement.icon}
                   </div>
-                  <div className="text-3xl font-bold text-primary-800 mb-2">
+                  <div className="text-3xl font-bold text-amber-700 mb-2">
                     {achievement.number}
                   </div>
-                  <div className="text-gray-600">{achievement.label}</div>
+                  <div className="text-amber-700">{achievement.label}</div>
                 </div>
               ))}
             </div>
 
             <div className="bg-primary-50 rounded-2xl p-8">
-              <h2 className="text-3xl font-bold mb-8 text-center text-primary-800">
-                Why Choose OEC India?
+              <h2 className="text-3xl font-bold mb-8 text-center text-amber-900">
+                Why Choose OEC Dubai?
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -440,10 +440,10 @@ const Services = () => {
                     key={index}
                     className="bg-white p-6 rounded-xl shadow-sm"
                   >
-                    <h3 className="text-xl font-semibold mb-4 text-primary-800">
+                    <h3 className="text-xl font-semibold mb-4 text-amber-700">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600">{feature.description}</p>
+                    <p className="text-amber-700">{feature.description}</p>
                   </div>
                 ))}
               </div>
@@ -451,7 +451,7 @@ const Services = () => {
               <div className="text-center">
                 <Link
                   href="/contact-us"
-                  className="bg-primary-800 text-white hover:bg-primary-600 font-bold py-4 px-8 rounded-full inline-flex items-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                  className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 font-bold py-4 px-8 rounded-full inline-flex items-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Start Your Journey Today
                   <ArrowRight className="ml-2 w-5 h-5" />

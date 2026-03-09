@@ -135,7 +135,7 @@ const CourseDetail = ({ slug }) => {
           <p>{error}</p>
           <Link
             href="/courses"
-            className="mt-3 inline-flex items-center text-primary-600 hover:text-primary-800 font-medium transition-colors"
+            className="mt-3 inline-flex items-center text-primary-600 hover:text-amber-900 font-medium transition-colors"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to courses
@@ -152,12 +152,12 @@ const CourseDetail = ({ slug }) => {
         animate={{ opacity: 1 }}
         className="max-w-7xl mx-auto px-4 py-12"
       >
-        <div className="bg-primary-50 border border-primary-200 text-primary-800 px-4 py-3 rounded-lg">
+        <div className="bg-primary-50 border border-primary-200 text-amber-900 px-4 py-3 rounded-lg">
           <h3 className="font-bold text-lg mb-1">Course Not Found</h3>
           <p>The requested course could not be found.</p>
           <Link
             href="/courses"
-            className="mt-3 inline-flex items-center text-primary-600 hover:text-primary-800 font-medium transition-colors"
+            className="mt-3 inline-flex items-center text-primary-600 hover:text-amber-900 font-medium transition-colors"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to courses
@@ -197,7 +197,7 @@ const CourseDetail = ({ slug }) => {
       variants={containerVariants}
       className="bg-gray-50"
     >
-      <header className="bg-primary-800 text-white mt-20 py-16 md:py-24">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             variants={itemVariants}
@@ -290,7 +290,7 @@ const CourseDetail = ({ slug }) => {
 
               <motion.section variants={itemVariants}>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                  <BookOpen className="h-6 w-6 mr-2 text-secondary-500" />
+                  <BookOpen className="h-6 w-6 mr-2 text-white" />
                   Course Description
                 </h2>
                 {course.description && (
@@ -306,7 +306,7 @@ const CourseDetail = ({ slug }) => {
               {course.curriculum && (
                 <motion.section variants={itemVariants}>
                   <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                    <ClipboardList className="h-6 w-6 mr-2 text-secondary-500" />
+                    <ClipboardList className="h-6 w-6 mr-2 text-white" />
                     Curriculum
                   </h2>
                   <div
@@ -319,7 +319,7 @@ const CourseDetail = ({ slug }) => {
               {course.career_prospects && (
                 <motion.section variants={itemVariants}>
                   <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                    <Briefcase className="h-6 w-6 mr-2 text-secondary-500" />
+                    <Briefcase className="h-6 w-6 mr-2 text-white" />
                     Career Prospects
                   </h2>
                   <div
@@ -333,14 +333,14 @@ const CourseDetail = ({ slug }) => {
 
               <motion.section variants={itemVariants}>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Globe className="h-6 w-6 mr-2 text-secondary-500" />
+                  <Globe className="h-6 w-6 mr-2 text-white" />
                   Key Information
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Clock className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">Duration</span>
+                      <Clock className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">Duration</span>
                     </div>
                     <p className="text-gray-700">
                       {course.duration} {course.duration_type}
@@ -349,8 +349,8 @@ const CourseDetail = ({ slug }) => {
 
                   <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Landmark className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">
+                      <Landmark className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">
                         Total Fees
                       </span>
                     </div>
@@ -364,8 +364,8 @@ const CourseDetail = ({ slug }) => {
 
                   <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Calendar className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">Intakes</span>
+                      <Calendar className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">Intakes</span>
                     </div>
                     <div className="flex flex-wrap gap-1">
                       {intakeIcons.map((intake) => (
@@ -385,8 +385,8 @@ const CourseDetail = ({ slug }) => {
 
                   <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                     <div className="flex items-center text-gray-500 mb-1">
-                      <GraduationCap className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">
+                      <GraduationCap className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">
                         Degree Level
                       </span>
                     </div>
@@ -423,8 +423,8 @@ const CourseDetail = ({ slug }) => {
                 variants={itemVariants}
                 className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
               >
-                <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                  <School className="h-5 w-5 mr-2 text-secondary-500" />
+                <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                  <School className="h-5 w-5 mr-2 text-white" />
                   University
                 </h3>
                 <div className="space-y-4">
@@ -442,7 +442,7 @@ const CourseDetail = ({ slug }) => {
                       <h4 className="font-medium text-gray-900">
                         {course.university_name}
                       </h4>
-                      <p className="text-sm text-gray-600 flex items-center">
+                      <p className="text-sm text-amber-700 flex items-center">
                         <MapPin className="h-3 w-3 mr-1" />
                         {course.university_country}
                       </p>
@@ -452,7 +452,7 @@ const CourseDetail = ({ slug }) => {
                     href={`/universities/${course.university_country
                       .toLowerCase()
                       .replace(/\s+/g, "-")}/${course.university_slug}`}
-                    className="inline-flex items-center text-primary-600 hover:text-primary-800 text-sm font-medium transition-colors"
+                    className="inline-flex items-center text-primary-600 hover:text-amber-900 text-sm font-medium transition-colors"
                   >
                     View university profile
                     <ExternalLink className="h-4 w-4 ml-1" />
@@ -464,39 +464,39 @@ const CourseDetail = ({ slug }) => {
                 variants={itemVariants}
                 className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
               >
-                <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                  <ClipboardList className="h-5 w-5 mr-2 text-secondary-500" />
+                <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                  <ClipboardList className="h-5 w-5 mr-2 text-white" />
                   Admission Requirements
                 </h3>
                 <div className="space-y-4">
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Gauge className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">Min GPA</span>
+                      <Gauge className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">Min GPA</span>
                     </div>
                     <p className="text-gray-700">{course.min_gpa}</p>
                   </div>
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Bookmark className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">IELTS</span>
+                      <Bookmark className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">IELTS</span>
                     </div>
                     <p className="text-gray-700">{course.ielts_score}</p>
                   </div>
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <ScrollText className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">TOEFL</span>
+                      <ScrollText className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">TOEFL</span>
                     </div>
                     <p className="text-gray-700">{course.toefl_score}</p>
                   </div>
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Trophy className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">GRE</span>
+                      <Trophy className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">GRE</span>
                     </div>
                     <p className="text-gray-700">
                       {course.gre_required ? (
@@ -515,8 +515,8 @@ const CourseDetail = ({ slug }) => {
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Trophy className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">GMAT</span>
+                      <Trophy className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">GMAT</span>
                     </div>
                     <p className="text-gray-700">
                       {course.gmat_required ? (
@@ -539,26 +539,26 @@ const CourseDetail = ({ slug }) => {
                 variants={itemVariants}
                 className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
               >
-                <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                  <Landmark className="h-5 w-5 mr-2 text-secondary-500" />
+                <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                  <Landmark className="h-5 w-5 mr-2 text-white" />
                   Fees Breakdown
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Tuition Fee:</span>
+                    <span className="text-amber-700">Tuition Fee:</span>
                     <span className="font-medium">
                       {formatFee(course.tuition_fee)}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-600">Other Fees:</span>
+                    <span className="text-amber-700">Other Fees:</span>
                     <span className="font-medium">
                       {formatFee(course.other_fees)}
                     </span>
                   </div>
                   <div className="border-t border-gray-200 my-2"></div>
                   <div className="flex justify-between text-lg font-semibold">
-                    <span className="text-gray-800">Total:</span>
+                    <span className="text-amber-900">Total:</span>
                     <span className="text-primary-700">
                       {formatFee(course.total_fee)}
                     </span>

@@ -6,7 +6,7 @@ import Listening from "@/components/IELTS/Listening/Listening";
 export const testConfig = {
   ielts: {
     title: "IELTS",
-    icon: <Star className="h-6 w-6 text-secondary-500" />,
+    icon: <Star className="h-6 w-6 text-white" />,
   },
 };
 
@@ -16,19 +16,19 @@ export const allTestCategories = {
       title: "Reading",
       slug: "reading",
       description: "Assess your reading comprehension skills.",
-      icon: <BookOpen className="h-10 w-10 text-primary-800" />,
+      icon: <BookOpen className="h-10 w-10 text-amber-900" />,
     },
     writing: {
       title: "Writing",
       slug: "writing",
       description: "Practice writing tasks and improve your structure.",
-      icon: <FilePenLine className="h-10 w-10 text-primary-800" />,
+      icon: <FilePenLine className="h-10 w-10 text-amber-900" />,
     },
     listening: {
       title: "Listening",
       slug: "listening",
       description: "Sharpen your listening skills with audio exercises.",
-      icon: <Ear className="h-10 w-10 text-primary-800" />,
+      icon: <Ear className="h-10 w-10 text-amber-900" />,
     },
   },
 };

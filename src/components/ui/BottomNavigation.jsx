@@ -77,13 +77,13 @@ const BottomNavigation = () => {
                   <div
                     className={`w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 ${
                       active
-                        ? "bg-primary-800 scale-110"
+                        ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 scale-110"
                         : "bg-white border-2 border-primary-800 hover:bg-primary-50"
                     }`}
                   >
                     <Image
                       src="/oec.png"
-                      alt="OEC India Home"
+                      alt="OEC Dubai Home"
                       width={48}
                       height={48}
                       className="object-contain"
@@ -91,7 +91,7 @@ const BottomNavigation = () => {
                   </div>
                   <span
                     className={`text-xs mt-2 font-medium ${
-                      active ? "text-primary-800" : "text-gray-600"
+                      active ? "text-amber-900" : "text-amber-700"
                     }`}
                   >
                     {item.name}
@@ -107,7 +107,7 @@ const BottomNavigation = () => {
                 href={item.href}
                 className={`flex flex-col items-center justify-center flex-1 h-full transition-colors duration-200 ${
                   active
-                    ? "text-primary-800"
+                    ? "text-amber-900"
                     : "text-gray-500 hover:text-primary-600"
                 }`}
                 aria-current={active ? "page" : undefined}
@@ -125,7 +125,7 @@ const BottomNavigation = () => {
                 </div>
                 <span
                   className={`text-xs mt-1 font-medium ${
-                    active ? "text-primary-800" : "text-gray-600"
+                    active ? "text-amber-900" : "text-amber-700"
                   }`}
                 >
                   {item.name}

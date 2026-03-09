@@ -76,12 +76,12 @@ const CountryGuides = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Country Study Guides
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Explore comprehensive guides and expert insights to choose the
             perfect destination for your international education.
           </p>
@@ -116,7 +116,7 @@ const CountryGuides = () => {
             <div className="flex items-center space-x-2">
               <label
                 htmlFor="filter-select"
-                className="text-gray-600 font-medium whitespace-nowrap"
+                className="text-amber-700 font-medium whitespace-nowrap"
               >
                 Filter by Universities:
               </label>
@@ -136,23 +136,23 @@ const CountryGuides = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div className="bg-primary-50 p-4 rounded-lg">
-              <p className="font-bold text-2xl text-primary-800">
+              <p className="font-bold text-2xl text-amber-900">
                 {countries.length}
               </p>
-              <p className="text-primary-800 text-sm">Countries Covered</p>
+              <p className="text-amber-900 text-sm">Countries Covered</p>
             </div>
             <div className="bg-secondary-50 p-4 rounded-lg">
-              <p className="font-bold text-2xl text-secondary-500">
+              <p className="font-bold text-2xl text-white">
                 {countries.reduce(
                   (sum, country) => sum + country.university_count,
                   0
                 )}
               </p>
-              <p className="text-secondary-500 text-sm">Universities Listed</p>
+              <p className="text-white text-sm">Universities Listed</p>
             </div>
             <div className="bg-primary-50 p-4 rounded-lg">
-              <p className="font-bold text-2xl text-primary-800">100+</p>
-              <p className="text-primary-800 text-sm">Program Categories</p>
+              <p className="font-bold text-2xl text-amber-900">100+</p>
+              <p className="text-amber-900 text-sm">Program Categories</p>
             </div>
           </div>
         </section>
@@ -191,17 +191,17 @@ const CountryGuides = () => {
                         {country.name}
                       </h3>
                     </div>
-                    <div className="absolute top-4 right-4 bg-white/90 text-primary-800 px-3 py-1 rounded-full text-sm font-semibold flex items-center">
+                    <div className="absolute top-4 right-4 bg-white/90 text-amber-900 px-3 py-1 rounded-full text-sm font-semibold flex items-center">
                       <GraduationCap className="w-4 h-4 mr-1.5" />
                       {country.university_count} Universities
                     </div>
                   </div>
 
                   <div className="p-6 flex-grow flex flex-col">
-                    <h4 className="font-semibold text-primary-800 mb-2">
+                    <h4 className="font-semibold text-amber-900 mb-2">
                       Why Study in {country.name}?
                     </h4>
-                    <div className="text-gray-600 text-sm line-clamp-3">
+                    <div className="text-amber-700 text-sm line-clamp-3">
                       {parse(
                         country.description
                           ?.replace(/<[^>]+>/g, "")
@@ -215,7 +215,7 @@ const CountryGuides = () => {
                         href={`/country-guides/${country.name
                           .toLowerCase()
                           .replace(/\s+/g, "-")}`}
-                        className="inline-flex items-center text-primary-600 font-bold group-hover:text-primary-800 transition-colors"
+                        className="inline-flex items-center text-primary-600 font-bold group-hover:text-amber-900 transition-colors"
                         aria-label={`Explore study guide for ${country.name}`}
                       >
                         Explore Guide
@@ -246,7 +246,7 @@ const CountryGuides = () => {
                           onClick={() => paginate(num)}
                           className={`px-4 py-2 rounded-md border ${
                             currentPage === num
-                              ? "bg-primary-800 text-white border-primary-600"
+                              ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white border-primary-600"
                               : "border-gray-300"
                           }`}
                           aria-current={

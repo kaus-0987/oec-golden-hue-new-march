@@ -230,7 +230,7 @@ const StepperCollegeFinder = () => {
                     </p>
                   </div>
                   {formData.degree === option.value && (
-                    <div className="bg-primary-600 text-white rounded-full p-1">
+                    <div className="bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white rounded-full p-1">
                       <Check className="w-5 h-5" />
                     </div>
                   )}
@@ -263,7 +263,7 @@ const StepperCollegeFinder = () => {
                     </h3>
                   </div>
                   {formData.field === option.value && (
-                    <div className="bg-primary-600 text-white rounded-full p-1">
+                    <div className="bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white rounded-full p-1">
                       <Check className="w-4 h-4" />
                     </div>
                   )}
@@ -296,7 +296,7 @@ const StepperCollegeFinder = () => {
                     </h3>
                   </div>
                   {formData.country === option.value && (
-                    <div className="bg-primary-600 text-white rounded-full p-1">
+                    <div className="bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white rounded-full p-1">
                       <Check className="w-4 h-4" />
                     </div>
                   )}
@@ -380,7 +380,7 @@ const StepperCollegeFinder = () => {
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               Your Personalized University Matches
             </h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-amber-700 max-w-2xl mx-auto">
               Based on your profile, we found {courses.length} universities that
               match your preferences
             </p>
@@ -395,7 +395,7 @@ const StepperCollegeFinder = () => {
           {/* Results */}
           {courses.length === 0 ? (
             <div className="text-center py-12">
-              <p className="text-gray-600">
+              <p className="text-amber-700">
                 No universities found matching your criteria. Please try
                 adjusting your preferences.
               </p>
@@ -444,14 +444,14 @@ const StepperCollegeFinder = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-800 px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 bg-primary-100 text-amber-900 px-4 py-2 rounded-full mb-4">
             <Sparkles className="w-5 h-5" />
             <span className="font-semibold">AI-Powered Matching</span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Find Your Perfect University
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-amber-700">
             Answer a few questions and let AI find the best universities for you
           </p>
         </div>
@@ -465,7 +465,7 @@ const StepperCollegeFinder = () => {
                   <div
                     className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
                       index <= currentStep
-                        ? "bg-primary-600 text-white"
+                        ? "bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white"
                         : "bg-gray-200 text-gray-400"
                     }`}
                   >
@@ -488,7 +488,7 @@ const StepperCollegeFinder = () => {
                 {index < steps.length - 1 && (
                   <div
                     className={`flex-1 h-1 mx-2 rounded ${
-                      index < currentStep ? "bg-primary-600" : "bg-gray-200"
+                      index < currentStep ? "bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600" : "bg-gray-200"
                     }`}
                   />
                 )}
@@ -509,7 +509,7 @@ const StepperCollegeFinder = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
               {steps[currentStep].title}
             </h2>
-            <p className="text-gray-600">{steps[currentStep].description}</p>
+            <p className="text-amber-700">{steps[currentStep].description}</p>
           </div>
 
           <div className="max-h-[500px] overflow-y-auto pr-2">
@@ -535,7 +535,7 @@ const StepperCollegeFinder = () => {
           <button
             onClick={handleNext}
             disabled={!isStepValid() || isLoading}
-            className="flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           >
             {isLoading ? (
               <>

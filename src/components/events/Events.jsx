@@ -204,7 +204,7 @@ const Events = () => {
   if (isLoading) {
     return (
       <div className="bg-gray-100 min-h-screen">
-        <div className="bg-primary-800 text-white py-20 md:py-32 text-center">
+        <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white py-20 md:py-32 text-center">
           <div className="max-w-7xl mx-auto px-4">
             <div className="h-12 bg-gray-300 rounded w-1/2 mx-auto animate-pulse" />
             <div className="h-6 bg-gray-300 rounded w-3/4 mx-auto mt-4 animate-pulse" />
@@ -240,18 +240,18 @@ const Events = () => {
 
   return (
     <div className="bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Upcoming Education Events
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Connect with universities, attend workshops, and get expert advice
             for your study abroad journey
           </p>
           <div className="mt-8 max-w-2xl mx-auto">
             <div className="relative">
-              <Search className="absolute left-4 top-3.5 h-5 w-5 text-secondary-500" />
+              <Search className="absolute left-4 top-3.5 h-5 w-5 text-white" />
               <input
                 type="search"
                 placeholder="Search events..."
@@ -268,7 +268,7 @@ const Events = () => {
                   aria-pressed={viewMode === "grid"}
                   className={`p-2 rounded-full ${
                     viewMode === "grid"
-                      ? "bg-white text-secondary-500"
+                      ? "bg-white text-white"
                       : "text-white hover:text-white/80"
                   }`}
                   aria-label="Grid view"
@@ -280,7 +280,7 @@ const Events = () => {
                   aria-pressed={viewMode === "list"}
                   className={`p-2 rounded-full ${
                     viewMode === "list"
-                      ? "bg-white text-secondary-500"
+                      ? "bg-white text-white"
                       : "text-white hover:text-white/80"
                   }`}
                   aria-label="List view"
@@ -302,8 +302,8 @@ const Events = () => {
                 aria-pressed={selectedCategory === "all"}
                 className={`px-4 py-2 rounded-full text-sm font-medium ${
                   selectedCategory === "all"
-                    ? "bg-primary-800 text-white"
-                    : "bg-white text-primary-800 hover:bg-primary-100 border border-primary-800"
+                    ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                    : "bg-white text-amber-900 hover:bg-primary-100 border border-primary-800"
                 }`}
               >
                 All Events
@@ -315,8 +315,8 @@ const Events = () => {
                   aria-pressed={selectedCategory === category.name}
                   className={`px-4 py-2 rounded-full text-sm font-medium ${
                     selectedCategory === category.name
-                      ? "bg-primary-800 text-white"
-                      : "bg-white text-primary-800 hover:bg-primary-100 border border-primary-800"
+                      ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                      : "bg-white text-amber-900 hover:bg-primary-100 border border-primary-800"
                   }`}
                 >
                   {category.name}
@@ -360,7 +360,7 @@ const Events = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleResetFilters}
-                  className="px-4 py-2 bg-primary-800 text-white rounded-md hover:bg-primary-700"
+                  className="px-4 py-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white rounded-md hover:bg-primary-700"
                 >
                   Reset Filters
                 </motion.button>
@@ -393,7 +393,7 @@ const Events = () => {
                             loading="lazy"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                          <div className="absolute top-4 right-4 bg-white/90 text-primary-800 px-3 py-1 rounded-full text-xs font-bold">
+                          <div className="absolute top-4 right-4 bg-white/90 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">
                             FREE
                           </div>
                         </Link>
@@ -401,13 +401,13 @@ const Events = () => {
 
                       <div className="p-6">
                         <span
-                          className="text-sm font-semibold text-secondary-500"
+                          className="text-sm font-semibold text-white"
                           itemProp="eventType"
                         >
                           {event.category_name}
                         </span>
                         <h3
-                          className="mt-2 text-xl font-bold text-gray-900 hover:text-primary-800"
+                          className="mt-2 text-xl font-bold text-gray-900 hover:text-amber-900"
                           itemProp="name"
                         >
                           <Link href={`/events/${event.slug}`}>
@@ -415,9 +415,9 @@ const Events = () => {
                           </Link>
                         </h3>
 
-                        <div className="mt-4 space-y-2 text-sm text-gray-600">
+                        <div className="mt-4 space-y-2 text-sm text-amber-700">
                           <div className="flex items-center gap-2">
-                            <Calendar className="h-4 w-4 text-secondary-500" />
+                            <Calendar className="h-4 w-4 text-white" />
                             <time
                               dateTime={event.start_date}
                               itemProp="startDate"
@@ -426,7 +426,7 @@ const Events = () => {
                             </time>
                           </div>
                           <div className="flex items-center gap-2">
-                            <Clock className="h-4 w-4 text-secondary-500" />
+                            <Clock className="h-4 w-4 text-white" />
                             {moment(event.start_time, "HH:mm:ss").format(
                               "h:mm A"
                             )}{" "}
@@ -436,7 +436,7 @@ const Events = () => {
                             )}
                           </div>
                           <div className="flex items-center gap-2">
-                            <MapPin className="h-4 w-4 text-secondary-500" />
+                            <MapPin className="h-4 w-4 text-white" />
                             <span itemProp="location">
                               {event.venue_name || "Online"}
                             </span>
@@ -446,7 +446,7 @@ const Events = () => {
                         <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center">
                           <Link
                             href={`/events/${event.slug}`}
-                            className="flex items-center gap-1 font-semibold text-primary-600 hover:text-primary-800"
+                            className="flex items-center gap-1 font-semibold text-primary-600 hover:text-amber-900"
                             aria-label={`View details for ${event.title}`}
                           >
                             View Details
@@ -456,7 +456,7 @@ const Events = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => handleRegister(event)}
-                            className="px-4 py-2 bg-primary-800 text-white text-sm font-medium rounded-lg hover:bg-primary-700"
+                            className="px-4 py-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-sm font-medium rounded-lg hover:bg-primary-700"
                           >
                             Register Now
                           </motion.button>
@@ -488,7 +488,7 @@ const Events = () => {
                                 itemProp="image"
                                 loading="lazy"
                               />
-                              <div className="absolute top-2 right-2 bg-white/90 text-primary-800 px-2 py-1 rounded text-xs font-bold">
+                              <div className="absolute top-2 right-2 bg-white/90 text-amber-900 px-2 py-1 rounded text-xs font-bold">
                                 FREE
                               </div>
                             </div>
@@ -497,13 +497,13 @@ const Events = () => {
                           <div className="md:w-3/4">
                             <div>
                               <span
-                                className="text-sm font-semibold text-secondary-500"
+                                className="text-sm font-semibold text-white"
                                 itemProp="eventType"
                               >
                                 {event.category_name}
                               </span>
                               <h3
-                                className="mt-1 text-xl font-bold text-gray-900 hover:text-primary-800"
+                                className="mt-1 text-xl font-bold text-gray-900 hover:text-amber-900"
                                 itemProp="name"
                               >
                                 <Link href={`/events/${event.slug}`}>
@@ -511,15 +511,15 @@ const Events = () => {
                                 </Link>
                               </h3>
                               <p
-                                className="mt-2 text-gray-600 line-clamp-2"
+                                className="mt-2 text-amber-700 line-clamp-2"
                                 itemProp="description"
                               >
                                 {event.short_description}
                               </p>
 
                               <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-                                <div className="flex items-center gap-2 text-gray-600">
-                                  <Calendar className="h-4 w-4 text-secondary-500" />
+                                <div className="flex items-center gap-2 text-amber-700">
+                                  <Calendar className="h-4 w-4 text-white" />
                                   <time
                                     dateTime={event.start_date}
                                     itemProp="startDate"
@@ -529,8 +529,8 @@ const Events = () => {
                                     )}
                                   </time>
                                 </div>
-                                <div className="flex items-center gap-2 text-gray-600">
-                                  <Clock className="h-4 w-4 text-secondary-500" />
+                                <div className="flex items-center gap-2 text-amber-700">
+                                  <Clock className="h-4 w-4 text-white" />
                                   {moment(event.start_time, "HH:mm:ss").format(
                                     "h:mm A"
                                   )}{" "}
@@ -539,8 +539,8 @@ const Events = () => {
                                     "h:mm A"
                                   )}
                                 </div>
-                                <div className="flex items-center gap-2 text-gray-600">
-                                  <MapPin className="h-4 w-4 text-secondary-500" />
+                                <div className="flex items-center gap-2 text-amber-700">
+                                  <MapPin className="h-4 w-4 text-white" />
                                   <span itemProp="location">
                                     {event.venue_name || "Online"}
                                   </span>
@@ -550,7 +550,7 @@ const Events = () => {
                               <div className="mt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                                 <Link
                                   href={`/events/${event.slug}`}
-                                  className="flex items-center gap-1 font-semibold text-primary-600 hover:text-primary-800"
+                                  className="flex items-center gap-1 font-semibold text-primary-600 hover:text-amber-900"
                                   aria-label={`View details for ${event.title}`}
                                 >
                                   View Details
@@ -580,7 +580,7 @@ const Events = () => {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     onClick={() => handleRegister(event)}
-                                    className="px-4 py-2 bg-primary-800 text-white text-sm font-medium rounded-lg hover:bg-primary-700"
+                                    className="px-4 py-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-sm font-medium rounded-lg hover:bg-primary-700"
                                   >
                                     Register Now
                                   </motion.button>
@@ -601,7 +601,7 @@ const Events = () => {
                             <h4 className="font-semibold text-gray-900 mb-3">
                               Event Details
                             </h4>
-                            <div className="prose prose-sm text-gray-600">
+                            <div className="prose prose-sm text-amber-700">
                               {event.short_description}
                             </div>
                           </motion.div>
@@ -640,7 +640,7 @@ const Events = () => {
                           }
                           className={`w-10 h-10 rounded-md text-sm font-medium ${
                             currentPage === page
-                              ? "bg-primary-800 text-white"
+                              ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                               : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
                           }`}
                           aria-label={`Go to page ${page}`}
@@ -676,7 +676,7 @@ const Events = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Register for Our Events
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-amber-700">
               Fill out the form below to register for upcoming events and get personalized guidance
             </p>
           </div>

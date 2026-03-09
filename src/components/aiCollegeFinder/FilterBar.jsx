@@ -61,9 +61,9 @@ const FilterBar = ({ filters, onFilterChange }) => {
     <div className="flex flex-wrap gap-3 w-full">
       {filterConfig.map(({ name, options, icon }) => (
         <div key={name} className="relative flex-1 min-w-[150px]">
-          <div className="flex items-center text-sm text-secondary-500 mb-1 ml-1">
+          <div className="flex items-center text-sm text-white mb-1 ml-1">
             {icon}
-            <span className="text-primary-800">
+            <span className="text-amber-900">
               {name.charAt(0).toUpperCase() + name.slice(1)}
             </span>
           </div>

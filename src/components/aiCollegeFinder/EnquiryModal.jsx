@@ -146,13 +146,13 @@ ${enquiryData.message}
         <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between">
           <div>
             <h2 className="text-2xl font-bold text-gray-900">Course Enquiry</h2>
-            <p className="text-sm text-gray-600 mt-1">
+            <p className="text-sm text-amber-700 mt-1">
               Fill in your details to enquire about this course
             </p>
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
+            className="text-gray-400 hover:text-amber-700 transition-colors"
           >
             <X className="w-6 h-6" />
           </button>
@@ -180,7 +180,7 @@ ${enquiryData.message}
           <form onSubmit={handleSubmit} className="p-6 space-y-6">
             {/* Course Details */}
             <div className="bg-primary-50 border border-primary-200 rounded-xl p-4">
-              <h3 className="font-semibold text-primary-900 mb-2">
+              <h3 className="font-semibold text-black mb-2">
                 {course.name}
               </h3>
               <p className="text-sm text-primary-700">
@@ -195,26 +195,26 @@ ${enquiryData.message}
               </h4>
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div>
-                  <span className="text-gray-600">Degree:</span>{" "}
+                  <span className="text-amber-700">Degree:</span>{" "}
                   <span className="font-medium text-gray-900">
                     {formData.degree}
                   </span>
                 </div>
                 <div>
-                  <span className="text-gray-600">Field:</span>{" "}
+                  <span className="text-amber-700">Field:</span>{" "}
                   <span className="font-medium text-gray-900">
                     {formData.field}
                   </span>
                 </div>
                 <div>
-                  <span className="text-gray-600">GPA:</span>{" "}
+                  <span className="text-amber-700">GPA:</span>{" "}
                   <span className="font-medium text-gray-900">
                     {formData.gpa}
                   </span>
                 </div>
                 {formData.testScore && (
                   <div>
-                    <span className="text-gray-600">Test Score:</span>{" "}
+                    <span className="text-amber-700">Test Score:</span>{" "}
                     <span className="font-medium text-gray-900">
                       {formData.testScore}
                     </span>
@@ -318,7 +318,7 @@ ${enquiryData.message}
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-1 px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
+                className="flex-1 px-6 py-3 bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>

@@ -7,7 +7,7 @@ import { testConfig, allTestCategories } from "@/lib/test-config";
 const TestSelectionMenu = ({ onSelectTest, activeCategory }) => {
   return (
     <div className="w-full md:w-1/3 lg:w-1/4 bg-white rounded-xl shadow-lg p-4">
-      <h2 className="text-xl font-bold text-primary-800 mb-4 p-2">
+      <h2 className="text-xl font-bold text-amber-900 mb-4 p-2">
         Choose Your Test
       </h2>
       <div className="space-y-2">
@@ -17,7 +17,7 @@ const TestSelectionMenu = ({ onSelectTest, activeCategory }) => {
             onClick={() => onSelectTest(id)}
             className={`w-full flex items-center p-4 rounded-lg text-left transition-all duration-300 ${
               activeCategory === id
-                ? "bg-primary-800 text-white shadow-md"
+                ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white shadow-md"
                 : "bg-gray-50 hover:bg-primary-100 hover:shadow-sm"
             }`}
           >
@@ -43,7 +43,7 @@ const TestPreparation = () => {
       const mainTest = testConfig[activeCategory];
       return (
         <div className="p-6">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-3xl font-bold text-amber-900 mb-6 text-center">
             {mainTest.title} Preparation
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -58,7 +58,7 @@ const TestPreparation = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
                     {title}
                   </h3>
-                  <p className="text-gray-600">{description}</p>
+                  <p className="text-amber-700">{description}</p>
                 </Link>
               )
             )}
@@ -69,11 +69,11 @@ const TestPreparation = () => {
 
     return (
       <div className="text-center p-8">
-        <BookOpen className="mx-auto h-20 w-20 text-primary-800 opacity-50 mb-4" />
-        <h2 className="text-3xl font-bold text-gray-800">
+        <BookOpen className="mx-auto h-20 w-20 text-amber-900 opacity-50 mb-4" />
+        <h2 className="text-3xl font-bold text-amber-900">
           Welcome to the Practice Center
         </h2>
-        <p className="mt-4 text-lg text-gray-600 max-w-lg mx-auto">
+        <p className="mt-4 text-lg text-amber-700 max-w-lg mx-auto">
           Select a test from the menu on the left to begin your practice
           session. Good luck!
         </p>
@@ -83,12 +83,12 @@ const TestPreparation = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Test Preparation
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Select a test, challenge your knowledge, and track your progress.
           </p>
         </div>

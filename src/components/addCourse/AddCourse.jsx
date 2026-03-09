@@ -273,12 +273,12 @@ const AddCourse = () => {
 
   return (
     <div>
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Find Your Perfect Course
           </h1>
-          <p className="text-secondary-500 text-xl md:text-3xl max-w-5xl mx-auto">
+          <p className="text-white text-xl md:text-3xl max-w-5xl mx-auto">
             Discover programs that match your academic goals and career
             aspirations
           </p>
@@ -297,7 +297,7 @@ const AddCourse = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm ${
                     activeTab === tab.id
-                      ? "border-primary-800 text-primary-800"
+                      ? "border-primary-800 text-amber-900"
                       : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
                   }`}
                 >
@@ -309,7 +309,7 @@ const AddCourse = () => {
 
           <div className="text-center my-4 h-6">
             {isFetching && (
-              <p className="text-primary-800 font-semibold animate-pulse">
+              <p className="text-amber-900 font-semibold animate-pulse">
                 Fetching course details...
               </p>
             )}
@@ -590,7 +590,7 @@ const AddCourse = () => {
                           name={field}
                           checked={formData[field]}
                           onChange={handleChange}
-                          className="h-4 w-4 text-primary-800 focus:ring-primary-800 border-gray-300 rounded"
+                          className="h-4 w-4 text-amber-900 focus:ring-primary-800 border-gray-300 rounded"
                         />
                         <label
                           htmlFor={field}
@@ -670,7 +670,7 @@ const AddCourse = () => {
                           name={intake.name}
                           checked={formData[intake.name]}
                           onChange={handleChange}
-                          className="h-4 w-4 text-primary-800 focus:ring-primary-800 border-gray-300 rounded"
+                          className="h-4 w-4 text-amber-900 focus:ring-primary-800 border-gray-300 rounded"
                         />
                         <label
                           htmlFor={intake.name}
@@ -724,7 +724,7 @@ const AddCourse = () => {
                       name="is_featured"
                       checked={formData.is_featured}
                       onChange={handleChange}
-                      className="h-4 w-4 text-primary-800 focus:ring-primary-800 border-gray-300 rounded"
+                      className="h-4 w-4 text-amber-900 focus:ring-primary-800 border-gray-300 rounded"
                     />
                     <label
                       htmlFor="is_featured"
@@ -741,7 +741,7 @@ const AddCourse = () => {
                       name="is_active"
                       checked={formData.is_active}
                       onChange={handleChange}
-                      className="h-4 w-4 text-primary-800 focus:ring-primary-800 border-gray-300 rounded"
+                      className="h-4 w-4 text-amber-900 focus:ring-primary-800 border-gray-300 rounded"
                     />
                     <label
                       htmlFor="is_active"
@@ -765,7 +765,7 @@ const AddCourse = () => {
                     tabs[tabs.findIndex((tab) => tab.id === activeTab) - 1].id
                   )
                 }
-                className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-6 rounded-lg"
+                className="bg-gray-200 hover:bg-gray-300 text-amber-900 py-2 px-6 rounded-lg"
               >
                 Previous
               </button>
@@ -781,7 +781,7 @@ const AddCourse = () => {
                     tabs[tabs.findIndex((tab) => tab.id === activeTab) + 1].id
                   )
                 }
-                className="bg-primary-800 hover:bg-primary-600 text-white py-2 px-6 rounded-lg"
+                className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-2 px-6 rounded-lg"
               >
                 Next
               </button>
@@ -789,7 +789,7 @@ const AddCourse = () => {
               <button
                 type="submit"
                 disabled={isLoading || isFetching}
-                className="bg-primary-800 hover:bg-primary-600 text-white py-2 px-6 rounded-lg disabled:opacity-50"
+                className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-2 px-6 rounded-lg disabled:opacity-50"
               >
                 {isLoading ? "Adding..." : "Add Course"}
               </button>

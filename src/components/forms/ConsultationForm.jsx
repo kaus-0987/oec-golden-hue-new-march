@@ -250,14 +250,14 @@ const ConsultationForm = ({ isOpen, onClose, service, initialEnquiry, defaultCou
       {isSuccess ? (
         <div className="text-center py-12">
           <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">Thank You!</h3>
-          <p className="text-gray-600 mb-6">Your consultation request has been sent. We'll be in touch soon.</p>
-          <button onClick={handleAnotherInquiry} className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">Book Another</button>
+          <h3 className="text-2xl font-bold text-amber-900 mb-2">Thank You!</h3>
+          <p className="text-amber-700 mb-6">Your consultation request has been sent. We'll be in touch soon.</p>
+          <button onClick={handleAnotherInquiry} className="bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">Book Another</button>
         </div>
       ) : (
         <form onSubmit={handleSubmit(handleFormSubmit)} noValidate onFocus={handleFormInteraction}>
           {!inline && (
-            <h3 className="text-2xl font-semibold text-primary-800 mb-6 flex items-center">
+            <h3 className="text-2xl font-semibold text-amber-900 mb-6 flex items-center">
               <MessageCircle className="h-6 w-6 mr-3 text-primary-600" />
               Book Your Free Consultation
             </h3>
@@ -295,7 +295,7 @@ const ConsultationForm = ({ isOpen, onClose, service, initialEnquiry, defaultCou
           <FormTextarea label="Message" name="enquiry_details" register={register} error={errors.enquiry_details} placeholder="Tell us more about your study plans or any specific questions you have." />
 
           <div className="text-center mt-6">
-            <button type="submit" disabled={countriesLoading || isSubmitting} className="w-full md:w-auto bg-primary-800 hover:bg-primary-600 disabled:bg-primary-300 disabled:cursor-not-allowed text-white font-semibold py-3 px-10 rounded-lg transition-colors inline-flex items-center justify-center">
+            <button type="submit" disabled={countriesLoading || isSubmitting} className="w-full md:w-auto bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 disabled:bg-primary-300 disabled:cursor-not-allowed text-white font-semibold py-3 px-10 rounded-lg transition-colors inline-flex items-center justify-center">
               {isSubmitting ? (<><Loader2 className="h-5 w-5 mr-2 animate-spin" />Submitting...</>) : ("Submit")}
             </button>
             {submitError && (<div className="mt-4 text-red-600 bg-red-100 border border-red-300 rounded-lg p-3 flex items-center justify-center text-sm" aria-live="assertive"><AlertTriangle className="h-5 w-5 mr-2" />{submitError}</div>)}
@@ -310,7 +310,7 @@ const ConsultationForm = ({ isOpen, onClose, service, initialEnquiry, defaultCou
   return (
     <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50" role="dialog" aria-modal="true">
       <div className="relative bg-white rounded-2xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto transition-all duration-300 ease-out transform scale-95 opacity-0 animate-fade-in-scale">
-        <button onClick={handleClose} className="absolute top-3 right-3 p-2 rounded-full text-gray-500 hover:bg-gray-100 hover:text-gray-800 transition-colors z-10" aria-label="Close">
+        <button onClick={handleClose} className="absolute top-3 right-3 p-2 rounded-full text-gray-500 hover:bg-gray-100 hover:text-amber-900 transition-colors z-10" aria-label="Close">
           <X className="h-6 w-6" />
         </button>
 

@@ -83,7 +83,7 @@ const BlogDetails = ({ slug }) => {
   const handleShare = (platform) => {
     const urls = {
       twitter: "https://x.com/oec_india",
-      instagram: "https://www.instagram.com/oecindia",
+      instagram: "https://www.instagram.com/oecdubai",
       facebook: "https://www.facebook.com/oecbaroda",
     };
 
@@ -136,7 +136,7 @@ const BlogDetails = ({ slug }) => {
           >
             <Link
               href="/blog"
-              className="group flex items-center gap-2 text-primary-600 hover:text-primary-800 transition-colors font-medium"
+              className="group flex items-center gap-2 text-primary-600 hover:text-amber-900 transition-colors font-medium"
               aria-label="Back to all blog articles"
             >
               <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
@@ -149,7 +149,7 @@ const BlogDetails = ({ slug }) => {
               {blog.tags?.map((tag) => (
                 <span
                   key={tag.id}
-                  className="px-4 py-1.5 bg-primary-100/80 text-primary-800 rounded-full text-sm font-medium flex items-center gap-2"
+                  className="px-4 py-1.5 bg-primary-100/80 text-amber-900 rounded-full text-sm font-medium flex items-center gap-2"
                   itemProp="keywords"
                 >
                   <Tag className="w-4 h-4" />
@@ -164,7 +164,7 @@ const BlogDetails = ({ slug }) => {
             >
               {blog.title}
             </h1>
-            <p className="text-xl text-gray-600 mb-8" itemProp="description">
+            <p className="text-xl text-amber-700 mb-8" itemProp="description">
               {blog.excerpt}
             </p>
 
@@ -175,11 +175,11 @@ const BlogDetails = ({ slug }) => {
                 itemScope
                 itemType="https://schema.org/Person"
               >
-                <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-primary-800 font-bold">
+                <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center text-amber-900 font-bold">
                   {blog.author_name.charAt(0)}
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-800" itemProp="name">
+                  <div className="font-semibold text-amber-900" itemProp="name">
                     {blog.author_name}
                   </div>
                   <div className="text-sm text-gray-500">Author</div>
@@ -187,7 +187,7 @@ const BlogDetails = ({ slug }) => {
               </div>
               <div className="flex flex-wrap items-center gap-6 text-sm text-gray-500">
                 <span className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-secondary-500" />
+                  <Calendar className="w-4 h-4 text-white" />
                   <time
                     dateTime={moment(blog.published_at).format("YYYY-MM-DD")}
                     itemProp="datePublished"
@@ -196,7 +196,7 @@ const BlogDetails = ({ slug }) => {
                   </time>
                 </span>
                 <span className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-secondary-500" />
+                  <Clock className="w-4 h-4 text-white" />
                   {blog.reading_time} min read
                 </span>
               </div>
@@ -213,7 +213,7 @@ const BlogDetails = ({ slug }) => {
                   className={`group p-3 rounded-xl transition-all duration-300 ${
                     isLiked
                       ? "bg-red-100 text-red-600"
-                      : "bg-white hover:bg-red-50 text-secondary-500 hover:text-red-500"
+                      : "bg-white hover:bg-red-50 text-white hover:text-red-500"
                   } shadow-sm hover:shadow-md`}
                   aria-label={
                     isLiked ? "Unlike this article" : "Like this article"
@@ -231,7 +231,7 @@ const BlogDetails = ({ slug }) => {
                   className={`group p-3 rounded-xl transition-all duration-300 ${
                     isBookmarked
                       ? "bg-primary-100 text-primary-600"
-                      : "bg-white hover:bg-primary-50 text-secondary-500 hover:text-primary-600"
+                      : "bg-white hover:bg-primary-50 text-white hover:text-primary-600"
                   } shadow-sm hover:shadow-md`}
                   aria-label={
                     isBookmarked ? "Remove bookmark" : "Bookmark this article"
@@ -247,7 +247,7 @@ const BlogDetails = ({ slug }) => {
                 <div className="relative">
                   <button
                     onClick={() => setShowShareTooltip(!showShareTooltip)}
-                    className="group p-3 rounded-xl bg-white hover:bg-gray-100 text-secondary-500 hover:text-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
+                    className="group p-3 rounded-xl bg-white hover:bg-gray-100 text-white hover:text-gray-700 transition-all duration-300 shadow-sm hover:shadow-md"
                     aria-label="Share options"
                     aria-expanded={showShareTooltip}
                   >
@@ -272,7 +272,7 @@ const BlogDetails = ({ slug }) => {
                                 role="menuitem"
                                 aria-label={`Share on ${label}`}
                               >
-                                <Icon className="w-4 h-4 text-secondary-500" />
+                                <Icon className="w-4 h-4 text-white" />
                                 <span>{label}</span>
                               </button>
                             )

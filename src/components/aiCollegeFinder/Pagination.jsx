@@ -27,7 +27,7 @@ const Pagination = ({
 
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
-      <div className="text-sm text-gray-600">
+      <div className="text-sm text-amber-700">
         Showing {indexOfFirstItem + 1} to{" "}
         {Math.min(indexOfLastItem, totalItems)} of {totalItems} courses
       </div>
@@ -52,7 +52,7 @@ const Pagination = ({
               onClick={() => onPageChange(1)}
               className={`px-3 py-1 rounded-lg ${
                 1 === currentPage
-                  ? "bg-primary-800 text-white"
+                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >
@@ -68,7 +68,7 @@ const Pagination = ({
             onClick={() => onPageChange(number)}
             className={`px-3 py-1 rounded-lg ${
               number === currentPage
-                ? "bg-primary-800 text-white"
+                ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                 : "text-gray-700 hover:bg-gray-100"
             }`}
           >
@@ -83,7 +83,7 @@ const Pagination = ({
               onClick={() => onPageChange(totalPages)}
               className={`px-3 py-1 rounded-lg ${
                 totalPages === currentPage
-                  ? "bg-primary-800 text-white"
+                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >

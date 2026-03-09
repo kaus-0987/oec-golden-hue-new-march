@@ -33,13 +33,13 @@ export const generateMetadata = async ({ params }) => {
         description: course?.meta_description,
         images: [
           {
-            url: "https://oecindia.com/oec.png",
+            url: "https://oecdubai.com/oec.png",
             alt: course?.meta_title,
             width: 800,
             height: 600,
           },
         ],
-        siteName: "OEC India",
+        siteName: "OEC Dubai",
         locale: "en_US",
         type: "website",
       },
@@ -49,7 +49,7 @@ export const generateMetadata = async ({ params }) => {
         description: course?.meta_description,
         images: [
           {
-            url: "https://oecindia.com/oec.png",
+            url: "https://oecdubai.com/oec.png",
             alt: course?.meta_title,
             width: 800,
             height: 600,
@@ -61,9 +61,9 @@ export const generateMetadata = async ({ params }) => {
     console.log("error", error);
     return {
       title:
-        "Best Courses to Study Abroad - Career-Focused Programs | OEC India",
+        "Best Courses to Study Abroad - Career-Focused Programs | OEC Dubai",
       description:
-        "Explore high-demand courses like Engineering, MBA, Medicine & more with OEC India’s guidance on top universities abroad.",
+        "Explore high-demand courses like Engineering, MBA, Medicine & more with OEC Dubai’s guidance on top universities abroad.",
     };
   }
 };

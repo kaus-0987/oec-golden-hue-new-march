@@ -48,12 +48,12 @@ const Community = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 mb-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 mb-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Connect. Learn. Succeed.
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             From university selection to career guidance - we support you at
             every step of your study abroad journey
           </p>
@@ -67,12 +67,12 @@ const Community = () => {
               key={id}
               className={`flex items-center px-4 py-2 rounded-full transition-all duration-300 text-sm ${
                 activeTab === id
-                  ? "bg-primary-800 text-white"
-                  : "bg-white text-primary-800 border border-primary-800 shadow"
+                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                  : "bg-white text-amber-900 border border-primary-800 shadow"
               }`}
               onClick={() => setActiveTab(id)}
             >
-              <Icon className="w-4 h-4 mr-2 text-secondary-500" />
+              <Icon className="w-4 h-4 mr-2 text-white" />
               {name}
             </button>
           ))}
@@ -86,10 +86,10 @@ const Community = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary-800 mb-4">
+            <h2 className="text-3xl font-bold text-amber-900 mb-4">
               Our Growing Community
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-amber-700 max-w-2xl mx-auto">
               Join a thriving network of students, alumni, and education experts
               committed to your success
             </p>
@@ -107,12 +107,12 @@ const Community = () => {
                 className="text-center p-6 bg-white rounded-xl shadow-sm"
               >
                 <div className="text-primary-600 mb-3 flex justify-center">
-                  <Icon className="w-8 h-8 text-secondary-500" />
+                  <Icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-primary-800 mb-2">
+                <div className="text-3xl font-bold text-amber-900 mb-2">
                   {number}
                 </div>
-                <div className="text-gray-600">{label}</div>
+                <div className="text-amber-700">{label}</div>
               </div>
             ))}
           </div>

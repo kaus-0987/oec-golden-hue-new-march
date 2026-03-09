@@ -134,7 +134,7 @@ const UniversityDetail = ({ slug }) => {
           <p>{error}</p>
           <Link
             href="/universities"
-            className="mt-3 inline-flex items-center text-primary-600 hover:text-primary-800 font-medium transition-colors"
+            className="mt-3 inline-flex items-center text-primary-600 hover:text-amber-900 font-medium transition-colors"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to universities
@@ -151,12 +151,12 @@ const UniversityDetail = ({ slug }) => {
         animate={{ opacity: 1 }}
         className="max-w-7xl mx-auto px-4 py-12"
       >
-        <div className="bg-primary-50 border border-primary-200 text-primary-800 px-4 py-3 rounded-lg">
+        <div className="bg-primary-50 border border-primary-200 text-amber-900 px-4 py-3 rounded-lg">
           <h3 className="font-bold text-lg mb-1">University Not Found</h3>
           <p>The requested university could not be found.</p>
           <Link
             href="/universities"
-            className="mt-3 inline-flex items-center text-primary-600 hover:text-primary-800 font-medium transition-colors"
+            className="mt-3 inline-flex items-center text-primary-600 hover:text-amber-900 font-medium transition-colors"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
             Back to universities
@@ -173,7 +173,7 @@ const UniversityDetail = ({ slug }) => {
       variants={containerVariants}
       className="bg-gray-50"
     >
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             variants={itemVariants}
@@ -246,7 +246,7 @@ const UniversityDetail = ({ slug }) => {
 
               <motion.section variants={itemVariants}>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                  <BookOpen className="h-6 w-6 mr-2 text-secondary-500" />
+                  <BookOpen className="h-6 w-6 mr-2 text-white" />
                   About {university.name}
                 </h2>
                 {university.description ? (
@@ -255,7 +255,7 @@ const UniversityDetail = ({ slug }) => {
                     dangerouslySetInnerHTML={{ __html: university.description }}
                   />
                 ) : (
-                  <p className="text-gray-600">
+                  <p className="text-amber-700">
                     No description available for this university.
                   </p>
                 )}
@@ -264,7 +264,7 @@ const UniversityDetail = ({ slug }) => {
               {university.facilities && (
                 <motion.section variants={itemVariants}>
                   <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                    <Library className="h-6 w-6 mr-2 text-secondary-500" />
+                    <Library className="h-6 w-6 mr-2 text-white" />
                     Facilities
                   </h2>
                   <div
@@ -277,7 +277,7 @@ const UniversityDetail = ({ slug }) => {
               {university.admission_requirements && (
                 <motion.section variants={itemVariants}>
                   <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                    <ClipboardList className="h-6 w-6 mr-2 text-secondary-500" />
+                    <ClipboardList className="h-6 w-6 mr-2 text-white" />
                     Admission Requirements
                   </h2>
                   <div
@@ -291,14 +291,14 @@ const UniversityDetail = ({ slug }) => {
 
               <motion.section variants={itemVariants}>
                 <h2 className="text-2xl font-bold mb-4 text-gray-900 flex items-center">
-                  <Globe className="h-6 w-6 mr-2 text-secondary-500" />
+                  <Globe className="h-6 w-6 mr-2 text-white" />
                   Quick Facts
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Home className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">Type</span>
+                      <Home className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">Type</span>
                     </div>
                     <p className="text-gray-700 capitalize">
                       {university.university_type || "Not specified"}
@@ -308,8 +308,8 @@ const UniversityDetail = ({ slug }) => {
                   {university.established_year && (
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <div className="flex items-center text-gray-500 mb-1">
-                        <Clock className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <Clock className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Established
                         </span>
                       </div>
@@ -322,8 +322,8 @@ const UniversityDetail = ({ slug }) => {
                   {university.application_fee && (
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <div className="flex items-center text-gray-500 mb-1">
-                        <CreditCard className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <CreditCard className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Application Fee
                         </span>
                       </div>
@@ -336,8 +336,8 @@ const UniversityDetail = ({ slug }) => {
                   {university.course_count !== undefined && (
                     <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                       <div className="flex items-center text-gray-500 mb-1">
-                        <BookOpen className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <BookOpen className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Courses Offered
                         </span>
                       </div>
@@ -357,15 +357,15 @@ const UniversityDetail = ({ slug }) => {
                 variants={itemVariants}
                 className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
               >
-                <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                  <Star className="h-5 w-5 mr-2 text-secondary-500" />
+                <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                  <Star className="h-5 w-5 mr-2 text-white" />
                   University Highlights
                 </h3>
                 <div className="space-y-4">
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <Building className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">Type</span>
+                      <Building className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">Type</span>
                     </div>
                     <p className="text-gray-700 capitalize">
                       {university.university_type || "Not specified"}
@@ -375,8 +375,8 @@ const UniversityDetail = ({ slug }) => {
                   {university.established_year && (
                     <div>
                       <div className="flex items-center text-gray-500 mb-1">
-                        <Calendar className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <Calendar className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Established
                         </span>
                       </div>
@@ -388,8 +388,8 @@ const UniversityDetail = ({ slug }) => {
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <PoundSterling className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">
+                      <PoundSterling className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">
                         Tuition Fees
                       </span>
                     </div>
@@ -403,8 +403,8 @@ const UniversityDetail = ({ slug }) => {
 
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
-                      <CreditCard className="h-4 w-4 mr-2 text-secondary-500" />
-                      <span className="text-sm text-primary-800">
+                      <CreditCard className="h-4 w-4 mr-2 text-white" />
+                      <span className="text-sm text-amber-900">
                         Application Fee
                       </span>
                     </div>
@@ -416,7 +416,7 @@ const UniversityDetail = ({ slug }) => {
                   <div>
                     <div className="flex items-center text-gray-500 mb-1">
                       <Star className="h-4 w-4 mr-2 text-yellow-500" />
-                      <span className="text-sm text-primary-800">Rankings</span>
+                      <span className="text-sm text-amber-900">Rankings</span>
                     </div>
                     {university.ranking_national > 0 && (
                       <p className="text-gray-700 mb-1">
@@ -440,16 +440,16 @@ const UniversityDetail = ({ slug }) => {
                 variants={itemVariants}
                 className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
               >
-                <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                  <Mail className="h-5 w-5 mr-2 text-secondary-500" />
+                <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                  <Mail className="h-5 w-5 mr-2 text-white" />
                   Contact Information
                 </h3>
                 <div className="space-y-4">
                   {university.address && (
                     <div>
                       <div className="flex items-center text-gray-500 mb-1">
-                        <MapPin className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <MapPin className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Address
                         </span>
                       </div>
@@ -460,12 +460,12 @@ const UniversityDetail = ({ slug }) => {
                   {university.email && (
                     <div>
                       <div className="flex items-center text-gray-500 mb-1">
-                        <Mail className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">Email</span>
+                        <Mail className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">Email</span>
                       </div>
                       <a
                         href={`mailto:${university.email}`}
-                        className="text-gray-700 hover:text-primary-800 hover:underline transition-colors"
+                        className="text-gray-700 hover:text-amber-900 hover:underline transition-colors"
                       >
                         {university.email}
                       </a>
@@ -475,12 +475,12 @@ const UniversityDetail = ({ slug }) => {
                   {university.phone && (
                     <div>
                       <div className="flex items-center text-gray-500 mb-1">
-                        <Phone className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">Phone</span>
+                        <Phone className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">Phone</span>
                       </div>
                       <a
                         href={`tel:${university.phone}`}
-                        className="text-gray-700 hover:text-primary-800 hover:underline transition-colors"
+                        className="text-gray-700 hover:text-amber-900 hover:underline transition-colors"
                       >
                         {university.phone}
                       </a>
@@ -490,8 +490,8 @@ const UniversityDetail = ({ slug }) => {
                   {university.website_url && (
                     <div>
                       <div className="flex items-center text-gray-500 mb-1">
-                        <ExternalLink className="h-4 w-4 mr-2 text-secondary-500" />
-                        <span className="text-sm text-primary-800">
+                        <ExternalLink className="h-4 w-4 mr-2 text-white" />
+                        <span className="text-sm text-amber-900">
                           Website
                         </span>
                       </div>
@@ -499,7 +499,7 @@ const UniversityDetail = ({ slug }) => {
                         href={university.website_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-700 hover:text-primary-800 hover:underline transition-colors"
+                        className="text-gray-700 hover:text-amber-900 hover:underline transition-colors"
                       >
                         {university.website_url.replace(/^https?:\/\//, "")}
                       </a>
@@ -513,8 +513,8 @@ const UniversityDetail = ({ slug }) => {
                   variants={itemVariants}
                   className="bg-white p-6 rounded-xl shadow-md border border-gray-200"
                 >
-                  <h3 className="font-semibold text-xl mb-4 text-primary-800 flex items-center">
-                    <MapPin className="h-5 w-5 mr-2 text-secondary-500" />
+                  <h3 className="font-semibold text-xl mb-4 text-amber-900 flex items-center">
+                    <MapPin className="h-5 w-5 mr-2 text-white" />
                     Location
                   </h3>
                   <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">

@@ -14,7 +14,7 @@ const ExpandableSection = ({ title, children, defaultOpen = false }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 text-left bg-primary-50 hover:bg-primary-100 transition-colors flex items-center justify-between"
       >
-        <h3 className="text-lg font-semibold text-primary-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-amber-900">{title}</h3>
         <ChevronDown
           className={`w-5 h-5 text-primary-600 transition-transform ${
             isOpen ? "rotate-180" : ""
@@ -65,10 +65,10 @@ const CountryGuides = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h3 className="text-3xl font-bold text-primary-800 mb-4">
+        <h3 className="text-3xl font-bold text-amber-900 mb-4">
           Country-Specific Guides
         </h3>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-amber-700 max-w-2xl mx-auto">
           Comprehensive guides for popular study destinations with insights from
           our alumni network
         </p>
@@ -102,12 +102,12 @@ const CountryGuides = () => {
                       )}
                       <h4 className="font-semibold text-lg">{country.name}</h4>
                     </div>
-                    <div className="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">
+                    <div className="text-xs bg-primary-100 text-amber-900 px-2 py-1 rounded">
                       {country.university_count} universities
                     </div>
                   </div>
 
-                  <div className="prose prose-sm max-w-none text-gray-600 line-clamp-3 mb-4">
+                  <div className="prose prose-sm max-w-none text-amber-700 line-clamp-3 mb-4">
                     {parse(
                       country.description
                         .replace(/<[^>]+>/g, "")
@@ -121,7 +121,7 @@ const CountryGuides = () => {
                       href={`/country-guides/${country.name
                         .toLowerCase()
                         .replace(/\s+/g, "-")}`}
-                      className="w-full flex items-center justify-center bg-primary-100 text-primary-800 py-2 px-4 rounded-lg text-sm font-medium hover:bg-primary-200 transition-colors"
+                      className="w-full flex items-center justify-center bg-primary-100 text-amber-900 py-2 px-4 rounded-lg text-sm font-medium hover:bg-primary-200 transition-colors"
                     >
                       View Guide <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
@@ -149,7 +149,7 @@ const CountryGuides = () => {
                       onClick={() => paginate(number)}
                       className={`px-3 py-1 rounded-md border ${
                         currentPage === number
-                          ? "bg-primary-800 text-white border-primary-800"
+                          ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white border-primary-800"
                           : "border-gray-300"
                       }`}
                     >
@@ -183,26 +183,26 @@ const CountryGuides = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-gray-200 rounded-lg p-4">
             <h4 className="font-semibold mb-3">🇺🇸 USA vs 🇨🇦 Canada</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-amber-700">
               <li>• Cost comparison and scholarship opportunities</li>
               <li>• Immigration policies and work permits</li>
               <li>• University rankings and program quality</li>
               <li>• Living standards and cultural differences</li>
             </ul>
-            <button className="mt-3 text-primary-600 text-sm font-medium hover:text-primary-800">
+            <button className="mt-3 text-primary-600 text-sm font-medium hover:text-amber-900">
               Read Comparison <ArrowRight className="inline w-4 h-4" />
             </button>
           </div>
 
           <div className="border border-gray-200 rounded-lg p-4">
             <h4 className="font-semibold mb-3">🇬🇧 UK vs 🇦🇺 Australia</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
+            <ul className="space-y-2 text-sm text-amber-700">
               <li>• Post-study work opportunities</li>
               <li>• Weather and lifestyle factors</li>
               <li>• Course duration and curriculum</li>
               <li>• Healthcare and safety considerations</li>
             </ul>
-            <button className="mt-3 text-primary-600 text-sm font-medium hover:text-primary-800">
+            <button className="mt-3 text-primary-600 text-sm font-medium hover:text-amber-900">
               Read Comparison <ArrowRight className="inline w-4 h-4" />
             </button>
           </div>

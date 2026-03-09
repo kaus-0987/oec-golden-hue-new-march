@@ -127,10 +127,10 @@ const FAQs = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
-      <div className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">FAQs</h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-5xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-5xl mx-auto">
             Expert advice, guides, and latest updates for your international
             education journey
           </p>
@@ -160,8 +160,8 @@ const FAQs = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-1">
-              <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <HelpCircle className="h-5 w-5 text-primary-800" />
+              <h2 className="text-xl font-bold text-amber-900 mb-4 flex items-center gap-2">
+                <HelpCircle className="h-5 w-5 text-amber-900" />
                 Categories
               </h2>
               <div className="space-y-2">
@@ -171,13 +171,13 @@ const FAQs = () => {
                     onClick={() => handleCategoryChange(category.slug)}
                     className={`w-full text-left px-4 py-3 rounded-lg flex items-center gap-3 transition-colors ${
                       activeCategory === category.slug
-                        ? "bg-primary-800 text-white"
+                        ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                         : "bg-white text-gray-700 hover:bg-primary-100"
                     }`}
                   >
                     {getCategoryIcon(category.name)}
                     <span>{category.name}</span>
-                    <span className="ml-auto bg-primary-100 text-primary-800 text-xs font-bold px-2 py-1 rounded-full">
+                    <span className="ml-auto bg-primary-100 text-amber-900 text-xs font-bold px-2 py-1 rounded-full">
                       {category.faq_count}
                     </span>
                   </button>
@@ -193,14 +193,14 @@ const FAQs = () => {
                       categories.find((cat) => cat.slug === activeCategory)
                         ?.name
                     )}
-                    <h2 className="text-2xl font-bold text-gray-800">
+                    <h2 className="text-2xl font-bold text-amber-900">
                       {
                         categories.find((cat) => cat.slug === activeCategory)
                           ?.name
                       }
                     </h2>
                   </div>
-                  <p className="text-gray-600 mb-8">
+                  <p className="text-amber-700 mb-8">
                     {
                       categories.find((cat) => cat.slug === activeCategory)
                         ?.description
@@ -221,7 +221,7 @@ const FAQs = () => {
                           onClick={() => toggleFaq(faq.id)}
                           className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
                         >
-                          <h3 className="text-lg font-semibold text-gray-800">
+                          <h3 className="text-lg font-semibold text-amber-900">
                             {faq.question}
                           </h3>
                           <motion.div
@@ -230,7 +230,7 @@ const FAQs = () => {
                             }}
                             transition={{ duration: 0.3 }}
                           >
-                            <ChevronDown className="h-5 w-5 text-primary-800" />
+                            <ChevronDown className="h-5 w-5 text-amber-900" />
                           </motion.div>
                         </button>
                         <AnimatePresence>
@@ -240,7 +240,7 @@ const FAQs = () => {
                               animate={{ opacity: 1, height: "auto" }}
                               exit={{ opacity: 0, height: 0 }}
                               transition={{ duration: 0.3 }}
-                              className="px-6 pb-6 text-gray-600"
+                              className="px-6 pb-6 text-amber-700"
                             >
                               <p>{faq.answer_preview}</p>
                             </motion.div>
@@ -260,7 +260,7 @@ const FAQs = () => {
                         className={`p-2 rounded-md ${
                           !pagination.previous
                             ? "text-gray-400 cursor-not-allowed"
-                            : "text-primary-800 hover:bg-primary-100"
+                            : "text-amber-900 hover:bg-primary-100"
                         }`}
                       >
                         <ChevronLeft className="h-5 w-5" />
@@ -286,7 +286,7 @@ const FAQs = () => {
                               onClick={() => handlePageChange(pageNum)}
                               className={`w-10 h-10 rounded-md flex items-center justify-center ${
                                 pagination.currentPage === pageNum
-                                  ? "bg-primary-800 text-white"
+                                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                                   : "text-gray-700 hover:bg-primary-100"
                               }`}
                             >
@@ -307,7 +307,7 @@ const FAQs = () => {
                             onClick={() => handlePageChange(totalPages)}
                             className={`w-10 h-10 rounded-md flex items-center justify-center ${
                               pagination.currentPage === totalPages
-                                ? "bg-primary-800 text-white"
+                                ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                                 : "text-gray-700 hover:bg-primary-100"
                             }`}
                           >
@@ -323,7 +323,7 @@ const FAQs = () => {
                         className={`p-2 rounded-md ${
                           !pagination.next
                             ? "text-gray-400 cursor-not-allowed"
-                            : "text-primary-800 hover:bg-primary-100"
+                            : "text-amber-900 hover:bg-primary-100"
                         }`}
                       >
                         <ChevronRight className="h-5 w-5" />
@@ -334,10 +334,10 @@ const FAQs = () => {
               ) : (
                 <div className="bg-white rounded-lg shadow p-8 text-center">
                   <HelpCircle className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-lg font-medium text-gray-800 mb-2">
+                  <h3 className="text-lg font-medium text-amber-900 mb-2">
                     No FAQs found in this category
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-amber-700">
                     We couldn't find any frequently asked questions for this
                     category.
                   </p>
@@ -347,16 +347,16 @@ const FAQs = () => {
           </div>
         )}
 
-        <div className="mt-16 bg-primary-800 rounded-xl p-8 md:p-12 text-center">
+        <div className="mt-16 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 rounded-xl p-8 md:p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Still have questions?
           </h3>
-          <p className="text-secondary-500 text-lg mb-6 max-w-3xl mx-auto">
+          <p className="text-white text-lg mb-6 max-w-3xl mx-auto">
             Our education consultants are ready to help you with any questions
             about studying abroad.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-6 py-3 bg-white text-primary-800 font-medium rounded-lg hover:bg-gray-100 transition-colors">
+            <button className="px-6 py-3 bg-white text-amber-900 font-medium rounded-lg hover:bg-gray-100 transition-colors">
               Contact Our Experts
             </button>
             <button className="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors">

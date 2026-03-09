@@ -52,7 +52,7 @@ const Listening = () => {
                       href={`/test-preparation/${category}/${subCategory}/${id}`}
                       target="_blank"
                     >
-                      <button className="bg-primary-800 hover:bg-primary-600 text-white py-1 px-4 rounded">
+                      <button className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-1 px-4 rounded">
                         Take Test
                       </button>
                     </Link>
@@ -71,7 +71,7 @@ const Listening = () => {
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-gray-300 hover:bg-gray-400 text-amber-900 font-bold p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Previous Page"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -80,7 +80,7 @@ const Listening = () => {
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+            className="bg-gray-300 hover:bg-gray-400 text-amber-900 font-bold p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
             aria-label="Next Page"
           >
             <ChevronRight className="h-5 w-5" />

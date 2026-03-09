@@ -171,10 +171,10 @@ src/app/globals.css
 ## 🎨 Visual Design
 
 ### Colors
-- **Active State:** `text-primary-800` (#172d65)
+- **Active State:** `text-amber-900` (#172d65)
 - **Inactive State:** `text-gray-500`
 - **Active Indicator:** `bg-secondary-500` (#e66234)
-- **Logo Background (Active):** `bg-primary-800`
+- **Logo Background (Active):** `bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900`
 - **Logo Background (Inactive):** `bg-white` with `border-primary-800`
 
 ### Spacing

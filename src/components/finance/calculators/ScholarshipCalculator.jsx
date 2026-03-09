@@ -107,7 +107,7 @@ const ScholarshipCalculator = () => {
       </div>
 
       <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6">
-        <h4 className="text-lg font-bold text-primary-800 mb-4">
+        <h4 className="text-lg font-bold text-amber-900 mb-4">
           Scholarship Impact Analysis
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

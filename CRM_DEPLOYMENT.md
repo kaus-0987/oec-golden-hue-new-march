@@ -45,9 +45,9 @@ netlify deploy --prod
 
 ### 1. Test CRM Access
 Visit these URLs and verify they load the CRM:
-- [ ] `https://oecindia.com/oeccrm/login`
-- [ ] `https://oecindia.netlify.app/oeccrm/login`
-- [ ] `https://oecindia.com/crm/login`
+- [ ] `https://oecdubai.com/oeccrm/login`
+- [ ] `https://oecdubai.netlify.app/oeccrm/login`
+- [ ] `https://oecdubai.com/crm/login`
 
 ### 2. Check Browser Console
 - [ ] No 404 errors for static assets
@@ -136,7 +136,7 @@ Assets from:   public/crm/static/*
 
 ## 🎯 Success Criteria
 
-✅ CRM loads at `https://oecindia.com/oeccrm/login`  
+✅ CRM loads at `https://oecdubai.com/oeccrm/login`  
 ✅ No 404 errors in console  
 ✅ All CRM features work properly  
 ✅ No CSP violations  

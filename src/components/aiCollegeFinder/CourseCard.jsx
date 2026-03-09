@@ -46,7 +46,7 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
         <p className="text-gray-700 mb-4">{course.description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-800">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-amber-900">
             <GraduationCap className="h-3 w-3 mr-1" /> {course.degree}
           </span>
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
@@ -66,14 +66,14 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
         <div className="grid grid-cols-2 gap-3 text-sm mb-6">
           <div>
             <div className="text-gray-500 flex items-center">
-              <CircleDollarSign className="h-4 w-4 mr-1.5 text-secondary-500" />
+              <CircleDollarSign className="h-4 w-4 mr-1.5 text-white" />
               Tuition
             </div>
             <div className="font-medium pl-6">{course.tuition || "Varies"}</div>
           </div>
           <div>
             <div className="text-gray-500 flex items-center">
-              <Calendar className="h-4 w-4 mr-1.5 text-secondary-500" />
+              <Calendar className="h-4 w-4 mr-1.5 text-white" />
               Intake
             </div>
             <div className="font-medium pl-6">{course.intake || "Multiple"}</div>
@@ -81,7 +81,7 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
           {course.acceptanceRate && (
             <div>
               <div className="text-gray-500 flex items-center">
-                <Percent className="h-4 w-4 mr-1.5 text-secondary-500" />
+                <Percent className="h-4 w-4 mr-1.5 text-white" />
                 Acceptance
               </div>
               <div className="font-medium pl-6">{course.acceptanceRate}</div>
@@ -90,7 +90,7 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
           {course.delivery && (
             <div>
               <div className="text-gray-500 flex items-center">
-                <User className="h-4 w-4 mr-1.5 text-secondary-500" />
+                <User className="h-4 w-4 mr-1.5 text-white" />
                 Delivery
               </div>
               <div className="font-medium pl-6">{course.delivery}</div>
@@ -101,14 +101,14 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
         {course.curriculum && (
           <div className="mb-6">
             <h4 className="text-sm font-medium text-gray-700 mb-2 flex items-center">
-              <BookOpen className="h-4 w-4 mr-1.5 text-secondary-500" />
+              <BookOpen className="h-4 w-4 mr-1.5 text-white" />
               Key Topics
             </h4>
             <div className="flex flex-wrap gap-2">
               {course.curriculum.slice(0, 3).map((topic, i) => (
                 <span
                   key={i}
-                  className="text-xs px-2 py-1 bg-white rounded-md border border-primary-800 text-primary-800"
+                  className="text-xs px-2 py-1 bg-white rounded-md border border-primary-800 text-amber-900"
                 >
                   {topic}
                 </span>
@@ -125,7 +125,7 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
         {course.careerOutcomes && (
           <div className="mb-6">
             <h4 className="text-sm font-medium text-gray-700 mb-2 flex items-center">
-              <BarChart2 className="h-4 w-4 mr-1.5 text-secondary-500" />
+              <BarChart2 className="h-4 w-4 mr-1.5 text-white" />
               Career Outcomes
             </h4>
             <div className="flex flex-wrap gap-2">
@@ -148,7 +148,7 @@ const CourseCard = ({ course, viewMode, onApplyNow }) => {
         <div className="flex justify-end items-center mt-4">
           <button
             onClick={() => onApplyNow(course)}
-            className="bg-primary-800 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+            className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
           >
             Enquiry Now
           </button>

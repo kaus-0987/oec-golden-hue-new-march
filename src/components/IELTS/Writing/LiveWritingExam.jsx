@@ -12,17 +12,17 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, isLoading }) => {
         className="bg-white rounded-xl shadow-2xl p-6 sm:p-8 m-4 max-w-sm w-full"
         onClick={(e) => e.stopPropagation()}
       >
-        <h3 className="text-xl font-bold text-gray-800 mb-4">
+        <h3 className="text-xl font-bold text-amber-900 mb-4">
           Confirm Submission
         </h3>
-        <p className="text-gray-600 mb-8">
+        <p className="text-amber-700 mb-8">
           Are you sure you want to submit your answer for evaluation?
         </p>
         <div className="flex justify-end gap-4">
           <button
             onClick={onClose}
             disabled={isLoading}
-            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors disabled:opacity-50"
+            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-amber-900 hover:bg-gray-300 transition-colors disabled:opacity-50"
           >
             Cancel
           </button>
@@ -49,17 +49,17 @@ const ScoreModal = ({ isOpen, onClose, scoreDetails }) => {
     <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-3xl flex flex-col max-h-[90vh]">
         <div className="flex justify-between items-center p-5 border-b border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800">{examName}</h2>
+          <h2 className="text-2xl font-bold text-amber-900">{examName}</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 transition-colors"
+            className="text-gray-400 hover:text-amber-700 transition-colors"
           >
             <X size={28} />
           </button>
         </div>
         <div className="p-6 sm:p-8 overflow-y-auto">
           <div className="mb-6">
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-xl font-semibold text-amber-900 mb-3">
               Detailed Feedback
             </h3>
             <div
@@ -69,7 +69,7 @@ const ScoreModal = ({ isOpen, onClose, scoreDetails }) => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-3">
+            <h3 className="text-xl font-semibold text-amber-900 mb-3">
               Your Submission
             </h3>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 max-h-48 overflow-y-auto text-gray-700 whitespace-pre-wrap">
@@ -181,7 +181,7 @@ const LiveWritingExam = ({ examData }) => {
   };
 
   return (
-    <div className="bg-gray-50 font-sans antialiased text-gray-800 min-h-screen">
+    <div className="bg-gray-50 font-sans antialiased text-amber-900 min-h-screen">
       <div className="mx-auto p-4 mt-24 sm:p-6 lg:p-8">
         <main
           className="grid grid-cols-1 lg:grid-cols-2 gap-6"
@@ -200,7 +200,7 @@ const LiveWritingExam = ({ examData }) => {
               className="w-full h-full p-4 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-blue-500 focus:outline-none"
               placeholder="Start writing your answer here..."
             />
-            <div className="text-right mt-2 text-sm font-semibold text-gray-600">
+            <div className="text-right mt-2 text-sm font-semibold text-amber-700">
               Word Count: {wordCount}
             </div>
           </div>

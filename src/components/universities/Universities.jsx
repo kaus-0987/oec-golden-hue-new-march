@@ -200,7 +200,7 @@ const Universities = ({ country }) => {
 
     return (
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-amber-700">
           Showing {totalUniversities > 0 ? indexOfFirstUniversity + 1 : 0} to{" "}
           {Math.min(indexOfLastUniversity, totalUniversities)} of{" "}
           {totalUniversities} universities
@@ -217,7 +217,7 @@ const Universities = ({ country }) => {
             }`}
             aria-label="Previous page"
           >
-            <ChevronLeft className="h-5 w-5 text-secondary-500" />
+            <ChevronLeft className="h-5 w-5 text-white" />
           </button>
 
           {startPage > 1 && (
@@ -276,7 +276,7 @@ const Universities = ({ country }) => {
             }`}
             aria-label="Next page"
           >
-            <ChevronRight className="h-5 w-5 text-secondary-500" />
+            <ChevronRight className="h-5 w-5 text-white" />
           </button>
         </div>
       </div>
@@ -308,17 +308,17 @@ const Universities = ({ country }) => {
 
   return (
     <div className="bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Best Colleges & Universities to Study Abroad
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             All you need to know about universities worldwide
           </p>
           <div className="mt-8 max-w-2xl mx-auto">
             <div className="relative">
-              <Search className="absolute left-4 top-3.5 h-5 w-5 text-secondary-500" />
+              <Search className="absolute left-4 top-3.5 h-5 w-5 text-white" />
               <input
                 type="search"
                 placeholder="Search universities, countries, or cities..."
@@ -336,9 +336,9 @@ const Universities = ({ country }) => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
             <div className="flex flex-wrap gap-4 w-full">
               <div className="relative flex-1 min-w-[180px]">
-                <div className="flex items-center text-sm text-secondary-500 mb-1 ml-1">
+                <div className="flex items-center text-sm text-white mb-1 ml-1">
                   <Globe className="h-4 w-4 mr-2" />
-                  <span className="text-primary-800 font-medium">Country</span>
+                  <span className="text-amber-900 font-medium">Country</span>
                 </div>
                 <select
                   name="country"
@@ -357,9 +357,9 @@ const Universities = ({ country }) => {
               </div>
 
               <div className="relative flex-1 min-w-[180px]">
-                <div className="flex items-center text-sm text-secondary-500 mb-1 ml-1">
+                <div className="flex items-center text-sm text-white mb-1 ml-1">
                   <Users className="h-4 w-4 mr-2" />
-                  <span className="text-primary-800 font-medium">Type</span>
+                  <span className="text-amber-900 font-medium">Type</span>
                 </div>
                 <select
                   name="type"
@@ -383,8 +383,8 @@ const Universities = ({ country }) => {
                   onClick={() => setViewMode(mode)}
                   className={`p-2 rounded-md flex items-center transition-colors ${
                     viewMode === mode
-                      ? "bg-white text-secondary-500 shadow-sm"
-                      : "text-gray-600 hover:bg-gray-300"
+                      ? "bg-white text-white shadow-sm"
+                      : "text-amber-700 hover:bg-gray-300"
                   }`}
                   aria-label={`${mode} view`}
                 >
@@ -410,7 +410,7 @@ const Universities = ({ country }) => {
                 skeletonCards
               ) : currentUniversities.length === 0 ? (
                 <div className="col-span-full text-center py-16">
-                  <div className="bg-primary-50 border border-primary-200 text-primary-800 px-4 py-3 rounded-lg max-w-2xl mx-auto">
+                  <div className="bg-primary-50 border border-primary-200 text-amber-900 px-4 py-3 rounded-lg max-w-2xl mx-auto">
                     <h3 className="font-bold text-lg mb-1">
                       No Universities Found
                     </h3>
@@ -449,8 +449,8 @@ const Universities = ({ country }) => {
                             <UniversityLogo uni={uni} isList={false} />
                           </div>
                           {uni.is_featured && (
-                            <div className="absolute top-3 left-3 bg-primary-800 text-white text-xs font-bold px-2 py-1 rounded">
-                              <Award className="inline mr-1 h-3 w-3 text-secondary-500" />
+                            <div className="absolute top-3 left-3 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-xs font-bold px-2 py-1 rounded">
+                              <Award className="inline mr-1 h-3 w-3 text-white" />
                               Featured
                             </div>
                           )}
@@ -461,13 +461,13 @@ const Universities = ({ country }) => {
                               href={`/universities/${uni.country_name
                                 .toLowerCase()
                                 .replace(/\s+/g, "-")}/${uni.slug}`}
-                              className="hover:text-primary-800 hover:underline"
+                              className="hover:text-amber-900 hover:underline"
                             >
                               {uni.name}
                             </Link>
                           </h3>
                           <div className="flex items-center justify-center text-sm text-gray-500 mb-2">
-                            <MapPin className="h-4 w-4 mr-1 text-secondary-500" />
+                            <MapPin className="h-4 w-4 mr-1 text-white" />
                             <span>
                               {uni.city ? `${uni.city}, ` : ""}
                               {uni.country_name}
@@ -475,15 +475,15 @@ const Universities = ({ country }) => {
                             </span>
                           </div>
                           <div className="flex flex-wrap gap-x-3 gap-y-1 justify-center mb-3">
-                            <div className="inline-flex items-center bg-primary-50 text-primary-800 text-xs px-2 py-1 rounded">
-                              <Building className="h-3 w-3 mr-1 text-secondary-500" />
+                            <div className="inline-flex items-center bg-primary-50 text-amber-900 text-xs px-2 py-1 rounded">
+                              <Building className="h-3 w-3 mr-1 text-white" />
                               <span className="capitalize">
                                 {uni.university_type}
                               </span>
                             </div>
                             {uni.established_year && (
                               <div className="inline-flex items-center bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
-                                <Calendar className="h-3 w-3 mr-1 text-secondary-500" />
+                                <Calendar className="h-3 w-3 mr-1 text-white" />
                                 <span>
                                   {formatEstablishedYear(uni.established_year)}
                                 </span>
@@ -492,7 +492,7 @@ const Universities = ({ country }) => {
                           </div>
 
                           {uni.description && (
-                            <p className="text-sm text-gray-600 line-clamp-2 mb-4 text-left">
+                            <p className="text-sm text-amber-700 line-clamp-2 mb-4 text-left">
                               {uni.description.replace(/<[^>]+>/g, "")}
                             </p>
                           )}
@@ -504,7 +504,7 @@ const Universities = ({ country }) => {
                                   Tuition
                                 </p>
                                 <div className="flex items-center justify-center text-gray-700">
-                                  <PoundSterling className="h-4 w-4 mr-1 text-secondary-500" />
+                                  <PoundSterling className="h-4 w-4 mr-1 text-white" />
                                   <span className="font-medium">
                                     {formatTuitionFee(
                                       uni.tuition_fee_min,
@@ -537,19 +537,19 @@ const Universities = ({ country }) => {
                               {uni.email && (
                                 <a
                                   href={`mailto:${uni.email}`}
-                                  className="text-gray-500 hover:text-primary-800"
+                                  className="text-gray-500 hover:text-amber-900"
                                   title="Email"
                                 >
-                                  <Mail className="h-5 w-5 text-secondary-500" />
+                                  <Mail className="h-5 w-5 text-white" />
                                 </a>
                               )}
                               {uni.phone && (
                                 <a
                                   href={`tel:${uni.phone}`}
-                                  className="text-gray-500 hover:text-primary-800"
+                                  className="text-gray-500 hover:text-amber-900"
                                   title="Phone"
                                 >
-                                  <Phone className="h-5 w-5 text-secondary-500" />
+                                  <Phone className="h-5 w-5 text-white" />
                                 </a>
                               )}
                             </div>
@@ -558,7 +558,7 @@ const Universities = ({ country }) => {
                               href={uni.website_url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="w-full flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-800 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors"
+                              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 hover:bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors"
                             >
                               Visit Website <ExternalLink className="h-4 w-4" />
                             </a>
@@ -585,8 +585,8 @@ const Universities = ({ country }) => {
                             </div>
                           )}
                           {uni.is_featured && (
-                            <div className="absolute top-3 left-3 bg-primary-800 text-white text-xs font-bold px-2 py-1 rounded">
-                              <Award className="inline mr-1 h-3 w-3 text-secondary-500" />
+                            <div className="absolute top-3 left-3 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-xs font-bold px-2 py-1 rounded">
+                              <Award className="inline mr-1 h-3 w-3 text-white" />
                               Featured
                             </div>
                           )}
@@ -598,13 +598,13 @@ const Universities = ({ country }) => {
                                 href={`/universities/${uni.country_name
                                   .toLowerCase()
                                   .replace(/\s+/g, "-")}/${uni.slug}`}
-                                className="hover:text-primary-800 hover:underline"
+                                className="hover:text-amber-900 hover:underline"
                               >
                                 {uni.name}
                               </Link>
                             </h3>
                             <div className="flex items-center text-sm text-gray-500 mb-2">
-                              <MapPin className="h-4 w-4 mr-1 text-secondary-500" />
+                              <MapPin className="h-4 w-4 mr-1 text-white" />
                               <span>
                                 {uni.city ? `${uni.city}, ` : ""}
                                 {uni.country_name}
@@ -613,15 +613,15 @@ const Universities = ({ country }) => {
                             </div>
 
                             <div className="flex flex-wrap gap-2 mb-3">
-                              <div className="inline-flex items-center bg-primary-50 text-primary-800 text-xs px-2 py-1 rounded">
-                                <Building className="h-3 w-3 mr-1 text-secondary-500" />
+                              <div className="inline-flex items-center bg-primary-50 text-amber-900 text-xs px-2 py-1 rounded">
+                                <Building className="h-3 w-3 mr-1 text-white" />
                                 <span className="capitalize">
                                   {uni.university_type}
                                 </span>
                               </div>
                               {uni.established_year && (
                                 <div className="inline-flex items-center bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded">
-                                  <Calendar className="h-3 w-3 mr-1 text-secondary-500" />
+                                  <Calendar className="h-3 w-3 mr-1 text-white" />
                                   <span>
                                     {formatEstablishedYear(
                                       uni.established_year
@@ -637,7 +637,7 @@ const Universities = ({ country }) => {
                                   Tuition
                                 </p>
                                 <div className="flex items-center text-gray-700 text-sm">
-                                  <PoundSterling className="h-4 w-4 mr-1 text-secondary-500" />
+                                  <PoundSterling className="h-4 w-4 mr-1 text-white" />
                                   <span className="font-medium">
                                     {formatTuitionFee(
                                       uni.tuition_fee_min,
@@ -667,7 +667,7 @@ const Universities = ({ country }) => {
                             </div>
 
                             {uni.description && (
-                              <p className="text-sm text-gray-600 line-clamp-2 mb-4">
+                              <p className="text-sm text-amber-700 line-clamp-2 mb-4">
                                 {uni.description.replace(/<[^>]+>/g, "")}
                               </p>
                             )}
@@ -678,20 +678,20 @@ const Universities = ({ country }) => {
                               {uni.email && (
                                 <a
                                   href={`mailto:${uni.email}`}
-                                  className="flex items-center space-x-1 text-gray-500 hover:text-primary-800"
+                                  className="flex items-center space-x-1 text-gray-500 hover:text-amber-900"
                                   title="Email"
                                 >
-                                  <Mail className="h-4 w-4 text-secondary-500 flex-shrink-0" />
+                                  <Mail className="h-4 w-4 text-white flex-shrink-0" />
                                   <span className="text-sm">{uni.email}</span>
                                 </a>
                               )}
                               {uni.phone && (
                                 <a
                                   href={`tel:${uni.phone}`}
-                                  className="flex items-center space-x-1 text-gray-500 hover:text-primary-800"
+                                  className="flex items-center space-x-1 text-gray-500 hover:text-amber-900"
                                   title="Phone"
                                 >
-                                  <Phone className="h-4 w-4 text-secondary-500 flex-shrink-0" />
+                                  <Phone className="h-4 w-4 text-white flex-shrink-0" />
                                   <span className="text-sm">{uni.phone}</span>
                                 </a>
                               )}
@@ -700,7 +700,7 @@ const Universities = ({ country }) => {
                               href={uni.website_url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-1 text-primary-600 hover:text-primary-800 text-sm font-medium mt-2 sm:mt-0 ml-auto"
+                              className="flex items-center gap-1 text-primary-600 hover:text-amber-900 text-sm font-medium mt-2 sm:mt-0 ml-auto"
                             >
                               Visit Website
                               <ExternalLink className="h-4 w-4" />

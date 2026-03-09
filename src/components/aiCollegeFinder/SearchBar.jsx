@@ -5,7 +5,7 @@ const SearchBar = ({ value, onChange }) => {
   return (
     <div className="mt-8 max-w-2xl mx-auto">
       <div className="relative">
-        <Search className="absolute left-4 top-3.5 h-5 w-5 text-secondary-500" />
+        <Search className="absolute left-4 top-3.5 h-5 w-5 text-white" />
         <input
           type="search"
           placeholder="Search courses, universities, or fields..."

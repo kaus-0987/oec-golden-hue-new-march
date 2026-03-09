@@ -101,9 +101,9 @@ const KnowledgeBase = () => {
             className="bg-white border-2 border-primary-600 rounded-xl p-6 hover:shadow-lg transition-all duration-300 cursor-pointer group"
           >
             <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <Icon className="w-6 h-6 text-secondary-500" />
+              <Icon className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">{name}</h3>
+            <h3 className="text-lg font-semibold text-amber-900 mb-2">{name}</h3>
             <Link
               href={href}
               className="flex items-center text-primary-600 text-sm font-medium"
@@ -115,7 +115,7 @@ const KnowledgeBase = () => {
       </div>
 
       <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-8">
-        <h3 className="text-2xl font-bold text-primary-800 mb-6">
+        <h3 className="text-2xl font-bold text-amber-900 mb-6">
           Featured Knowledge Articles
         </h3>
         {isLoading ? (
@@ -132,12 +132,12 @@ const KnowledgeBase = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">{blog.title}</h4>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-amber-700">
                       Published {moment(blog.published_at).fromNow()}
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                <p className="text-amber-700 text-sm mb-4 line-clamp-2">
                   {blog.excerpt}
                 </p>
                 <div className="flex items-center justify-between">
@@ -146,7 +146,7 @@ const KnowledgeBase = () => {
                   </span>
                   <Link
                     href={`/blog/${blog.slug}`}
-                    className="text-primary-600 text-sm font-medium hover:text-primary-800"
+                    className="text-primary-600 text-sm font-medium hover:text-amber-900"
                   >
                     Read More
                   </Link>

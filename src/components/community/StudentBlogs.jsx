@@ -56,10 +56,10 @@ const StudentBlogs = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="text-center mb-12">
-        <h3 className="text-3xl font-bold text-primary-800 mb-2">
+        <h3 className="text-3xl font-bold text-amber-900 mb-2">
           Student Experiences
         </h3>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-amber-700 max-w-2xl mx-auto">
           Real stories and advice from OEC students studying across the globe.
         </p>
       </div>
@@ -89,14 +89,14 @@ const StudentBlogs = () => {
                     </div>
                   )}
                   <div className="absolute top-4 left-4">
-                    <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-gray-800">
+                    <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-amber-900">
                       {post.category_name}
                     </span>
                   </div>
                 </div>
 
                 <div className="p-6 flex-grow flex flex-col">
-                  <h4 className="font-semibold text-lg mb-3 line-clamp-2 text-primary-900 group-hover:text-primary-700">
+                  <h4 className="font-semibold text-lg mb-3 line-clamp-2 text-black group-hover:text-primary-700">
                     {post.title}
                   </h4>
 
@@ -111,7 +111,7 @@ const StudentBlogs = () => {
                     </p>
                   </div>
 
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3 flex-grow">
+                  <p className="text-amber-700 text-sm mb-4 line-clamp-3 flex-grow">
                     {post.excerpt}
                   </p>
 
@@ -122,7 +122,7 @@ const StudentBlogs = () => {
                     </div>
                     <a
                       href={`/blog/${post.slug}`}
-                      className="text-primary-800 font-medium hover:text-primary-600"
+                      className="text-amber-900 font-medium hover:text-primary-600"
                     >
                       Read More →
                     </a>
@@ -141,7 +141,7 @@ const StudentBlogs = () => {
       )}
 
       <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-8">
-        <h3 className="text-2xl font-bold text-primary-800 mb-6 text-center">
+        <h3 className="text-2xl font-bold text-amber-900 mb-6 text-center">
           Popular Blog Categories
         </h3>
         {popularCategories.length > 0 ? (
@@ -157,11 +157,11 @@ const StudentBlogs = () => {
                   key={category.id}
                   className="bg-white/70 backdrop-blur-sm p-4 rounded-lg text-center hover:shadow-lg hover:bg-white transition-all cursor-pointer"
                 >
-                  <IconComponent className="w-8 h-8 text-secondary-500 mx-auto mb-3" />
-                  <h4 className="font-semibold text-sm text-primary-900">
+                  <IconComponent className="w-8 h-8 text-white mx-auto mb-3" />
+                  <h4 className="font-semibold text-sm text-black">
                     {category.name}
                   </h4>
-                  <p className="text-gray-600 text-xs mt-1">
+                  <p className="text-amber-700 text-xs mt-1">
                     {blogCount} {blogCount === 1 ? "post" : "posts"}
                   </p>
                 </div>

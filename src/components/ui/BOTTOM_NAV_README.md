@@ -193,7 +193,7 @@ The component uses Tailwind classes. Key customization points:
 className="bg-white" // Change to bg-gray-100, etc.
 
 // Active color
-className="text-primary-800" // Change to any color
+className="text-amber-900" // Change to any color
 
 // Height
 className="h-16" // Change to h-14, h-20, etc.

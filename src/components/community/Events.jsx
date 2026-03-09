@@ -52,10 +52,10 @@ const Events = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mb-8">
-        <h3 className="text-3xl font-bold text-primary-800 mb-2">
+        <h3 className="text-3xl font-bold text-amber-900 mb-2">
           Upcoming Events
         </h3>
-        <p className="text-gray-600">
+        <p className="text-amber-700">
           Connect, learn, and grow with the OEC community
         </p>
       </div>
@@ -99,8 +99,8 @@ const Events = () => {
                         getEventStatus(event.start_date) === "Soon"
                           ? "bg-yellow-100 text-yellow-800"
                           : getEventStatus(event.start_date) === "Past"
-                          ? "bg-gray-100 text-gray-800"
-                          : "bg-primary-100 text-primary-800"
+                          ? "bg-gray-100 text-amber-900"
+                          : "bg-primary-100 text-amber-900"
                       }`}
                     >
                       {getEventStatus(event.start_date)}
@@ -110,41 +110,41 @@ const Events = () => {
 
                 <div className="p-6 flex-grow flex flex-col">
                   <h4 className="font-semibold text-lg mb-3">{event.title}</h4>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  <p className="text-amber-700 text-sm mb-4 line-clamp-2">
                     {event.short_description}
                   </p>
 
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-gray-600 text-sm">
-                      <Calendar className="w-4 h-4 mr-2 flex-shrink-0 text-secondary-500" />
+                    <div className="flex items-center text-amber-700 text-sm">
+                      <Calendar className="w-4 h-4 mr-2 flex-shrink-0 text-white" />
                       {event.formattedDate}
                     </div>
-                    <div className="flex items-center text-gray-600 text-sm">
-                      <Clock className="w-4 h-4 mr-2 flex-shrink-0 text-secondary-500" />
+                    <div className="flex items-center text-amber-700 text-sm">
+                      <Clock className="w-4 h-4 mr-2 flex-shrink-0 text-white" />
                       {event.formattedTime}
                     </div>
-                    <div className="flex items-center text-gray-600 text-sm">
+                    <div className="flex items-center text-amber-700 text-sm">
                       {event.is_online ? (
                         <>
-                          <Globe className="w-4 h-4 mr-2 flex-shrink-0 text-secondary-500" />
+                          <Globe className="w-4 h-4 mr-2 flex-shrink-0 text-white" />
                           Online Event
                         </>
                       ) : (
                         <>
-                          <MapPin className="w-4 h-4 mr-2 flex-shrink-0 text-secondary-500" />
+                          <MapPin className="w-4 h-4 mr-2 flex-shrink-0 text-white" />
                           {event.venue_name}
                         </>
                       )}
                     </div>
-                    <div className="flex items-center text-gray-600 text-sm">
-                      <Building className="w-4 h-4 mr-2 flex-shrink-0 text-secondary-500" />
+                    <div className="flex items-center text-amber-700 text-sm">
+                      <Building className="w-4 h-4 mr-2 flex-shrink-0 text-white" />
                       {event.category_name}
                     </div>
                   </div>
 
                   <a
                     href={`/events/${event.slug}`}
-                    className="block w-full text-center bg-primary-800 text-white py-2 px-4 rounded-lg hover:bg-primary-600 transition-colors mt-auto"
+                    className="block w-full text-center bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white py-2 px-4 rounded-lg hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 transition-colors mt-auto"
                   >
                     View Details
                   </a>
@@ -160,7 +160,7 @@ const Events = () => {
       )}
 
       <div className="bg-gradient-to-r from-secondary-50 to-primary-50 rounded-xl p-8">
-        <h3 className="text-2xl font-bold text-primary-800 mb-6">
+        <h3 className="text-2xl font-bold text-amber-900 mb-6">
           Event Calendar
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -178,13 +178,13 @@ const Events = () => {
                     className="flex items-center p-3 bg-white rounded-lg mb-3"
                   >
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-3 flex-shrink-0">
-                      <span className="text-primary-800 font-bold text-sm">
+                      <span className="text-amber-900 font-bold text-sm">
                         {moment(event.start_date).format("D")}
                       </span>
                     </div>
                     <div>
                       <p className="font-medium text-sm">{event.title}</p>
-                      <p className="text-gray-600 text-xs">
+                      <p className="text-amber-700 text-xs">
                         {event.is_online ? "Online" : event.venue_name}
                       </p>
                     </div>
@@ -204,8 +204,8 @@ const Events = () => {
                   key={category}
                   className="flex items-center justify-between"
                 >
-                  <span className="text-gray-600">{category}</span>
-                  <span className="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs font-medium">
+                  <span className="text-amber-700">{category}</span>
+                  <span className="bg-primary-100 text-amber-900 px-2 py-1 rounded text-xs font-medium">
                     {events.filter((e) => e.category_name === category).length}{" "}
                     events
                   </span>

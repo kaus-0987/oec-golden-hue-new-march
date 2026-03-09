@@ -98,36 +98,36 @@ const Blogs = ({ country }) => {
             </Link>
           </div>
           <div className="p-6 flex-grow flex flex-col">
-            <p className="text-sm font-semibold text-secondary-500">
+            <p className="text-sm font-semibold text-white">
               {article.category_name}
             </p>
-            <h3 className="mt-2 text-lg font-bold text-gray-900 group-hover:text-primary-800 transition-colors">
+            <h3 className="mt-2 text-lg font-bold text-gray-900 group-hover:text-amber-900 transition-colors">
               <Link href={`/blog/${article.slug}`} className="line-clamp-2">
                 {article.title}
               </Link>
             </h3>
-            <p className="mt-3 text-sm text-gray-600 line-clamp-3 flex-grow">
+            <p className="mt-3 text-sm text-amber-700 line-clamp-3 flex-grow">
               {article.excerpt}
             </p>
           </div>
           <div className="p-6 pt-4 border-t border-gray-100">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-gray-500">
               <div className="flex items-center gap-1.5">
-                <User className="h-4 w-4 text-secondary-500" />
+                <User className="h-4 w-4 text-white" />
                 {article.author_name}
               </div>
               <div className="flex items-center gap-1.5">
-                <Calendar className="h-4 w-4 text-secondary-500" />
+                <Calendar className="h-4 w-4 text-white" />
                 {moment(article.published_at).format("MMM D, YYYY")}
               </div>
               <div className="flex items-center gap-1.5">
-                <Clock className="h-4 w-4 text-secondary-500" />
+                <Clock className="h-4 w-4 text-white" />
                 {article.reading_time} min read
               </div>
             </div>
             <Link
               href={`/blog/${article.slug}`}
-              className="mt-4 inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-primary-800"
+              className="mt-4 inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-amber-900"
             >
               Read More
               <ArrowRight className="h-4 w-4 transform transition-transform group-hover:translate-x-1" />

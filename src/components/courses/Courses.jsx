@@ -249,7 +249,7 @@ const Courses = ({ course }) => {
 
     return (
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
-        <div className="text-sm text-gray-600">
+        <div className="text-sm text-amber-700">
           Showing {indexOfFirstCourse + 1} to{" "}
           {Math.min(indexOfLastCourse, totalCourses)} of {totalCourses} courses
         </div>
@@ -274,7 +274,7 @@ const Courses = ({ course }) => {
                 onClick={() => paginate(1)}
                 className={`px-3 py-1 rounded-lg ${
                   1 === currentPage
-                    ? "bg-primary-800 text-white"
+                    ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -290,7 +290,7 @@ const Courses = ({ course }) => {
               onClick={() => paginate(number)}
               className={`px-3 py-1 rounded-lg ${
                 number === currentPage
-                  ? "bg-primary-800 text-white"
+                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                   : "text-gray-700 hover:bg-gray-100"
               }`}
             >
@@ -305,7 +305,7 @@ const Courses = ({ course }) => {
                 onClick={() => paginate(totalPages)}
                 className={`px-3 py-1 rounded-lg ${
                   totalPages === currentPage
-                    ? "bg-primary-800 text-white"
+                    ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                     : "text-gray-700 hover:bg-gray-100"
                 }`}
               >
@@ -333,18 +333,18 @@ const Courses = ({ course }) => {
 
   return (
     <div className="bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Find Your Perfect Course
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Discover programs that match your academic goals and career
             aspirations
           </p>
           <div className="mt-8 max-w-2xl mx-auto">
             <div className="relative">
-              <Search className="absolute left-4 top-3.5 h-5 w-5 text-secondary-500" />
+              <Search className="absolute left-4 top-3.5 h-5 w-5 text-white" />
               <input
                 type="search"
                 placeholder="Search courses, universities, or fields..."
@@ -433,9 +433,9 @@ const Courses = ({ course }) => {
                 },
               ].map(({ name, label, options, icon }) => (
                 <div key={name} className="relative flex-1 min-w-[150px]">
-                  <div className="flex items-center text-sm text-secondary-500 mb-1 ml-1">
+                  <div className="flex items-center text-sm text-white mb-1 ml-1">
                     {icon}
-                    <span className="text-primary-800">{label}</span>
+                    <span className="text-amber-900">{label}</span>
                   </div>
                   <select
                     name={name}
@@ -461,8 +461,8 @@ const Courses = ({ course }) => {
                   onClick={() => setViewMode(mode)}
                   className={`p-2 rounded-lg flex items-center ${
                     viewMode === mode
-                      ? "bg-white text-secondary-500 shadow-sm"
-                      : "text-gray-600 hover:bg-gray-200"
+                      ? "bg-white text-white shadow-sm"
+                      : "text-amber-700 hover:bg-gray-200"
                   }`}
                   aria-label={`${mode} view`}
                 >
@@ -503,7 +503,7 @@ const Courses = ({ course }) => {
                 </div>
               ) : currentCourses.length === 0 ? (
                 <div className="col-span-full text-center py-16">
-                  <div className="bg-primary-50 border border-primary-200 text-primary-800 px-4 py-3 rounded-lg max-w-2xl mx-auto">
+                  <div className="bg-primary-50 border border-primary-200 text-amber-900 px-4 py-3 rounded-lg max-w-2xl mx-auto">
                     <h3 className="font-bold text-lg mb-1">No Courses Found</h3>
                     <p>Try adjusting your filters or search term</p>
                   </div>
@@ -545,7 +545,7 @@ const Courses = ({ course }) => {
                           />
                         ) : (
                           <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mr-4">
-                            <School className="h-6 w-6 text-primary-800" />
+                            <School className="h-6 w-6 text-amber-900" />
                           </div>
                         )}
                         <div>
@@ -566,7 +566,7 @@ const Courses = ({ course }) => {
                       </div>
 
                       <div className="flex flex-wrap gap-2 mb-4">
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-800">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-amber-900">
                           <GraduationCap className="h-3 w-3 mr-1" />
                           {course.degree_level.charAt(0).toUpperCase() +
                             course.degree_level.slice(1)}
@@ -585,7 +585,7 @@ const Courses = ({ course }) => {
                             Scholarship Available
                           </span>
                         ) : (
-                          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-amber-900">
                             <XCircle className="h-3 w-3 mr-1" />
                             No Scholarship
                           </span>
@@ -606,7 +606,7 @@ const Courses = ({ course }) => {
                       <div className="grid grid-cols-2 gap-3 text-sm mb-6">
                         <div>
                           <div className="text-gray-500 flex items-center">
-                            <CircleDollarSign className="h-4 w-4 mr-1.5 text-secondary-500" />
+                            <CircleDollarSign className="h-4 w-4 mr-1.5 text-white" />
                             Tuition Fee
                           </div>
                           <div className="font-medium pl-6">
@@ -615,7 +615,7 @@ const Courses = ({ course }) => {
                         </div>
                         <div>
                           <div className="text-gray-500 flex items-center">
-                            <Calendar className="h-4 w-4 mr-1.5 text-secondary-500" />
+                            <Calendar className="h-4 w-4 mr-1.5 text-white" />
                             Intakes
                           </div>
                           <div className="font-medium pl-6">
@@ -624,7 +624,7 @@ const Courses = ({ course }) => {
                         </div>
                         <div>
                           <div className="text-gray-500 flex items-center">
-                            <Percent className="h-4 w-4 mr-1.5 text-secondary-500" />
+                            <Percent className="h-4 w-4 mr-1.5 text-white" />
                             Min GPA
                           </div>
                           <div className="font-medium pl-6">
@@ -633,7 +633,7 @@ const Courses = ({ course }) => {
                         </div>
                         <div>
                           <div className="text-gray-500 flex items-center">
-                            <CheckCircle className="h-4 w-4 mr-1.5 text-secondary-500" />
+                            <CheckCircle className="h-4 w-4 mr-1.5 text-white" />
                             IELTS
                           </div>
                           <div className="font-medium pl-6">
@@ -647,7 +647,7 @@ const Courses = ({ course }) => {
                           href={`/popular-courses/${course.category_name
                             .toLowerCase()
                             .replace(/\s+/g, "-")}/${course.slug}`}
-                          className="bg-primary-800 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                          className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
                         >
                           View Details
                         </Link>

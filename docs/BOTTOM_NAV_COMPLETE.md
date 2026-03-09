@@ -2,7 +2,7 @@
 
 ## ✅ What Was Implemented
 
-A professional, mobile-first bottom navigation bar has been added to the OEC India website, providing quick access to key features on mobile devices.
+A professional, mobile-first bottom navigation bar has been added to the OEC Dubai website, providing quick access to key features on mobile devices.
 
 ---
 
@@ -234,7 +234,7 @@ const navItems = [
 ### Changing Colors
 ```jsx
 // Active state color
-className="text-blue-600"  // Instead of text-primary-800
+className="text-blue-600"  // Instead of text-amber-900
 
 // Indicator dot color
 className="bg-orange-500"  // Instead of bg-secondary-500

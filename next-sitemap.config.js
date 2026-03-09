@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 
 module.exports = {
-  siteUrl: "https://oecindia.com",
+  siteUrl: "https://oecdubai.com",
   generateRobotsTxt: true,
   sitemapSize: 5000,
   generateIndexSitemap: false,

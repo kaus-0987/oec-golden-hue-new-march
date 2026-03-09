@@ -2,7 +2,7 @@
 
 ## What Was Added
 
-A mobile-only bottom navigation bar has been added to the OEC India website for improved mobile user experience.
+A mobile-only bottom navigation bar has been added to the OEC Dubai website for improved mobile user experience.
 
 ---
 
@@ -216,7 +216,7 @@ const navItems = [
 
 ```jsx
 // Active color
-className="text-primary-800" // Change to text-blue-600, etc.
+className="text-amber-900" // Change to text-blue-600, etc.
 
 // Indicator dot color
 className="bg-secondary-500" // Change to bg-orange-500, etc.

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://oecindia.com
+Host: https://oecdubai.com
 
 # Sitemaps
-Sitemap: https://oecindia.com/sitemap.xml
+Sitemap: https://oecdubai.com/sitemap.xml

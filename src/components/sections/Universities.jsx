@@ -51,11 +51,11 @@ const Universities = () => {
         <div className="text-center mb-16">
           <h2
             id="study-destinations-heading"
-            className="text-4xl font-bold text-primary-800 mb-4"
+            className="text-4xl font-bold text-amber-900 mb-4"
           >
             Our Students Admitted To Top Universities
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-amber-700 max-w-3xl mx-auto">
             Your gateway to overseas education and success.
           </p>
         </div>
@@ -76,18 +76,18 @@ const Universities = () => {
                 >
                   <div className="p-6 flex-grow">
                     <div className="relative mb-6">
-                      <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-800 text-white text-xs font-semibold px-4 py-1 rounded-t-none rounded-b-full shadow-md">
+                      <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-xs font-semibold px-4 py-1 rounded-t-none rounded-b-full shadow-md">
                         <div className="flex items-center gap-2">
                           <Crown className="w-4 h-4" /> <span>Admit</span>
                         </div>
                       </div>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                    <h3 className="text-xl font-bold text-amber-900 mb-4 text-center">
                       {student.university_name}
                     </h3>
                     <div className="flex justify-between space-x-4 mb-6">
                       <div className="flex items-center space-x-2">
-                        <CalendarDays className="text-secondary-500 w-5 h-5 flex-shrink-0" />
+                        <CalendarDays className="text-white w-5 h-5 flex-shrink-0" />
                         <div className="text-sm">
                           <div className="font-semibold text-gray-900">
                             {student.admission_year}
@@ -96,7 +96,7 @@ const Universities = () => {
                         </div>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <Globe className="text-secondary-500 w-5 h-5 flex-shrink-0" />
+                        <Globe className="text-white w-5 h-5 flex-shrink-0" />
                         <div className="text-sm">
                           <div className="font-semibold text-gray-900">
                             {student.nationality}
@@ -122,14 +122,14 @@ const Universities = () => {
                           className="w-10 h-10 rounded-full object-cover ring-2 ring-white"
                         />
                       ) : (
-                        <div className="w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center ring-2 ring-white">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white flex items-center justify-center ring-2 ring-white">
                           <span className="font-medium text-sm">
                             {getInitials(student.full_name)}
                           </span>
                         </div>
                       )}
                       <div>
-                        <p className="font-semibold text-sm text-gray-800">
+                        <p className="font-semibold text-sm text-amber-900">
                           {student.full_name}
                         </p>
                         <p className="text-xs text-gray-500">

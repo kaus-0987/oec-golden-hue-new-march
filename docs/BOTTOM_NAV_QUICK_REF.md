@@ -121,7 +121,7 @@ npm test BottomNavigation
 const navItems = [ /* your items */ ];
 
 // Change colors
-text-primary-800  // Active color
+text-amber-900  // Active color
 bg-secondary-500  // Indicator dot
 bg-white         // Background
 

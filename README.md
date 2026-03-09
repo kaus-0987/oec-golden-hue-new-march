@@ -1,4 +1,4 @@
-# 🎓 OEC India - Overseas Education Consultants Website
+# 🎓 OEC Dubai - Overseas Education Consultants Website
 
 > A modern, AI-powered platform helping students achieve their dream of studying abroad.
 
@@ -493,7 +493,7 @@ npm install --legacy-peer-deps
 
 ## 📄 License
 
-Private - OEC India © 2025
+Private - OEC Dubai © 2025
 
 ---
 
@@ -513,6 +513,6 @@ See `IMPROVEMENTS.md` for full details.
 
 ---
 
-**Built with ❤️ by the OEC India Team**
+**Built with ❤️ by the OEC Dubai Team**
 
 For questions or issues, refer to the documentation files or contact the development team.

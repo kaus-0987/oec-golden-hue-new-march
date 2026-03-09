@@ -13,8 +13,8 @@ export const generateMetadata = async ({ params }) => {
 
   if (!slug) {
     return {
-      title: "Event Not Found | OEC India",
-      description: "The requested event was not found on OEC India.",
+      title: "Event Not Found | OEC Dubai",
+      description: "The requested event was not found on OEC Dubai.",
     };
   }
 
@@ -36,7 +36,7 @@ export const generateMetadata = async ({ params }) => {
             height: 600,
           },
         ],
-        siteName: "OEC India",
+        siteName: "OEC Dubai",
         locale: "en_US",
         type: "website",
       },
@@ -57,7 +57,7 @@ export const generateMetadata = async ({ params }) => {
   } catch (error) {
     console.log("error", error);
     return {
-      title: "Upcoming Study Abroad Events & Webinars | OEC India",
+      title: "Upcoming Study Abroad Events & Webinars | OEC Dubai",
       description: "Check out our events and webinars for study abroad.",
     };
   }

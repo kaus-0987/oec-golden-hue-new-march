@@ -206,12 +206,12 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Contact Our Study Abroad Experts
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Begin your international education adventure. Reach out to our
             expert counselors for tailored advice and support.
           </p>
@@ -232,7 +232,7 @@ const ContactUs = () => {
                 <h3 className="font-semibold text-lg mb-2">Call Us</h3>
                 <a
                   href="tel:+919327581167"
-                  className="text-gray-600 hover:text-primary-600 transition-colors block mb-2"
+                  className="text-amber-700 hover:text-primary-600 transition-colors block mb-2"
                 >
                   +91 93275 81167
                 </a>
@@ -247,7 +247,7 @@ const ContactUs = () => {
                   href="https://wa.me/919327581167"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-green-600 transition-colors block mb-2"
+                  className="text-amber-700 hover:text-green-600 transition-colors block mb-2"
                 >
                   +91 93275 81167
                 </a>
@@ -259,10 +259,10 @@ const ContactUs = () => {
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Email Us</h3>
                 <a
-                  href="mailto:uk@oecindia.com"
-                  className="text-gray-600 hover:text-blue-600 transition-colors block mb-2"
+                  href="mailto:uk@oecdubai.com"
+                  className="text-amber-700 hover:text-blue-600 transition-colors block mb-2"
                 >
-                  uk@oecindia.com
+                  uk@oecdubai.com
                 </a>
                 <p className="text-gray-500 text-sm">Response within 2 hours</p>
               </div>
@@ -273,7 +273,7 @@ const ContactUs = () => {
                 <h3 className="font-semibold text-lg mb-2">Emergency</h3>
                 <a
                   href="tel:+919876543212"
-                  className="text-gray-600 hover:text-primary-600 transition-colors block mb-2"
+                  className="text-amber-700 hover:text-primary-600 transition-colors block mb-2"
                 >
                   +91 98765 43212
                 </a>
@@ -293,11 +293,11 @@ const ContactUs = () => {
             <div className="text-center mb-12">
               <h2
                 id="consultation-section"
-                className="text-3xl font-bold text-primary-800 mb-4"
+                className="text-3xl font-bold text-amber-900 mb-4"
               >
                 Our Branches & Free Consultation
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-amber-700 max-w-3xl mx-auto">
                 Find our nearest branch or book a virtual consultation to start
                 your study abroad journey today.
               </p>
@@ -306,7 +306,7 @@ const ContactUs = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
               <div className="lg:col-span-1">
                 <div className="bg-gray-50 rounded-xl shadow-md overflow-hidden">
-                  <div className="p-6 bg-primary-800 text-white">
+                  <div className="p-6 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white">
                     <h3 className="text-xl font-semibold flex items-center">
                       <MapPin className="h-5 w-5 mr-2" />
                       Our Branch Locations
@@ -332,7 +332,7 @@ const ContactUs = () => {
                             aria-expanded={expandedBranch === branch.id}
                             className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-100 transition-colors rounded-lg"
                           >
-                            <span className="font-medium text-primary-900">
+                            <span className="font-medium text-black">
                               {branch.name}
                               {branch.is_main_branch && (
                                 <span className="ml-2 bg-secondary-200 text-secondary-800 text-xs px-2 py-1 rounded-full">
@@ -348,16 +348,16 @@ const ContactUs = () => {
                           </button>
                           {expandedBranch === branch.id && (
                             <div className="p-4 pt-0">
-                              <p className="text-gray-600 mb-3 whitespace-pre-line border-t border-gray-200 pt-3">
+                              <p className="text-amber-700 mb-3 whitespace-pre-line border-t border-gray-200 pt-3">
                                 {branch.address}
                               </p>
                               <div className="space-y-2">
                                 {branch.phone && (
                                   <div className="flex items-center text-sm">
-                                    <Phone className="h-4 w-4 text-secondary-500 mr-2 flex-shrink-0" />
+                                    <Phone className="h-4 w-4 text-white mr-2 flex-shrink-0" />
                                     <a
                                       href={`tel:${branch.phone}`}
-                                      className="text-gray-600 hover:text-primary-600"
+                                      className="text-amber-700 hover:text-primary-600"
                                     >
                                       {branch.phone}
                                     </a>
@@ -365,10 +365,10 @@ const ContactUs = () => {
                                 )}
                                 {branch.email && (
                                   <div className="flex items-center text-sm">
-                                    <Mail className="h-4 w-4 text-secondary-500 mr-2 flex-shrink-0" />
+                                    <Mail className="h-4 w-4 text-white mr-2 flex-shrink-0" />
                                     <a
                                       href={`mailto:${branch.email}`}
-                                      className="text-gray-600 hover:text-primary-600"
+                                      className="text-amber-700 hover:text-primary-600"
                                     >
                                       {branch.email}
                                     </a>
@@ -400,7 +400,7 @@ const ContactUs = () => {
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
-                      <h3 className="text-2xl font-semibold text-primary-800 mb-6 flex items-center">
+                      <h3 className="text-2xl font-semibold text-amber-900 mb-6 flex items-center">
                         <MessageCircle className="h-6 w-6 mr-2" />
                         Book Your Free Consultation
                       </h3>
@@ -493,7 +493,7 @@ const ContactUs = () => {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full md:w-auto bg-primary-800 hover:bg-primary-600 disabled:bg-primary-300 text-white font-semibold py-3 px-8 rounded-lg transition-colors inline-flex items-center justify-center"
+                          className="w-full md:w-auto bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 disabled:bg-primary-300 text-white font-semibold py-3 px-8 rounded-lg transition-colors inline-flex items-center justify-center"
                         >
                           {isSubmitting ? (
                             <>

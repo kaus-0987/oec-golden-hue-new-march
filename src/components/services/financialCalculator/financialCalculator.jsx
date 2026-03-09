@@ -62,7 +62,7 @@ const FinancialCalculator = () => {
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <div className="flex items-center mb-6">
         <Calculator className="w-8 h-8 text-primary-600 mr-3" />
-        <h3 className="text-2xl font-bold text-primary-800">
+        <h3 className="text-2xl font-bold text-amber-900">
           Education Cost Calculator
         </h3>
       </div>
@@ -118,7 +118,7 @@ const FinancialCalculator = () => {
         <div className="flex items-end">
           <button
             onClick={calculateCosts}
-            className="w-full bg-primary-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
+            className="w-full bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white py-3 px-6 rounded-lg hover:bg-primary-700 transition-colors font-semibold"
           >
             Calculate Costs
           </button>
@@ -127,7 +127,7 @@ const FinancialCalculator = () => {
 
       {results && (
         <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-6">
-          <h4 className="text-xl font-bold text-primary-800 mb-4">
+          <h4 className="text-xl font-bold text-amber-900 mb-4">
             Estimated Costs for {results.countryName}
           </h4>
 
@@ -135,11 +135,11 @@ const FinancialCalculator = () => {
             <div className="bg-white p-4 rounded-lg">
               <div className="flex items-center mb-2">
                 <Book className="w-5 h-5 text-primary-600 mr-2" />
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-amber-700">
                   Tuition (Per Year)
                 </span>
               </div>
-              <div className="text-2xl font-bold text-primary-800">
+              <div className="text-2xl font-bold text-amber-900">
                 {results.tuitionPerYear.toLocaleString()} {results.currency}
               </div>
             </div>
@@ -147,7 +147,7 @@ const FinancialCalculator = () => {
             <div className="bg-white p-4 rounded-lg">
               <div className="flex items-center mb-2">
                 <Home className="w-5 h-5 text-secondary-600 mr-2" />
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-amber-700">
                   Living Expenses (Per Year)
                 </span>
               </div>
@@ -159,11 +159,11 @@ const FinancialCalculator = () => {
             <div className="bg-white p-4 rounded-lg">
               <div className="flex items-center mb-2">
                 <CreditCard className="w-5 h-5 text-primary-600 mr-2" />
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-amber-700">
                   Total Per Year
                 </span>
               </div>
-              <div className="text-2xl font-bold text-primary-800">
+              <div className="text-2xl font-bold text-amber-900">
                 {results.totalPerYear.toLocaleString()} {results.currency}
               </div>
             </div>
@@ -171,7 +171,7 @@ const FinancialCalculator = () => {
             <div className="bg-white p-4 rounded-lg">
               <div className="flex items-center mb-2">
                 <PiggyBank className="w-5 h-5 text-secondary-600 mr-2" />
-                <span className="text-sm font-medium text-gray-600">
+                <span className="text-sm font-medium text-amber-700">
                   Total Course Cost
                 </span>
               </div>
@@ -191,7 +191,7 @@ const FinancialCalculator = () => {
           </div>
 
           <div className="mt-4 text-center">
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-amber-700">
               *These are estimated costs. Actual expenses may vary based on
               university, lifestyle, and location.
             </p>

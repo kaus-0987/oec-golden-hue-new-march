@@ -283,7 +283,7 @@ const LiveReadingExam = ({ examData }) => {
   }, [uniqueIdArr, examAnswer]);
 
   return (
-    <div className="bg-gray-50 font-sans antialiased text-gray-800 min-h-screen">
+    <div className="bg-gray-50 font-sans antialiased text-amber-900 min-h-screen">
       <div className="mx-auto p-4 mt-24 sm:p-6 lg:p-8">
         <main
           className="grid grid-cols-1 lg:grid-cols-2 gap-6"

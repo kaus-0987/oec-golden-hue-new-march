@@ -101,18 +101,18 @@ const Blogs = () => {
 
   return (
     <div className="bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Study Abroad Blogs
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Expert advice, guides, and latest updates for your international
             education journey
           </p>
           <div className="mt-8 max-w-2xl mx-auto">
             <div className="relative">
-              <Search className="absolute left-4 top-3.5 h-5 w-5 text-secondary-500" />
+              <Search className="absolute left-4 top-3.5 h-5 w-5 text-white" />
               <input
                 type="search"
                 placeholder="Search articles..."
@@ -129,7 +129,7 @@ const Blogs = () => {
                   aria-pressed={viewMode === "grid"}
                   className={`p-2 rounded-full ${
                     viewMode === "grid"
-                      ? "bg-white text-secondary-500"
+                      ? "bg-white text-white"
                       : "text-white hover:text-white/80"
                   }`}
                   aria-label="Grid view"
@@ -141,7 +141,7 @@ const Blogs = () => {
                   aria-pressed={viewMode === "list"}
                   className={`p-2 rounded-full ${
                     viewMode === "list"
-                      ? "bg-white text-secondary-500"
+                      ? "bg-white text-white"
                       : "text-white hover:text-white/80"
                   }`}
                   aria-label="List view"
@@ -162,8 +162,8 @@ const Blogs = () => {
                 aria-pressed={selectedCategory === "all"}
                 className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                   selectedCategory === "all"
-                    ? "bg-primary-800 text-white"
-                    : "bg-white text-primary-800 hover:bg-primary-100 border border-primary-800"
+                    ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                    : "bg-white text-amber-900 hover:bg-primary-100 border border-primary-800"
                 }`}
               >
                 All Categories
@@ -175,8 +175,8 @@ const Blogs = () => {
                   aria-pressed={selectedCategory === category.name}
                   className={`px-4 py-2 rounded-full text-sm font-medium ${
                     selectedCategory === category.name
-                      ? "bg-primary-800 text-white"
-                      : "bg-white text-primary-800 hover:bg-primary-100 border border-primary-800"
+                      ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                      : "bg-white text-amber-900 hover:bg-primary-100 border border-primary-800"
                   }`}
                 >
                   {category.name}
@@ -260,7 +260,7 @@ const Blogs = () => {
                 <button
                   type="button"
                   onClick={handleResetFilters}
-                  className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary-800 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                  className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                 >
                   Reset Filters
                 </button>
@@ -295,12 +295,12 @@ const Blogs = () => {
                         </Link>
                       </div>
                       <div className="p-6 flex-grow flex flex-col">
-                        <p className="text-sm font-semibold text-secondary-500">
+                        <p className="text-sm font-semibold text-white">
                           <span itemProp="articleSection">
                             {article.category_name}
                           </span>
                         </p>
-                        <h3 className="mt-2 text-lg font-bold text-gray-900 group-hover:text-primary-800 transition-colors">
+                        <h3 className="mt-2 text-lg font-bold text-gray-900 group-hover:text-amber-900 transition-colors">
                           <Link
                             href={`/blog/${article.slug}`}
                             className="line-clamp-2"
@@ -310,7 +310,7 @@ const Blogs = () => {
                           </Link>
                         </h3>
                         <p
-                          className="mt-3 text-sm text-gray-600 line-clamp-3 flex-grow"
+                          className="mt-3 text-sm text-amber-700 line-clamp-3 flex-grow"
                           itemProp="description"
                         >
                           {article.excerpt}
@@ -324,11 +324,11 @@ const Blogs = () => {
                             itemScope
                             itemType="https://schema.org/Person"
                           >
-                            <User className="h-4 w-4 text-secondary-500" />
+                            <User className="h-4 w-4 text-white" />
                             <span itemProp="name">{article.author_name}</span>
                           </div>
                           <div className="flex items-center gap-1.5">
-                            <Calendar className="h-4 w-4 text-secondary-500" />
+                            <Calendar className="h-4 w-4 text-white" />
                             <time
                               dateTime={moment(article.published_at).format(
                                 "YYYY-MM-DD"
@@ -341,13 +341,13 @@ const Blogs = () => {
                             </time>
                           </div>
                           <div className="flex items-center gap-1.5">
-                            <Clock className="h-4 w-4 text-secondary-500" />
+                            <Clock className="h-4 w-4 text-white" />
                             {article.reading_time} min read
                           </div>
                         </div>
                         <Link
                           href={`/blog/${article.slug}`}
-                          className="mt-4 inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-primary-800"
+                          className="mt-4 inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-amber-900"
                           aria-label={`Read more about ${article.title}`}
                         >
                           Read More
@@ -380,18 +380,18 @@ const Blogs = () => {
                         </Link>
                       </div>
                       <div className="p-6 md:col-span-2">
-                        <p className="text-sm font-semibold text-secondary-500">
+                        <p className="text-sm font-semibold text-white">
                           <span itemProp="articleSection">
                             {article.category_name}
                           </span>
                         </p>
-                        <h2 className="mt-2 text-xl font-bold text-gray-900 group-hover:text-primary-800 transition-colors">
+                        <h2 className="mt-2 text-xl font-bold text-gray-900 group-hover:text-amber-900 transition-colors">
                           <Link href={`/blog/${article.slug}`} itemProp="url">
                             <span itemProp="headline">{article.title}</span>
                           </Link>
                         </h2>
                         <p
-                          className="mt-3 text-base text-gray-600"
+                          className="mt-3 text-base text-amber-700"
                           itemProp="description"
                         >
                           {article.excerpt}
@@ -404,11 +404,11 @@ const Blogs = () => {
                               itemScope
                               itemType="https://schema.org/Person"
                             >
-                              <User className="h-4 w-4 text-secondary-500" />
+                              <User className="h-4 w-4 text-white" />
                               <span itemProp="name">{article.author_name}</span>
                             </div>
                             <div className="flex items-center gap-1.5">
-                              <Calendar className="h-4 w-4 text-secondary-500" />
+                              <Calendar className="h-4 w-4 text-white" />
                               <time
                                 dateTime={moment(article.published_at).format(
                                   "YYYY-MM-DD"
@@ -421,13 +421,13 @@ const Blogs = () => {
                               </time>
                             </div>
                             <div className="flex items-center gap-1.5">
-                              <Clock className="h-4 w-4 text-secondary-500" />
+                              <Clock className="h-4 w-4 text-white" />
                               {article.reading_time} min read
                             </div>
                           </div>
                           <Link
                             href={`/blog/${article.slug}`}
-                            className="font-semibold text-primary-600 inline-flex items-center gap-1 hover:text-primary-800 whitespace-nowrap"
+                            className="font-semibold text-primary-600 inline-flex items-center gap-1 hover:text-amber-900 whitespace-nowrap"
                             aria-label={`Read more about ${article.title}`}
                           >
                             Read More{" "}
@@ -464,7 +464,7 @@ const Blogs = () => {
                           }
                           className={`w-10 h-10 rounded-md text-sm font-medium transition-colors ${
                             currentPage === page
-                              ? "bg-primary-800 text-white"
+                              ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                               : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
                           }`}
                           aria-label={`Go to page ${page}`}

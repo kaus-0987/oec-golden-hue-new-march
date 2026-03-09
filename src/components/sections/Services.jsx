@@ -85,11 +85,11 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2
             id="services-heading"
-            className="text-4xl font-bold text-primary-800 mb-4"
+            className="text-4xl font-bold text-amber-900 mb-4"
           >
             Comprehensive Support for Your Study Abroad Journey
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-amber-700 max-w-3xl mx-auto">
             From university selection to graduation support, we're with you
             every step of the way
           </p>
@@ -109,7 +109,7 @@ const Services = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <p className="text-amber-700 mb-4">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <li
@@ -125,7 +125,7 @@ const Services = () => {
                 <div className="px-6 pb-6">
                   <Link
                     href="/services"
-                    className="text-primary-800 font-medium hover:text-primary-500 inline-flex items-center"
+                    className="text-amber-900 font-medium hover:text-primary-500 inline-flex items-center"
                     aria-label={`Learn more about ${service.title}`}
                   >
                     Learn more
@@ -153,7 +153,7 @@ const Services = () => {
         <div className="text-center mt-12">
           <Link
             href="/services"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-800 hover:opacity-90 transition-opacity"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:opacity-90 transition-opacity"
             aria-label="View all services"
           >
             View All Services

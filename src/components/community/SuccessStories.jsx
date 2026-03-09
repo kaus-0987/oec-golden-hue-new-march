@@ -48,10 +48,10 @@ const SuccessStories = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h3 className="text-3xl font-bold text-primary-800 mb-4">
+        <h3 className="text-3xl font-bold text-amber-900 mb-4">
           OEC Success Stories
         </h3>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-amber-700 max-w-2xl mx-auto">
           Discover how our students transformed their dreams into reality with
           our guidance and support
         </p>
@@ -84,7 +84,7 @@ const SuccessStories = () => {
                         <h4 className="font-semibold text-lg">
                           {testimonial.name}
                         </h4>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-amber-700 text-sm">
                           {testimonial.designation}
                         </p>
                         <p className="text-gray-500 text-xs">
@@ -111,15 +111,15 @@ const SuccessStories = () => {
               ))}
           </div>
 
-          <div className="bg-primary-800 text-white p-8 rounded-xl text-center">
+          <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white p-8 rounded-xl text-center">
             <h3 className="text-2xl font-bold mb-4">
               Want to Share Your Success Story?
             </h3>
-            <p className="mb-6 text-secondary-500 opacity-90">
+            <p className="mb-6 text-white opacity-90">
               Inspire future students by sharing your journey with the OEC
               community
             </p>
-            <button className="bg-white text-primary-600 hover:text-primary-800 px-6 py-3 rounded-lg font-semibold transition-colors">
+            <button className="bg-white text-primary-600 hover:text-amber-900 px-6 py-3 rounded-lg font-semibold transition-colors">
               Share My Story
             </button>
           </div>

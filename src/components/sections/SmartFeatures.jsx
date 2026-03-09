@@ -58,11 +58,11 @@ const SmartFeatures = () => {
         <div className="text-center mb-16">
           <h2
             id="services-heading"
-            className="text-3xl sm:text-4xl font-bold text-primary-800 mb-4"
+            className="text-3xl sm:text-4xl font-bold text-amber-900 mb-4"
           >
             All-Tech For Studying Abroad
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-7xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-amber-700 max-w-7xl mx-auto px-4">
             We have smart features to help you throughout your abroad education
             journey
           </p>
@@ -83,10 +83,10 @@ const SmartFeatures = () => {
                 className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-all duration-300 group cursor-pointer h-full flex flex-col border border-gray-200 hover:border-primary-600 hover:ring-1 hover:ring-primary-600"
               >
                 <div className="p-6 flex-grow">
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-800 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-amber-900 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base mb-4">
+                  <p className="text-amber-700 text-sm sm:text-base mb-4">
                     {service.description}
                   </p>
                 </div>

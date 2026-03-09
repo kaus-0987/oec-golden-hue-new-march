@@ -39,10 +39,10 @@ const QuickCoursePreview = ({ filters }) => {
   return (
     <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-6 mb-6 border border-primary-100">
       <div className="text-center mb-6">
-        <h3 className="text-lg font-semibold text-primary-800 mb-2">
+        <h3 className="text-lg font-semibold text-amber-900 mb-2">
           Quick Preview: Popular {filters.field.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())} Courses
         </h3>
-        <p className="text-gray-600 text-sm">
+        <p className="text-amber-700 text-sm">
           Here's what you might find while we generate personalized recommendations...
         </p>
       </div>
@@ -57,13 +57,13 @@ const QuickCoursePreview = ({ filters }) => {
             className="bg-white rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow"
           >
             <div className="flex items-start justify-between mb-3">
-              <h4 className="font-medium text-gray-800 text-sm leading-tight flex-1">
+              <h4 className="font-medium text-amber-900 text-sm leading-tight flex-1">
                 {course.name}
               </h4>
               <span className="text-xl ml-2">{course.country.flag}</span>
             </div>
             
-            <div className="space-y-2 text-xs text-gray-600">
+            <div className="space-y-2 text-xs text-amber-700">
               <div className="flex items-center gap-2">
                 <Clock className="w-3 h-3" />
                 <span>{course.duration}</span>

@@ -169,12 +169,12 @@ const AICollegeFinder = () => {
 
   return (
     <div className="bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Find Your Perfect Course
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Discover programs that match your academic goals and career
             aspirations
           </p>
@@ -226,7 +226,7 @@ const AICollegeFinder = () => {
                 </div>
               ) : currentCourses.length === 0 ? (
                 <div className="col-span-full text-center py-16">
-                  <div className="bg-primary-50 border border-primary-200 text-primary-800 px-4 py-3 rounded-lg max-w-2xl mx-auto">
+                  <div className="bg-primary-50 border border-primary-200 text-amber-900 px-4 py-3 rounded-lg max-w-2xl mx-auto">
                     <h3 className="font-bold text-lg mb-1">No Courses Found</h3>
                     <p>Try adjusting your filters or search term</p>
                   </div>

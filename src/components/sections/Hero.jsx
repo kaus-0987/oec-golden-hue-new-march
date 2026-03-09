@@ -27,7 +27,7 @@ const Hero = () => {
               title: "Craft Your Own Future",
               subtitle: "We Bridge Your Ambition with a World-Class Education",
               description:
-                "<p>Imagine a future without boundaries. At OEC India, we believe in the power of your dreams. As your dedicated overseas education partner, we provide personalized counseling and unwavering support to connect you with the perfect course and university abroad. Let us transform your aspirations into an international reality. The world is waiting for you.</p>",
+                "<p>Imagine a future without boundaries. At OEC Dubai, we believe in the power of your dreams. As your dedicated overseas education partner, we provide personalized counseling and unwavering support to connect you with the perfect course and university abroad. Let us transform your aspirations into an international reality. The world is waiting for you.</p>",
               background_image:
                 "https://sweekarme.in/media/about/hero/about-us-2_tNVk7YA.jpg",
               cta_text: "Contact us Today",
@@ -39,7 +39,7 @@ const Hero = () => {
               title: "Your Journey to a Global Future Starts Here",
               subtitle: "Expert Guidance for Your Overseas Education Dream",
               description:
-                "<p>OEC India is your trusted partner in turning your study abroad aspirations into reality. For over two decades, we have been the one-stop solution for students across India, offering comprehensive and personalized counseling for top universities in the UK, USA, Canada, Australia, and New Zealand. From course and university selection to visa assistance and pre-departure briefings, our experienced counselors are dedicated to guiding you at every step. Begin your global education journey with confidence.</p>",
+                "<p>OEC Dubai is your trusted partner in turning your study abroad aspirations into reality. For over two decades, we have been the one-stop solution for students across India, offering comprehensive and personalized counseling for top universities in the UK, USA, Canada, Australia, and New Zealand. From course and university selection to visa assistance and pre-departure briefings, our experienced counselors are dedicated to guiding you at every step. Begin your global education journey with confidence.</p>",
               background_image:
                 "https://sweekarme.in/media/about/hero/about-us-2_tNVk7YA.jpg",
               cta_text: "Contact us Today",
@@ -102,7 +102,7 @@ const Hero = () => {
               {currentHero.title}
             </h1>
 
-            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-secondary-500 font-medium px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-medium px-2">
               {currentHero.subtitle}
             </h2>
 
@@ -116,7 +116,7 @@ const Hero = () => {
             {currentHero.cta_link ? (
               <Link
                 href={currentHero.cta_link}
-                className="inline-flex items-center gap-2 bg-primary-800 hover:bg-primary-600 text-white px-4 py-2.5 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base md:text-lg shadow-lg"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white px-4 py-2.5 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base md:text-lg shadow-lg"
               >
                 {currentHero.cta_text}
                 <ArrowRight size={18} className="sm:w-5 sm:h-5" aria-hidden="true" />
@@ -124,7 +124,7 @@ const Hero = () => {
             ) : (
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 bg-primary-800 hover:bg-primary-600 text-white px-4 py-2.5 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base md:text-lg shadow-lg"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 text-white px-4 py-2.5 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base md:text-lg shadow-lg"
               >
                 {currentHero.cta_text}
                 <ArrowRight size={18} className="sm:w-5 sm:h-5" aria-hidden="true" />

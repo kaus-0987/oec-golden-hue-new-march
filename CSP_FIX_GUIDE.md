@@ -2,7 +2,7 @@
 
 ## Issue Description
 
-**Error:** Blank page at `oecindia.netlify.app/oeccrm` with CSP violation:
+**Error:** Blank page at `oecdubai.netlify.app/oeccrm` with CSP violation:
 ```
 The Content Security Policy (CSP) prevents the evaluation of arbitrary strings as JavaScript
 script-src blocked
@@ -102,7 +102,7 @@ For better security, consider:
 1. **Rebuild CRM:** Use a build process that doesn't require eval
 2. **Nonce-based CSP:** Generate unique nonces for each script
 3. **Hash-based CSP:** Use SHA hashes for specific inline scripts
-4. **Separate Subdomain:** Host CRM on `crm.oecindia.com` with different CSP
+4. **Separate Subdomain:** Host CRM on `crm.oecdubai.com` with different CSP
 
 ## Testing CSP Configuration
 
@@ -164,9 +164,9 @@ The CSP is scoped only to CRM routes. If main site has issues:
 
 After deployment, verify:
 
-- ✅ Main site loads normally at `oecindia.netlify.app`
-- ✅ CRM launcher loads at `oecindia.netlify.app/oeccrm`
-- ✅ CRM application loads at `oecindia.netlify.app/crm/login`
+- ✅ Main site loads normally at `oecdubai.netlify.app`
+- ✅ CRM launcher loads at `oecdubai.netlify.app/oeccrm`
+- ✅ CRM application loads at `oecdubai.netlify.app/crm/login`
 - ✅ No CSP violations in browser console
 - ✅ CRM functionality works (buttons, forms, navigation)
 - ✅ No 404 errors on CRM assets

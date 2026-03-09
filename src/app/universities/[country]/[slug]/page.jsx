@@ -39,7 +39,7 @@ export const generateMetadata = async ({ params }) => {
             height: 600,
           },
         ],
-        siteName: "OEC India",
+        siteName: "OEC Dubai",
         locale: "en_US",
         type: "website",
       },
@@ -60,9 +60,9 @@ export const generateMetadata = async ({ params }) => {
   } catch (error) {
     console.log("error", error);
     return {
-      title: "Top Universities Abroad - Partner Institutions | OEC India",
+      title: "Top Universities Abroad - Partner Institutions | OEC Dubai",
       description:
-        "Discover the best global universities partnered with OEC India for admissions in the UK, USA, Canada, Australia & Europe.",
+        "Discover the best global universities partnered with OEC Dubai for admissions in the UK, USA, Canada, Australia & Europe.",
     };
   }
 };

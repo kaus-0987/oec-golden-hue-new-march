@@ -2,36 +2,36 @@ import React from "react";
 import { Handshake, ShieldCheck, Clock, GraduationCap } from "lucide-react";
 
 export const metadata = {
-  title: "About OEC India - Trusted Study Abroad Consultants Since 2010",
+  title: "About OEC Dubai - Trusted Study Abroad Consultants Since 2010",
   description:
-    "Learn about OEC India’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
+    "Learn about OEC Dubai’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
   openGraph: {
-    title: "About OEC India - Trusted Study Abroad Consultants Since 2010",
+    title: "About OEC Dubai - Trusted Study Abroad Consultants Since 2010",
     description:
-      "Learn about OEC India’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
+      "Learn about OEC Dubai’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
     images: [
       {
-        url: "https://oecindia.com/oec.png",
+        url: "https://oecdubai.com/oec.png",
         width: 800,
         height: 600,
-        alt: "OEC India",
+        alt: "OEC Dubai",
       },
     ],
-    siteName: "OEC India",
+    siteName: "OEC Dubai",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About OEC India - Trusted Study Abroad Consultants Since 2010",
+    title: "About OEC Dubai - Trusted Study Abroad Consultants Since 2010",
     description:
-      "Learn about OEC India’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
+      "Learn about OEC Dubai’s mission, team, and success stories. We are a leading overseas education consultancy helping students study in top global universities.",
     images: [
       {
-        url: "https://oecindia.com/oec.png",
+        url: "https://oecdubai.com/oec.png",
         width: 800,
         height: 600,
-        alt: "OEC India",
+        alt: "OEC Dubai",
       },
     ],
   },
@@ -40,12 +40,12 @@ export const metadata = {
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About OEC India
+            About OEC Dubai
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Your trusted partner in international education with a decade of
             expertise, 2,000+ successful placements, and an unwavering
             commitment to student success.
@@ -58,24 +58,24 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-3 gap-8 lg:gap-16">
             <main className="md:col-span-2">
               <article>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
                   Our Story
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-amber-700 leading-relaxed mb-6">
                   Overseas Education Center (OEC) was established with the core objective of helping students in achieving their dreams of overseas education. Since conception in 2003, we have worked to develop our expertise for overseas education and visa formalities. Over the years we have also created a robust network with leading institutions worldwide that gives us the ability to provide better education services to our students.
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-amber-700 leading-relaxed mb-6">
                   OEC was founded by Mr Jagat Patel, a graduate of Webster University from the United Kingdom. He is a well-known personality in the education industry in the South Asia region. Before he founded OEC, Mr Jagat Patel spent many years working with the University of Bedfordshire Regional Representatives Office (South-West India). He has an unparalleled knowledge of overseas education and the challenges involved.
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-amber-700 leading-relaxed mb-6">
                   Apart from his work at OEC, Mr Jagat Patel is also involved in managing the India office for Bath Spa University as the Regional Director. A sister concern of OEC manages the Regional setup for leading Australian and UK universities.
                 </p>
 
                 <section className="mt-12">
-                  <h3 className="text-2xl font-bold text-gray-700 mb-4">
-                    Why We Started OEC India
+                  <h3 className="text-2xl font-bold text-amber-900 mb-4">
+                    Why We Started OEC Dubai
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-amber-700 leading-relaxed mb-6">
                     Every year, thousands of talented Indian students dream of
                     studying abroad but face numerous challenges: information
                     overload, hidden costs, unreliable guidance, and lack of
@@ -83,8 +83,8 @@ const AboutUs = () => {
                     costly mistakes or miss opportunities simply because they
                     didn't have access to the right guidance at the right time.
                   </p>
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    OEC India was born to bridge this gap. We believe that every
+                  <p className="text-amber-700 leading-relaxed mb-6">
+                    OEC Dubai was born to bridge this gap. We believe that every
                     student deserves transparent, expert guidance that puts
                     their interests first. Our approach goes beyond just
                     securing admissions - we're committed to ensuring long-term
@@ -94,10 +94,10 @@ const AboutUs = () => {
                 </section>
 
                 <section className="mt-12">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
                     Our Mission
                   </h2>
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-amber-700 leading-relaxed mb-6">
                     To empower Indian students with the knowledge, guidance, and
                     support they need to achieve their international education
                     dreams while ensuring they make informed decisions that
@@ -106,10 +106,10 @@ const AboutUs = () => {
                 </section>
 
                 <section className="mt-12">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                  <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-4">
                     Our Values
                   </h2>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 text-amber-700">
                     {[
                       "Transparency: No hidden costs, no false promises - just honest, clear guidance",
                       "Expertise: Continuous learning and deep knowledge of international education systems",
@@ -126,10 +126,10 @@ const AboutUs = () => {
                 </section>
 
                 <section className="mt-12">
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                  <h2 className="text-3xl md:text-4xl font-bold text-amber-900 mb-6">
                     Our Track Record
                   </h2>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 text-amber-700">
                     {[
                       "20,000+ students successfully placed in top universities worldwide",
                       "95% visa success rate across all countries",
@@ -138,7 +138,7 @@ const AboutUs = () => {
                       "98% student satisfaction rate",
                     ].map((item, index) => (
                       <li key={index} className="flex items-center">
-                        <span className="text-green-500 mr-2">✓</span> {item}
+                        <span className="text-amber-900 mr-2">✓</span> {item}
                       </li>
                     ))}
                   </ul>
@@ -148,7 +148,7 @@ const AboutUs = () => {
 
             <aside className="bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200">
               <section>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold text-amber-900 mb-4">
                   Quick Facts
                 </h3>
                 <ul className="divide-y divide-gray-200">
@@ -169,10 +169,10 @@ const AboutUs = () => {
               </section>
 
               <section className="mt-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold text-amber-900 mb-4">
                   Certifications
                 </h3>
-                <ul className="divide-y divide-gray-200 text-primary-700">
+                <ul className="divide-y divide-gray-200 text-black">
                   {[
                     "ICEF Agency Certified",
                     "British Council Trained",
@@ -188,10 +188,10 @@ const AboutUs = () => {
               </section>
 
               <section className="mt-8">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold text-amber-900 mb-4">
                   Awards & Recognition
                 </h3>
-                <ul className="divide-y divide-gray-200 text-primary-700">
+                <ul className="divide-y divide-gray-200 text-black">
                   {[
                     "Best Education Consultant 2023",
                     "Student Choice Award 2022",
@@ -212,10 +212,10 @@ const AboutUs = () => {
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-900">
               Meet Our Expert Team
             </h2>
-            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+            <p className="text-amber-700 mt-2 max-w-2xl mx-auto">
               Our diverse team of education experts, former admissions officers,
               and industry veterans are here to guide your journey
             </p>
@@ -235,7 +235,7 @@ const AboutUs = () => {
                 initials: "NP",
                 name: "Neha Parmar",
                 role: "OEC Global Manager",
-                bio: "With a deep understanding of the global education landscape, Neha is committed to empowering students to achieve their academic goals. Her leadership is instrumental in driving the mission of oecindia.com, connecting students with world-class educational opportunities and paving the way for their future success.",
+                bio: "With a deep understanding of the global education landscape, Neha is committed to empowering students to achieve their academic goals. Her leadership is instrumental in driving the mission of oecdubai.com, connecting students with world-class educational opportunities and paving the way for their future success.",
                 expertise: "UK Universities, European Programs, Visa Guidance",
               },
               {
@@ -281,13 +281,13 @@ const AboutUs = () => {
                 >
                   {member.initials}
                 </div>
-                <h3 className="text-xl lg:text-2xl font-bold text-gray-800 text-center">
+                <h3 className="text-xl lg:text-2xl font-bold text-amber-900 text-center">
                   {member.name}
                 </h3>
-                <p className="text-primary-600 font-semibold text-center mb-4">
+                <p className="text-amber-500 font-semibold text-center mb-4">
                   {member.role}
                 </p>
-                <p className="text-gray-600 mb-4 text-sm lg:text-base">
+                <p className="text-amber-700 mb-4 text-sm lg:text-base">
                   {member.bio}
                 </p>
                 <div className="bg-gray-100 p-3 rounded-lg border-l-4 border-primary-600">
@@ -304,11 +304,11 @@ const AboutUs = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <header className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-900">
               Our Commitment to You
             </h2>
-            <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-              When you choose OEC India, you're not just getting a consultant -
+            <p className="text-amber-700 mt-2 max-w-2xl mx-auto">
+              When you choose OEC Dubai, you're not just getting a consultant -
               you're getting a partner committed to your success
             </p>
           </header>
@@ -347,10 +347,10 @@ const AboutUs = () => {
                 <div className="w-16 h-16 bg-secondary-500 rounded-lg flex items-center justify-center text-white mb-6">
                   <item.icon size={24} aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                <h3 className="text-xl font-bold text-amber-900 mb-4">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-amber-700">{item.description}</p>
               </article>
             ))}
           </div>

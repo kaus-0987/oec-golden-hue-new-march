@@ -17,8 +17,8 @@ export const generateMetadata = async ({ params }) => {
 
   if (!country) {
     return {
-      title: "Country Not Found | OEC India",
-      description: "The requested country was not found on OEC India.",
+      title: "Country Not Found | OEC Dubai",
+      description: "The requested country was not found on OEC Dubai.",
     };
   }
 
@@ -30,8 +30,8 @@ export const generateMetadata = async ({ params }) => {
       }
     );
     const countryData = country.results.find((c) => c.name === normalCountry);
-    const meta_title = `Study in ${countryData?.name} - Top Universities & Visa Guidance | OEC India`;
-    const meta_description = `Get expert advice on studying in the ${countryData?.meta_description} including top universities, courses, scholarships, and student visa requirements with OEC India.`;
+    const meta_title = `Study in ${countryData?.name} - Top Universities & Visa Guidance | OEC Dubai`;
+    const meta_description = `Get expert advice on studying in the ${countryData?.meta_description} including top universities, courses, scholarships, and student visa requirements with OEC Dubai.`;
 
     return {
       title: meta_title,
@@ -47,7 +47,7 @@ export const generateMetadata = async ({ params }) => {
             height: 600,
           },
         ],
-        siteName: "OEC India",
+        siteName: "OEC Dubai",
         locale: "en_US",
         type: "website",
       },
@@ -68,9 +68,9 @@ export const generateMetadata = async ({ params }) => {
   } catch (error) {
     console.log("error", error);
     return {
-      title: "Study Abroad with OEC India",
+      title: "Study Abroad with OEC Dubai",
       description:
-        "Explore guides, tips, and expert advice for studying abroad with OEC India.",
+        "Explore guides, tips, and expert advice for studying abroad with OEC Dubai.",
     };
   }
 };

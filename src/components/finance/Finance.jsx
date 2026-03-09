@@ -195,7 +195,7 @@ export const CalculatorCard = ({
         <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
           <Icon className="w-6 h-6 text-primary-600" />
         </div>
-        <h3 className="text-xl font-bold text-primary-800">{title}</h3>
+        <h3 className="text-xl font-bold text-amber-900">{title}</h3>
       </div>
     </div>
     <div className="p-6">{children}</div>
@@ -230,7 +230,7 @@ const ExpandableSection = ({ title, children, defaultOpen = false }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 text-left bg-primary-50 hover:bg-primary-100 transition-colors flex items-center justify-between"
       >
-        <h3 className="text-lg font-semibold text-primary-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-amber-900">{title}</h3>
         <ChevronDown
           className={`w-5 h-5 text-primary-600 transition-transform ${
             isOpen ? "rotate-180" : ""
@@ -244,7 +244,7 @@ const ExpandableSection = ({ title, children, defaultOpen = false }) => {
 
 const financeTipsData = [
   {
-    icon: <PiggyBank className="w-8 h-8 text-secondary-500" />,
+    icon: <PiggyBank className="w-8 h-8 text-white" />,
     title: "Start Early",
     description:
       "Begin financial planning 2-3 years before your intended start date for better preparation.",
@@ -256,7 +256,7 @@ const financeTipsData = [
       "Calculate costs for different countries and courses to compare your options effectively.",
   },
   {
-    icon: <Award className="w-8 h-8 text-secondary-500" />,
+    icon: <Award className="w-8 h-8 text-white" />,
     title: "Explore Scholarships",
     description:
       "Always factor in potential scholarships and part-time work to reduce your financial burden.",
@@ -302,12 +302,12 @@ const Finance = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 mb-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 mb-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Financial Calculators
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Make informed financial decisions with our comprehensive suite of
             calculators designed specifically for study abroad planning.
           </p>
@@ -316,10 +316,10 @@ const Finance = () => {
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-primary-800 mb-4">
+          <h2 className="text-3xl font-bold text-amber-900 mb-4">
             Choose Your Calculator
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-amber-700 max-w-2xl mx-auto">
             Select from our comprehensive range of financial calculators to plan
             your study abroad budget effectively
           </p>
@@ -331,12 +331,12 @@ const Finance = () => {
               key={index}
               className={`flex items-center px-4 py-2 rounded-full transition-all duration-300 text-sm ${
                 activeCalculator === calc.id
-                  ? "bg-primary-800 text-white"
-                  : "bg-white text-primary-800 border border-primary-800 shadow"
+                  ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                  : "bg-white text-amber-900 border border-primary-800 shadow"
               }`}
               onClick={() => setActiveCalculator(calc.id)}
             >
-              <calc.icon className="w-4 h-4 mr-2 text-secondary-500" />
+              <calc.icon className="w-4 h-4 mr-2 text-white" />
               {calc.name}
             </button>
           ))}
@@ -367,7 +367,7 @@ const Finance = () => {
                   {tip.icon}
                 </div>
                 <h4 className="font-semibold mb-2">{tip.title}</h4>
-                <p className="text-gray-600 text-sm">{tip.description}</p>
+                <p className="text-amber-700 text-sm">{tip.description}</p>
               </div>
             ))}
           </div>
@@ -392,12 +392,12 @@ const Finance = () => {
                 className="text-center p-6 bg-white rounded-xl shadow-sm"
               >
                 <div className="text-primary-600 mb-3 flex justify-center">
-                  <stat.icon className="w-8 h-8 text-secondary-500" />
+                  <stat.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-primary-800 mb-2">
+                <div className="text-3xl font-bold text-amber-900 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-amber-700">{stat.label}</div>
               </div>
             ))}
           </div>

@@ -28,7 +28,7 @@ const NewsCard = ({ article }) => (
     )}
     <div className="p-4 flex-grow">
       <h3 className="font-bold text-lg mb-2 line-clamp-2">{article.title}</h3>
-      <p className="text-gray-600 text-sm mb-3 line-clamp-3">
+      <p className="text-amber-700 text-sm mb-3 line-clamp-3">
         {article.description}
       </p>
       <div className="flex items-center justify-between text-xs text-gray-500 mt-auto">
@@ -40,7 +40,7 @@ const NewsCard = ({ article }) => (
       href={article.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block p-4 text-primary-600 hover:text-primary-800 text-sm font-medium border-t border-gray-100"
+      className="block p-4 text-primary-600 hover:text-amber-900 text-sm font-medium border-t border-gray-100"
     >
       Read More →
     </a>
@@ -122,7 +122,7 @@ const News = ({ activeTab, countryData }) => {
           onClick={() => handlePageChange(i)}
           className={`px-3 py-1 rounded-md ${
             currentPage === i
-              ? "bg-primary-800 text-white"
+              ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
               : "bg-white text-gray-700 hover:bg-gray-100"
           }`}
         >
@@ -176,7 +176,7 @@ const News = ({ activeTab, countryData }) => {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-primary-800 mb-6">
+      <h2 className="text-2xl font-bold text-amber-900 mb-6">
         Latest Education News from {countryData?.name || ""}
       </h2>
 

@@ -10,8 +10,8 @@ const ViewModeToggle = ({ viewMode, onViewModeChange }) => {
           onClick={() => onViewModeChange(mode)}
           className={`p-2 rounded-lg flex items-center ${
             viewMode === mode
-              ? "bg-white text-secondary-500 shadow-sm"
-              : "text-gray-600 hover:bg-gray-200"
+              ? "bg-white text-white shadow-sm"
+              : "text-amber-700 hover:bg-gray-200"
           }`}
           aria-label={`${mode} view`}
         >

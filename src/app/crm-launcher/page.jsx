@@ -68,7 +68,7 @@ export default function CRMPage() {
             <div className="bg-gradient-to-r from-primary-800 to-primary-600 px-8 py-6">
               <div className="flex items-center justify-center mb-4">
                 <div className="bg-white rounded-full p-3">
-                  <Settings className="h-8 w-8 text-primary-800" />
+                  <Settings className="h-8 w-8 text-amber-900" />
                 </div>
               </div>
               <h2 className="text-3xl font-bold text-white mb-2">CRM Setup Required</h2>
@@ -79,32 +79,32 @@ export default function CRMPage() {
             
             <div className="p-8">
               <div className="bg-blue-50 rounded-xl p-6 mb-6">
-                <h3 className="font-bold text-primary-800 mb-4 flex items-center">
+                <h3 className="font-bold text-amber-900 mb-4 flex items-center">
                   <Rocket className="h-5 w-5 mr-2" />
                   Quick Setup Guide
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary-800 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
+                    <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
                     <div>
-                      <strong className="text-gray-800">Build your React CRM:</strong>
+                      <strong className="text-amber-900">Build your React CRM:</strong>
                       <code className="block bg-gray-100 p-3 mt-2 rounded-lg text-sm font-mono">npm run build</code>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary-800 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
+                    <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
                     <div>
-                      <strong className="text-gray-800">Deploy to OEC:</strong>
+                      <strong className="text-amber-900">Deploy to OEC:</strong>
                       <code className="block bg-gray-100 p-3 mt-2 rounded-lg text-sm font-mono">npm run deploy-crm [build-directory]</code>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <div className="bg-primary-800 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
+                    <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
                     <div>
-                      <strong className="text-gray-800">Access your CRM:</strong>
-                      <p className="text-gray-600 mt-1">Visit this page again and your CRM will open automatically!</p>
+                      <strong className="text-amber-900">Access your CRM:</strong>
+                      <p className="text-amber-700 mt-1">Visit this page again and your CRM will open automatically!</p>
                     </div>
                   </div>
                 </div>
@@ -155,14 +155,14 @@ export default function CRMPage() {
             <div className="bg-green-100 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
               <ExternalLink className="h-10 w-10 text-green-600" />
             </div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">CRM Window Opened!</h1>
-            <p className="text-gray-600 text-lg">
+            <h1 className="text-3xl font-bold text-amber-900 mb-2">CRM Window Opened!</h1>
+            <p className="text-amber-700 text-lg">
               Your OEC CRM has been launched in a new browser window.
             </p>
           </div>
 
           <div className="bg-blue-50 rounded-xl p-6 mb-6">
-            <h3 className="font-semibold text-primary-800 mb-3">Can't see the CRM window?</h3>
+            <h3 className="font-semibold text-amber-900 mb-3">Can't see the CRM window?</h3>
             <ul className="text-left space-y-2 text-gray-700 text-sm">
               <li>• Check if pop-ups are blocked in your browser</li>
               <li>• Look for a new tab or window in your browser</li>
@@ -173,7 +173,7 @@ export default function CRMPage() {
           <div className="space-y-4">
             <button
               onClick={openCRMWindow}
-              className="inline-flex items-center gap-2 bg-primary-800 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               <ExternalLink className="h-5 w-5" />
               Open CRM Window
@@ -184,7 +184,7 @@ export default function CRMPage() {
                 href={`${typeof window !== 'undefined' ? window.location.origin : ''}/crm/login`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-600 hover:text-primary-800 text-sm font-medium inline-flex items-center gap-1"
+                className="text-primary-600 hover:text-amber-900 text-sm font-medium inline-flex items-center gap-1"
               >
                 <ExternalLink className="h-4 w-4" />
                 Or open CRM directly

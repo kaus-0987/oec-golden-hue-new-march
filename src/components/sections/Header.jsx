@@ -177,7 +177,7 @@ const Header = () => {
         isScrolled ? "bg-gray-100 shadow-lg" : "bg-white"
       }`}
     >
-      <div className="bg-primary-800 text-white py-2 px-4 text-sm">
+      <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white py-2 px-4 text-sm">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 md:gap-6">
             <Link
@@ -188,11 +188,11 @@ const Header = () => {
               <span>+91 93275 81167</span>
             </Link>
             <Link
-              href="mailto:uk@oecindia.com"
+              href="mailto:uk@oecdubai.com"
               className="flex items-center gap-2 hover:text-primary-200 transition-colors text-xs md:text-sm"
             >
               <Mail size={14} />
-              <span>uk@oecindia.com</span>
+              <span>uk@oecdubai.com</span>
             </Link>
           </div>
           <div className="hidden md:flex items-center gap-2 text-primary-100 text-sm">
@@ -228,7 +228,7 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setIsExploreOpen(!isExploreOpen)}
-                        className="flex items-center gap-1 text-gray-800 hover:text-primary-800 font-medium transition-colors duration-200 py-2"
+                        className="flex items-center gap-1 text-amber-900 hover:text-amber-900 font-medium transition-colors duration-200 py-2"
                       >
                         {item.name}
                         <ChevronDown
@@ -260,7 +260,7 @@ const Header = () => {
                                       <h3 className="font-bold text-gray-900 text-base md:text-lg">
                                         {card.title}
                                       </h3>
-                                      <p className="text-gray-600 text-xs md:text-sm mt-1">
+                                      <p className="text-amber-700 text-xs md:text-sm mt-1">
                                         {card.subtitle}
                                       </p>
                                     </div>
@@ -295,7 +295,7 @@ const Header = () => {
 
                               <div className="w-full md:w-1/2 p-4 md:p-6">
                                 <div className="space-y-3">
-                                  <h3 className="font-semibold text-gray-800 text-base md:text-lg">
+                                  <h3 className="font-semibold text-amber-900 text-base md:text-lg">
                                     {menuSections[activeSection]?.title}
                                   </h3>
                                   {isLoading ? (
@@ -338,7 +338,7 @@ const Header = () => {
                   ) : (
                     <Link
                       href={item.href}
-                      className="text-gray-700 hover:text-primary-800 font-medium transition-colors duration-200 py-2 text-sm md:text-base"
+                      className="text-gray-700 hover:text-amber-900 font-medium transition-colors duration-200 py-2 text-sm md:text-base"
                     >
                       {item.name}
                     </Link>
@@ -405,7 +405,7 @@ const Header = () => {
                                 <h4 className="font-semibold text-gray-900">
                                   {card.title}
                                 </h4>
-                                <p className="text-gray-600 text-xs mt-1">
+                                <p className="text-amber-700 text-xs mt-1">
                                   {card.subtitle}
                                 </p>
                               </div>
@@ -444,7 +444,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block py-3 text-gray-700 hover:text-primary-800 font-medium"
+                    className="block py-3 text-gray-700 hover:text-amber-900 font-medium"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}

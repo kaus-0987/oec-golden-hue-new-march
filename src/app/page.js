@@ -11,16 +11,16 @@ export default function Home() {
   const homePageSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "OEC India | Overseas Education Consultants in Vadodara",
-    url: "https://oecindia.com",
-    logo: "https://oecindia.com/oec.png",
+    name: "OEC Dubai | Overseas Education Consultants in Vadodara",
+    url: "https://oecdubai.com",
+    logo: "https://oecdubai.com/oec.png",
     sameAs: [
       "https://www.facebook.com/oecbaroda",
-      "https://www.instagram.com/oecindia",
+      "https://www.instagram.com/oecdubai",
       "https://x.com/oec_india",
     ],
     description:
-      "OEC India helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
+      "OEC Dubai helps students achieve their dream of studying abroad. Get expert guidance on university selection, visas, scholarships & more for the UK, USA, Canada, Australia & Europe.",
   };
 
   return (

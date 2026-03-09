@@ -13,7 +13,7 @@ import {
 
 const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/oecbaroda", name: "Facebook" },
-  { icon: Instagram, href: "https://www.instagram.com/oecindia", name: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/oecdubai", name: "Instagram" },
   { icon: Twitter, href: "https://x.com/oec_india", name: "Twitter" },
 ];
 
@@ -75,7 +75,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-primary-800 text-white"
+      className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
       aria-labelledby="footer-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -87,9 +87,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
-                <div className="w-16 h-16 md:w-24 md:h-24 rounded-lg overflow-hidden">
+                <div className="w-16 h-16 md:w-24 md:h-24 rounded-lg overflow-hidden ">
                   <img
-                    src="/oec.png"
+                    src="/OEC.png"
                     alt="OEC"
                     className="w-full h-full object-contain"
                   />
@@ -119,7 +119,7 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="text-secondary-500 hover:text-white transition-colors duration-200"
+                  className="text-white hover:text-white transition-colors duration-200"
                   aria-label={`Follow us on ${social.name}`}
                 >
                   <social.icon size={20} aria-hidden="true" />
@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin
                   size={16}
-                  className="text-primary-400 mt-1 flex-shrink-0"
+                  className="text-white mt-1 flex-shrink-0"
                   aria-hidden="true"
                 />
                 <div>
@@ -202,7 +202,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone
                   size={16}
-                  className="text-primary-400"
+                  className="text-white"
                   aria-hidden="true"
                 />
                 <a href="tel:+919327581167" className="hover:underline">
@@ -212,22 +212,22 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail
                   size={16}
-                  className="text-primary-400"
+                  className="text-white"
                   aria-hidden="true"
                 />
-                <a href="mailto:uk@oecindia.com" className="hover:underline">
-                  uk@oecindia.com
+                <a href="mailto:uk@oecdubai.com" className="hover:underline">
+                  uk@oecdubai.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone
                   size={16}
-                  className="text-secondary-500"
+                  className="text-white"
                   aria-hidden="true"
                 />
                 <a
                   href="tel:+918905570642"
-                  className="font-medium text-secondary-500 hover:underline"
+                  className="font-medium text-white hover:underline"
                 >
                   Emergency: +91 8905570642
                 </a>
@@ -236,9 +236,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-secondary-500 mt-12 pt-8 text-center text-sm text-white">
+        <div className="border-t border-white mt-12 pt-8 text-center text-sm text-white">
           <p>
-            &copy; {currentYear} OEC India. All rights reserved. |{" "}
+            &copy; {currentYear} OEC Dubai. All rights reserved. |{" "}
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>{" "}

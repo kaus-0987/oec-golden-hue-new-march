@@ -132,7 +132,7 @@ const EducationTrivia = ({ isLoading }) => {
             >
               {/* Question */}
               <div className="mb-6">
-                <h4 className="text-xl font-semibold text-gray-800 mb-4">
+                <h4 className="text-xl font-semibold text-amber-900 mb-4">
                   {current.question}
                 </h4>
                 
@@ -154,7 +154,7 @@ const EducationTrivia = ({ isLoading }) => {
                           <p className="font-semibold text-secondary-700 mb-2">
                             Answer: {current.answer}
                           </p>
-                          <p className="text-gray-600 text-sm leading-relaxed">
+                          <p className="text-amber-700 text-sm leading-relaxed">
                             {current.detail}
                           </p>
                         </div>
@@ -172,7 +172,7 @@ const EducationTrivia = ({ isLoading }) => {
                 
                 <button
                   onClick={handleNext}
-                  className="flex items-center gap-2 bg-primary-800 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium"
+                  className="flex items-center gap-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors text-sm font-medium"
                 >
                   Next Trivia
                   <ChevronRight className="w-4 h-4" />
@@ -189,7 +189,7 @@ const EducationTrivia = ({ isLoading }) => {
               {[0, 1, 2].map((i) => (
                 <motion.div
                   key={i}
-                  className="w-2 h-2 bg-primary-600 rounded-full"
+                  className="w-2 h-2 bg-gradient-to-r from-yellow-300 via-yellow-500 to-amber-600 rounded-full"
                   animate={{
                     scale: [1, 1.2, 1],
                     opacity: [0.7, 1, 0.7],
@@ -202,7 +202,7 @@ const EducationTrivia = ({ isLoading }) => {
                 />
               ))}
             </div>
-            <span className="text-sm text-gray-600 font-medium">
+            <span className="text-sm text-amber-700 font-medium">
               Finding your perfect courses...
             </span>
           </div>

@@ -37,7 +37,7 @@ export const generateMetadata = async ({ params }) => {
             height: 600,
           },
         ],
-        siteName: "OEC India",
+        siteName: "OEC Dubai",
         locale: "en_US",
         type: "website",
       },
@@ -84,7 +84,7 @@ const BlogDetail = async ({ params }) => {
       "@type": "Article",
       mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": `https://oecindia.com/blog/${slug}`,
+        "@id": `https://oecdubai.com/blog/${slug}`,
       },
       headline: blog?.meta_title,
       description: blog?.meta_description,
@@ -95,10 +95,10 @@ const BlogDetail = async ({ params }) => {
       },
       publisher: {
         "@type": "Organization",
-        name: "OEC India",
+        name: "OEC Dubai",
         logo: {
           "@type": "ImageObject",
-          url: "https://oecindia.com/oec.png",
+          url: "https://oecdubai.com/oec.png",
         },
       },
       datePublished: blog?.published_at,

@@ -143,7 +143,7 @@ const Courses = ({ country }) => {
           <div className="p-6 w-full">
             <div className="flex items-start mb-4">
               <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mr-4 shrink-0">
-                <School className="h-6 w-6 text-primary-800" />
+                <School className="h-6 w-6 text-amber-900" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900">
@@ -167,7 +167,7 @@ const Courses = ({ country }) => {
             />
 
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-primary-800">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-100 text-amber-900">
                 <GraduationCap className="h-3 w-3 mr-1" />
                 {course.degree_level.charAt(0).toUpperCase() +
                   course.degree_level.slice(1)}
@@ -186,7 +186,7 @@ const Courses = ({ country }) => {
                   Scholarship Available
                 </span>
               ) : (
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-gray-100 text-amber-900">
                   <XCircle className="h-3 w-3 mr-1" />
                   No Scholarship
                 </span>
@@ -196,7 +196,7 @@ const Courses = ({ country }) => {
             <div className="grid grid-cols-2 gap-3 text-sm mb-6">
               <div>
                 <div className="text-gray-500 flex items-center">
-                  <CircleDollarSign className="h-4 w-4 mr-1.5 text-secondary-500" />
+                  <CircleDollarSign className="h-4 w-4 mr-1.5 text-white" />
                   Tuition Fee
                 </div>
                 <div className="font-medium pl-6">
@@ -205,21 +205,21 @@ const Courses = ({ country }) => {
               </div>
               <div>
                 <div className="text-gray-500 flex items-center">
-                  <Calendar className="h-4 w-4 mr-1.5 text-secondary-500" />
+                  <Calendar className="h-4 w-4 mr-1.5 text-white" />
                   Intakes
                 </div>
                 <div className="font-medium pl-6">{getIntakes(course)}</div>
               </div>
               <div>
                 <div className="text-gray-500 flex items-center">
-                  <Percent className="h-4 w-4 mr-1.5 text-secondary-500" />
+                  <Percent className="h-4 w-4 mr-1.5 text-white" />
                   Min GPA
                 </div>
                 <div className="font-medium pl-6">{course.min_gpa}</div>
               </div>
               <div>
                 <div className="text-gray-500 flex items-center">
-                  <CheckCircle className="h-4 w-4 mr-1.5 text-secondary-500" />
+                  <CheckCircle className="h-4 w-4 mr-1.5 text-white" />
                   IELTS
                 </div>
                 <div className="font-medium pl-6">{course.ielts_score}</div>
@@ -229,7 +229,7 @@ const Courses = ({ country }) => {
             <div className="flex justify-end items-center mt-4">
               <Link
                 href={`/courses/${course.slug}`}
-                className="bg-primary-800 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
               >
                 View Details
               </Link>

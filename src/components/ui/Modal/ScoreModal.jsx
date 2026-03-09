@@ -8,10 +8,10 @@ const ScoreModal = ({ isOpen, onClose, scoreDetails }) => {
     <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col">
         <div className="flex justify-between items-center mb-4 border-b pb-3">
-          <h2 className="text-2xl font-bold text-gray-800">Your Score</h2>
+          <h2 className="text-2xl font-bold text-amber-900">Your Score</h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-800 text-3xl font-bold"
+            className="text-gray-500 hover:text-amber-900 text-3xl font-bold"
           >
             &times;
           </button>
@@ -34,14 +34,14 @@ const ScoreModal = ({ isOpen, onClose, scoreDetails }) => {
             <div className="text-2xl font-bold">{skipped}</div>
             <div className="text-sm">Skipped</div>
           </div>
-          <div className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg">
+          <div className="px-4 py-2 bg-gray-100 text-amber-900 rounded-lg">
             <div className="text-2xl font-bold">{band}</div>
             <div className="text-sm">Band</div>
           </div>
         </div>
 
         <div className="overflow-y-auto flex-grow">
-          <table className="w-full text-sm text-left text-gray-600">
+          <table className="w-full text-sm text-left text-amber-700">
             <thead className="text-xs text-gray-700 uppercase bg-gray-100 sticky top-0">
               <tr>
                 <th scope="col" className="px-4 py-3">
@@ -97,7 +97,7 @@ const ScoreModal = ({ isOpen, onClose, scoreDetails }) => {
         <div className="mt-6 text-right border-t pt-4">
           <button
             onClick={onClose}
-            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300"
+            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-amber-900 hover:bg-gray-300"
           >
             Close
           </button>

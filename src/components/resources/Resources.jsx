@@ -91,12 +91,12 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-primary-800 text-white mt-20 py-20 md:py-32 text-center">
+      <header className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white mt-20 py-20 md:py-32 text-center">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Resources & Insights
           </h1>
-          <p className="text-secondary-500 text-xl md:text-2xl max-w-4xl mx-auto">
+          <p className="text-white text-xl md:text-2xl max-w-4xl mx-auto">
             Comprehensive guides, latest updates, and expert insights to help
             you make informed decisions about your international education
             journey
@@ -186,8 +186,8 @@ const Resources = () => {
                 <button
                   className={`px-4 py-2 rounded-full ${
                     activeTab === "all"
-                      ? "bg-primary-800 text-white"
-                      : "bg-primary-100 text-primary-800 hover:bg-primary-200 border border-primary-800"
+                      ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                      : "bg-primary-100 text-amber-900 hover:bg-primary-200 border border-primary-800"
                   }`}
                   onClick={() => setActiveTab("all")}
                 >
@@ -198,8 +198,8 @@ const Resources = () => {
                     key={category.id}
                     className={`px-4 py-2 rounded-full ${
                       activeTab === category.slug
-                        ? "bg-primary-800 text-white"
-                        : "bg-primary-100 text-primary-800 hover:bg-primary-200 border border-primary-800"
+                        ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
+                        : "bg-primary-100 text-amber-900 hover:bg-primary-200 border border-primary-800"
                     }`}
                     onClick={() => setActiveTab(category.slug)}
                   >
@@ -212,14 +212,14 @@ const Resources = () => {
             <div className="flex flex-col md:flex-row gap-8">
               <div className="w-full md:w-1/4">
                 <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200">
-                  <h3 className="font-bold text-lg mb-4 text-gray-800">
+                  <h3 className="font-bold text-lg mb-4 text-amber-900">
                     Filter by Country
                   </h3>
                   <div className="space-y-2 max-h-[500px] overflow-y-auto">
                     <button
                       className={`w-full text-left flex items-center px-3 py-2 rounded-md ${
                         selectedCountry === "all"
-                          ? "bg-primary-100 text-primary-800 border border-primary-800"
+                          ? "bg-primary-100 text-amber-900 border border-primary-800"
                           : "hover:bg-primary-100 hover:border hover:border-primary-800"
                       }`}
                       onClick={() => setSelectedCountry("all")}
@@ -231,7 +231,7 @@ const Resources = () => {
                         key={country.id}
                         className={`w-full text-left flex items-center px-3 py-2 rounded-md ${
                           selectedCountry === country.name
-                            ? "bg-primary-100 text-primary-800 border border-primary-800"
+                            ? "bg-primary-100 text-amber-900 border border-primary-800"
                             : "hover:bg-primary-100 hover:border hover:border-primary-800"
                         }`}
                         onClick={() => setSelectedCountry(country.name)}
@@ -253,7 +253,7 @@ const Resources = () => {
               </div>
 
               <div className="w-full md:w-3/4">
-                <h2 className="text-2xl font-bold mb-6 text-gray-800">
+                <h2 className="text-2xl font-bold mb-6 text-amber-900">
                   {selectedCountry === "all"
                     ? "All Resources"
                     : `Resources for ${selectedCountry}`}
@@ -269,11 +269,11 @@ const Resources = () => {
                         <div className="flex justify-between items-start">
                           <div className="flex-grow pr-4">
                             <div className="mb-2">
-                              <span className="bg-primary-100 text-primary-800 border border-primary-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                              <span className="bg-primary-100 text-amber-900 border border-primary-800 text-xs font-medium px-2.5 py-0.5 rounded">
                                 {resource.category_name}
                               </span>
                             </div>
-                            <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                            <h3 className="text-xl font-semibold mb-2 text-amber-900">
                               {resource.title}
                             </h3>
                           </div>
@@ -284,13 +284,13 @@ const Resources = () => {
                             className="flex-shrink-0 flex items-center justify-center p-2 rounded-full bg-secondary-100 hover:bg-secondary-200 transition-colors"
                             title="Download PDF"
                           >
-                            <Download className="h-5 w-5 text-secondary-500" />
+                            <Download className="h-5 w-5 text-white" />
                           </button>
                         </div>
-                        <div className="mb-2 text-sm text-gray-500">
+                        <div className="mb-2 text-sm text-amber-700">
                           <span>Country: {resource.country_name}</span>
                         </div>
-                        <div className="flex justify-between items-center text-sm text-gray-500">
+                        <div className="flex justify-between items-center text-sm text-amber-700">
                           <span>
                             Published:{" "}
                             {moment(resource.publication_date).format(

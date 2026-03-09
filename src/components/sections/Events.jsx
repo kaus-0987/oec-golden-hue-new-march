@@ -39,11 +39,11 @@ const Events = () => {
         <div className="text-center mb-16">
           <h2
             id="services-heading"
-            className="text-3xl sm:text-4xl font-bold text-primary-800 mb-4"
+            className="text-3xl sm:text-4xl font-bold text-amber-900 mb-4"
           >
             What's happening with overseas education
           </h2>
-          <p className="text-lg text-gray-600 mx-auto">
+          <p className="text-lg text-amber-700 mx-auto">
             Stay up-to-date with the latest updates on overseas education,
             student life, rules, COVID-19, and many more!
           </p>
@@ -88,7 +88,7 @@ const Events = () => {
           </div>
         ) : events.length === 0 ? (
           <div className="text-center py-10">
-            <p className="text-gray-600">No upcoming events at the moment.</p>
+            <p className="text-amber-700">No upcoming events at the moment.</p>
             <p className="text-gray-500 mt-2">Check back later for updates!</p>
           </div>
         ) : (
@@ -113,7 +113,7 @@ const Events = () => {
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-                    <div className="absolute top-4 right-4 bg-white/90 text-primary-800 px-3 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute top-4 right-4 bg-white/90 text-amber-900 px-3 py-1 rounded-full text-xs font-bold">
                       {event.event_type === "fair" ? "FAIR" : "EVENT"}
                     </div>
                   </Link>
@@ -121,11 +121,11 @@ const Events = () => {
 
                 <div className="p-6 flex-grow flex flex-col">
                   <div className="flex justify-between items-start">
-                    <span className="text-sm font-semibold text-secondary-500">
+                    <span className="text-sm font-semibold text-white">
                       {event.category_name}
                     </span>
                     <div className="flex flex-wrap gap-1">
-                      <span className="px-2 py-1 bg-primary-100 text-primary-800 rounded-full text-xs font-medium">
+                      <span className="px-2 py-1 bg-primary-100 text-amber-900 rounded-full text-xs font-medium">
                         {event.event_type}
                       </span>
                       {event.is_online && (
@@ -136,7 +136,7 @@ const Events = () => {
                     </div>
                   </div>
 
-                  <h3 className="mt-3 text-xl font-bold text-gray-900 group-hover:text-primary-800 transition-colors">
+                  <h3 className="mt-3 text-xl font-bold text-gray-900 group-hover:text-amber-900 transition-colors">
                     <Link
                       href={`/events/${event.slug}`}
                       className="line-clamp-2"
@@ -145,23 +145,23 @@ const Events = () => {
                     </Link>
                   </h3>
 
-                  <p className="mt-2 text-gray-600 text-sm line-clamp-2">
+                  <p className="mt-2 text-amber-700 text-sm line-clamp-2">
                     {event.short_description}
                   </p>
 
                   <div className="mt-4 space-y-2">
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <Calendar className="h-4 w-4 text-secondary-500" />
+                    <div className="flex items-center gap-2 text-sm text-amber-700">
+                      <Calendar className="h-4 w-4 text-white" />
                       {moment(event.start_date).format("MMMM D, YYYY")}
                       {event.end_date &&
                         ` - ${moment(event.end_date).format("MMMM D, YYYY")}`}
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <Clock className="h-4 w-4 text-secondary-500" />
+                    <div className="flex items-center gap-2 text-sm text-amber-700">
+                      <Clock className="h-4 w-4 text-white" />
                       {event.start_time} - {event.end_time}
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <MapPin className="h-4 w-4 text-secondary-500" />
+                    <div className="flex items-center gap-2 text-sm text-amber-700">
+                      <MapPin className="h-4 w-4 text-white" />
                       {event.is_online ? "Online Event" : event.venue_name}
                     </div>
                   </div>
@@ -169,14 +169,14 @@ const Events = () => {
                   <div className="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center">
                     <Link
                       href={`/events/${event.slug}`}
-                      className="inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-primary-800"
+                      className="inline-flex items-center gap-1 font-semibold text-primary-600 hover:text-amber-900"
                     >
                       View Details
                       <ArrowRight className="h-4 w-4 transform transition-transform group-hover:translate-x-1" />
                     </Link>
                     <Link
                       href="/events#register"
-                      className="px-4 py-2 bg-primary-800 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors inline-block text-center"
+                      className="px-4 py-2 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors inline-block text-center"
                     >
                       Register Now
                     </Link>
@@ -190,7 +190,7 @@ const Events = () => {
         <div className="text-center mt-12">
           <Link
             href="/events"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary-800 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             aria-label="Explore all study destinations"
           >
             Explore All Events

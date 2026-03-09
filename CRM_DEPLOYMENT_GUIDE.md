@@ -53,8 +53,8 @@ git push origin main
 
 Test these URLs on your live site:
 
-1. **https://oecindia.com/oeccrm/login** ← Main CRM URL ✅
-2. **https://oecindia.netlify.app/oeccrm/login** ← Should also work ✅
+1. **https://oecdubai.com/oeccrm/login** ← Main CRM URL ✅
+2. **https://oecdubai.netlify.app/oeccrm/login** ← Should also work ✅
 
 ## 📁 File Structure (Current)
 
@@ -99,7 +99,7 @@ Should show:
    - Verify no build errors
 
 2. **Check Browser Console**
-   - Visit https://oecindia.com/oeccrm/login
+   - Visit https://oecdubai.com/oeccrm/login
    - Open DevTools > Console
    - Look for 404 errors on asset loading
 
@@ -109,7 +109,7 @@ Should show:
 
 ## 🎯 Expected Behavior
 
-1. User visits: `https://oecindia.com/oeccrm/login`
+1. User visits: `https://oecdubai.com/oeccrm/login`
 2. Netlify redirect: → `/oeccrm/index.html`
 3. Browser loads: HTML with `/oeccrm/static/js/main.xxx.js`
 4. Assets load: From `/public/oeccrm/static/`

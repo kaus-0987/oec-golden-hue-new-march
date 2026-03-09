@@ -27,7 +27,7 @@ describe('BottomNavigation Component', () => {
     render(<BottomNavigation />);
     
     const courseFinderLink = screen.getByText('Course Finder').closest('a');
-    expect(courseFinderLink).toHaveClass('text-primary-800');
+    expect(courseFinderLink).toHaveClass('text-amber-900');
   });
 
   it('renders correct links', () => {
@@ -68,6 +68,6 @@ describe('BottomNavigation Component', () => {
     render(<BottomNavigation />);
     
     const eventsLink = screen.getByText('Events').closest('a');
-    expect(eventsLink).toHaveClass('text-primary-800');
+    expect(eventsLink).toHaveClass('text-amber-900');
   });
 });

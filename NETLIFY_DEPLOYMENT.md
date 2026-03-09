@@ -1,6 +1,6 @@
 # Netlify Deployment Guide
 
-This guide will help you deploy the OEC India website with CRM integration to Netlify.
+This guide will help you deploy the OEC Dubai website with CRM integration to Netlify.
 
 ## Pre-Deployment Checklist
 
@@ -142,14 +142,14 @@ If you need environment variables, add them in Netlify:
 
 Example:
 ```
-NEXT_PUBLIC_API_URL=https://api.oecindia.com
+NEXT_PUBLIC_API_URL=https://api.oecdubai.com
 ```
 
 ## Custom Domain
 
 1. **Add Custom Domain in Netlify**
    - Site Settings → Domain Management
-   - Add custom domain: `oecindia.com`
+   - Add custom domain: `oecdubai.com`
 
 2. **Update DNS Records**
    - Point your domain to Netlify's servers

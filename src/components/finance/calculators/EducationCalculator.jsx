@@ -144,7 +144,7 @@ const EducationCalculator = () => {
                 onClick={() => setTuitionType(option.key)}
                 className={`flex-1 py-2 px-3 rounded-lg text-sm font-medium transition-colors ${
                   tuitionType === option.key
-                    ? "bg-primary-800 text-white"
+                    ? "bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -218,7 +218,7 @@ const EducationCalculator = () => {
       </div>
 
       <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-xl p-6">
-        <h4 className="text-lg font-bold text-primary-800 mb-4">
+        <h4 className="text-lg font-bold text-amber-900 mb-4">
           Living Expenses Breakdown (Per Year)
         </h4>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -247,7 +247,7 @@ const EducationCalculator = () => {
                   {category}
                 </span>
               </div>
-              <div className="text-lg font-bold text-gray-800">
+              <div className="text-lg font-bold text-amber-900">
                 {Math.round(amount).toLocaleString()} {results.currency}
               </div>
             </div>

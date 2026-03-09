@@ -75,7 +75,7 @@ export default function StudyAbroadHero() {
   };
 
   return (
-    <div className="relative overflow-hidden bg-primary-800 text-white">
+    <div className="relative overflow-hidden bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white">
       <div className="container mx-auto px-4 py-12 lg:py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <motion.div
@@ -109,7 +109,7 @@ export default function StudyAbroadHero() {
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative bg-white text-primary-800 font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden"
+                className="group relative bg-white text-amber-900 font-semibold px-8 py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Explore Our Services

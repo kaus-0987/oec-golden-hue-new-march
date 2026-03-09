@@ -1,8 +1,8 @@
-# OEC India Website - Improvements & Refactoring
+# OEC Dubai Website - Improvements & Refactoring
 
 ## Overview of Changes
 
-This document outlines the major improvements and refactoring performed on the OEC India website codebase.
+This document outlines the major improvements and refactoring performed on the OEC Dubai website codebase.
 
 ---
 

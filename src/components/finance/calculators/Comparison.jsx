@@ -6,12 +6,12 @@ const Comparison = () => {
   return (
     <div className="text-center py-12">
       <div className="w-24 h-24 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-        <BarChart3 className="w-12 h-12 text-secondary-500" />
+        <BarChart3 className="w-12 h-12 text-white" />
       </div>
-      <h3 className="text-2xl font-bold text-primary-800 mb-4">
+      <h3 className="text-2xl font-bold text-amber-900 mb-4">
         Country Comparison
       </h3>
-      <p className="text-gray-600 mb-6 max-w-md mx-auto">
+      <p className="text-amber-700 mb-6 max-w-md mx-auto">
         Compare costs, ROI, and financial requirements across multiple countries
         to make the best decision for your education.
       </p>

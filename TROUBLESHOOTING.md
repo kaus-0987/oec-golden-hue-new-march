@@ -6,7 +6,7 @@
 
 **Error:**
 ```
-GET https://oecindia.netlify.app/crm/login 404 (Not Found)
+GET https://oecdubai.netlify.app/crm/login 404 (Not Found)
 ```
 
 **Solution:**
@@ -33,7 +33,7 @@ The `netlify.toml` file now includes specific redirects for CRM routes:
 
 **Error:**
 ```
-GET https://oecindia.netlify.app/courses?_rsc=8pre9 404 (Not Found)
+GET https://oecdubai.netlify.app/courses?_rsc=8pre9 404 (Not Found)
 ```
 
 **Solution:**

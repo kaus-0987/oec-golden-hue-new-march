@@ -6,12 +6,12 @@ const BudgetPlanner = () => {
   return (
     <div className="text-center py-12">
       <div className="w-24 h-24 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-        <PieChart className="w-12 h-12 text-secondary-500" />
+        <PieChart className="w-12 h-12 text-white" />
       </div>
-      <h3 className="text-2xl font-bold text-primary-800 mb-4">
+      <h3 className="text-2xl font-bold text-amber-900 mb-4">
         Budget Planner
       </h3>
-      <p className="text-gray-600 mb-6 max-w-md mx-auto">
+      <p className="text-amber-700 mb-6 max-w-md mx-auto">
         Create comprehensive monthly and yearly budgets for your study abroad
         journey with our interactive budget planner.
       </p>

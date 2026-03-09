@@ -7,18 +7,18 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, answers }) => {
     <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col">
         <div className="flex justify-between items-center mb-4 border-b pb-3">
-          <h2 className="text-2xl font-bold text-gray-800">
+          <h2 className="text-2xl font-bold text-amber-900">
             Confirm Your Answers
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-800 text-3xl font-bold"
+            className="text-gray-500 hover:text-amber-900 text-3xl font-bold"
           >
             &times;
           </button>
         </div>
         <div className="overflow-y-auto pr-2">
-          <p className="mb-4 text-gray-600">
+          <p className="mb-4 text-amber-700">
             Please review your answers before submitting.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -39,7 +39,7 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, answers }) => {
         <div className="mt-6 text-right border-t pt-4 flex justify-end gap-3">
           <button
             onClick={onClose}
-            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-gray-800 hover:bg-gray-300"
+            className="px-6 py-2 rounded-lg text-sm font-semibold bg-gray-200 text-amber-900 hover:bg-gray-300"
           >
             Cancel
           </button>

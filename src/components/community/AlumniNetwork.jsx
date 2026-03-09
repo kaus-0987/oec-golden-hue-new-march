@@ -15,26 +15,26 @@ import {
 
 const statsData = [
   {
-    icon: <Users className="w-12 h-12 mx-auto mb-4 text-secondary-500" />,
+    icon: <Users className="w-12 h-12 mx-auto mb-4 text-white" />,
     value: "15,000+",
     label: "Active Alumni",
     labelColor: "text-primary-100",
   },
   {
-    icon: <Globe className="w-12 h-12 mx-auto mb-4 text-secondary-500" />,
+    icon: <Globe className="w-12 h-12 mx-auto mb-4 text-white" />,
     value: "85+",
     label: "Countries",
     labelColor: "text-secondary-100",
   },
   {
-    icon: <Building className="w-12 h-12 mx-auto mb-4 text-secondary-500" />,
+    icon: <Building className="w-12 h-12 mx-auto mb-4 text-white" />,
     value: "500+",
     label: "Top Companies",
     labelColor: "text-primary-100",
   },
   {
     icon: (
-      <MessageCircle className="w-12 h-12 mx-auto mb-4 text-secondary-500" />
+      <MessageCircle className="w-12 h-12 mx-auto mb-4 text-white" />
     ),
     value: "2,500+",
     label: "Mentorships",
@@ -44,17 +44,17 @@ const statsData = [
 
 const benefitsData = [
   {
-    icon: <MessageCircle className="w-8 h-8 text-secondary-500" />,
+    icon: <MessageCircle className="w-8 h-8 text-white" />,
     title: "One-on-One Mentoring",
     description: "Get personalized guidance from alumni in your field",
   },
   {
-    icon: <Users className="w-8 h-8 text-secondary-500" />,
+    icon: <Users className="w-8 h-8 text-white" />,
     title: "Networking Events",
     description: "Connect at exclusive alumni networking sessions",
   },
   {
-    icon: <Trophy className="w-8 h-8 text-secondary-500" />,
+    icon: <Trophy className="w-8 h-8 text-white" />,
     title: "Career Guidance",
     description: "Industry insights and job referrals from successful alumni",
   },
@@ -69,7 +69,7 @@ const ExpandableSection = ({ title, children, defaultOpen = false }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-4 text-left bg-primary-50 hover:bg-primary-100 transition-colors flex items-center justify-between"
       >
-        <h3 className="text-lg font-semibold text-primary-800">{title}</h3>
+        <h3 className="text-lg font-semibold text-amber-900">{title}</h3>
         <ChevronDown
           className={`w-5 h-5 text-primary-600 transition-transform ${
             isOpen ? "rotate-180" : ""
@@ -123,10 +123,10 @@ const AlumniNetwork = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
-        <h3 className="text-3xl font-bold text-primary-800 mb-4">
+        <h3 className="text-3xl font-bold text-amber-900 mb-4">
           Alumni Network
         </h3>
-        <p className="text-gray-600 max-w-2xl mx-auto">
+        <p className="text-amber-700 max-w-2xl mx-auto">
           Connect with OEC alumni worldwide for mentorship, career guidance, and
           networking opportunities
         </p>
@@ -136,7 +136,7 @@ const AlumniNetwork = () => {
         {statsData.map((stat, index) => (
           <div
             key={index}
-            className="bg-primary-800 text-white p-6 rounded-xl text-center"
+            className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white p-6 rounded-xl text-center"
           >
             {stat.icon}
             <div className="text-3xl font-bold mb-2">{stat.value}</div>
@@ -153,14 +153,14 @@ const AlumniNetwork = () => {
                 {benefit.icon}
               </div>
               <h4 className="font-semibold mb-2">{benefit.title}</h4>
-              <p className="text-gray-600 text-sm">{benefit.description}</p>
+              <p className="text-amber-700 text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>
       </ExpandableSection>
 
       <div className="bg-white border-2 border-primary-200 rounded-xl p-8 mb-8">
-        <h3 className="text-xl font-bold text-primary-800 mb-6">
+        <h3 className="text-xl font-bold text-amber-900 mb-6">
           Featured Alumni Mentors
         </h3>
 
@@ -185,25 +185,25 @@ const AlumniNetwork = () => {
                           .join("")}
                       </span>
                     ) : (
-                      <User className="w-5 h-5 text-secondary-500" />
+                      <User className="w-5 h-5 text-white" />
                     )}
                   </div>
                   <div>
                     <h4 className="font-semibold text-sm">
                       {alumni.full_name}
                     </h4>
-                    <p className="text-gray-600 text-xs">
+                    <p className="text-amber-700 text-xs">
                       {alumni.course_name}
                     </p>
                   </div>
                 </div>
-                <div className="space-y-1 text-xs text-gray-600 mb-3">
+                <div className="space-y-1 text-xs text-amber-700 mb-3">
                   <div className="flex items-center">
-                    <GraduationCap className="w-3 h-3 mr-1 text-secondary-500" />
+                    <GraduationCap className="w-3 h-3 mr-1 text-white" />
                     <span>{alumni.university_name}</span>
                   </div>
                   <div className="flex items-center">
-                    <MapPin className="w-3 h-3 mr-1 text-secondary-500" />
+                    <MapPin className="w-3 h-3 mr-1 text-white" />
                     <span>{alumni.country_name}</span>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ const AlumniNetwork = () => {
         )}
       </div>
 
-      <div className="bg-primary-800 text-white p-8 rounded-xl text-center">
+      <div className="bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white p-8 rounded-xl text-center">
         <h3 className="text-2xl font-bold mb-4">Join Our Alumni Network</h3>
         <p className="mb-6 opacity-90">
           Already studying abroad? Connect with fellow OEC students and give

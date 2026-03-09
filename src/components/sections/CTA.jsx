@@ -9,7 +9,7 @@ const CTA = () => {
   return (
     <>
       <section
-        className="py-20 bg-primary-800 text-white relative overflow-hidden"
+        className="py-20 bg-gradient-to-r from-yellow-500 via-amber-700 to-yellow-900 text-white relative overflow-hidden"
         aria-labelledby="cta-heading"
       >
         <div

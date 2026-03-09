@@ -19,7 +19,7 @@ describe('ViewModeToggle Component', () => {
     render(<ViewModeToggle viewMode="grid" onViewModeChange={mockOnViewModeChange} />);
     
     const gridButton = screen.getByLabelText(/grid view/i);
-    expect(gridButton).toHaveClass('bg-white', 'text-secondary-500');
+    expect(gridButton).toHaveClass('bg-white', 'text-white');
   });
 
   it('calls onViewModeChange when button is clicked', () => {
